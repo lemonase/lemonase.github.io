@@ -40,7 +40,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # Check https://github.com/Track3/hermit#social-icons for more info.
   [[params.social]]
     name = "github"
-    url = "https://github.com/lemon-scented"
+    url = "https://github.com/lemonase"
 
 [menu]
   [[menu.main]]
