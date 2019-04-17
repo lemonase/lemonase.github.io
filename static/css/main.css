@@ -6,9 +6,28 @@ html{
 h1{
     text-align: center !important;
 }
+pre, code{
+    background-color: #272727 !important;
+} 
+.bg-img{
+  opacity: .4; !important;
+}
+#home-center{
+  padding-bottom: 50px;
+}
 #site-header{
     background-color: #272727 !important;
 }
-pre, code{
-    background-color: #272727 !important;
+#home-prefix{
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: .7em;
+  font-style: italic;
+}
+#home-title{
+  font-size: 4em;
+}
+img[alt="Pic-Of-Me"]{
+  /* margin-left: 75%; */
+  width: 20%;
 }

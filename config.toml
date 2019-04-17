@@ -26,9 +26,10 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   themeColor = "#222249"
 
+  homePrefix = "Well, well, well, if it isn't"
   homeSubtitle = "Motivated student. Up and coming Programmer. Expect some projects real soon"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  # bgImg = ""  # Homepage background-image URL
+  bgImg = "images/backgrounds/beach.jpg"  # Homepage background-image URL
 
   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
   justifyContent = false  # Set "text-align: justify" to `.content`.
@@ -41,6 +42,12 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   [[params.social]]
     name = "github"
     url = "https://github.com/lemonase"
+  [[params.social]]
+    name = "email"
+    url = "mailto:notjamesdixon@gmail.com"
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/james-dixon-147431109/"
 
 [menu]
   [[menu.main]]
@@ -52,3 +59,4 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     name = "About"
     url = "about-me/"
     weight = 20
+    bgImg = "images/backgrounds/me.png"
