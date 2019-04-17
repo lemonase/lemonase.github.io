@@ -1,7 +1,7 @@
 ---
 title: "Quick Mid-April Update"
 date: 2019-04-16T16:06:08-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags: 
