@@ -24,4 +24,3 @@ you can expect that to change in the near future.
 If you would like to contact me, please feel free. My email is [notjamesdixon@gmail.com](mailto:notjamesdixon@gmail.com)
 
 ![Pic-Of-Me](/images/me.png)
-
