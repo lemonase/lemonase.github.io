@@ -1,11 +1,11 @@
 html{
-    background-color: #1a1a1a !important;
+  background-color: #1a1a1a !important;
 }
 h1{
-    text-align: center !important;
+  text-align: center !important;
 }
 pre, code{
-    background-color: #272727 !important;
+  background-color: #272727 !important;
 } 
 .bg-img{
   opacity: .4 !important;
@@ -14,7 +14,7 @@ pre, code{
   padding-bottom: 50px;
 }
 #site-header{
-    background-color: #272727 !important;
+  background-color: #272727 !important;
 }
 #home-prefix{
   margin-bottom: 0px;
