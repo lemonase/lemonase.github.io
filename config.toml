@@ -26,8 +26,8 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   themeColor = "#222249"
 
-  homePrefix = "Well, well, well, if it isn't"
-  homeSubtitle = "Motivated student. Up and coming Programmer. Expect some projects real soon"
+  homePrefix = "Hello, World. I am"
+  homeSubtitle = "motivated student, amature programmer, curious person. he/him"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   bgImg = "images/backgrounds/beach.jpg"  # Homepage background-image URL
 

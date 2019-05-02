@@ -8,7 +8,10 @@ pre, code{
   background-color: #272727 !important;
 } 
 .bg-img{
-  opacity: .4 !important;
+  opacity: .3 !important;
+}
+.site-branding a{
+  color: #ffffff;
 }
 #home-center{
   padding-bottom: 50px;
@@ -18,12 +21,14 @@ pre, code{
 }
 #home-prefix{
   margin-bottom: 0px;
+  padding-top: 60px;
   text-align: center;
-  font-size: .7em;
+  font-size: .9em;
   font-style: italic;
 }
 #home-title{
   font-size: 4em;
+  color: #ffffff;
 }
 img[alt="Pic-Of-Me"]{
   /* margin-left: 75%; */
