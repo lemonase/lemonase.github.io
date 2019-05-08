@@ -1,12 +1,11 @@
 +++
 title = "About me"
-date = "2019-03-06"
+date = "2019-03-06" 
 myPic = "images/me.png"
-featuredImg = "/images/backgrounds/sunset1.jpg"
 +++
 
 I am a Computer Science student who enjoys getting into and learning **all** kinds of technology.
-Other areas of study I gravitate towards are history, physics, geometry and philosophy.
+Other areas of study I gravitate towards are history, physics, geometry and philosophy. :bust_in_silhouette:
 
 I do enjoy playing PC games every now and then, but I don't have much time as of late, and have lost the friends I used
 to play online with. (this is so sad) :'( -- My [Steam](https://steamcommunity.com/id/thatonepyro) and [PSN](https://psnprofiles.com/Old_Salty_Lemon)
@@ -22,5 +21,6 @@ Right now I am mostly experimenting and exploring so I have no real projects wor
 you can expect that to change in the near future.
 
 If you would like to contact me, please feel free. My email is [notjamesdixon@gmail.com](mailto:notjamesdixon@gmail.com)
+:email:
 
 ![Pic-Of-Me](/images/me.png)
