@@ -7,6 +7,12 @@ h1{
 pre, code{
   background-color: #272727 !important;
 } 
+.content>p:first-child{
+  text-indent: 30px;
+}
+.content>p:first-child::first-letter{
+  font-size: 1.5em;
+}
 .bg-img{
   opacity: .3 !important;
 }
