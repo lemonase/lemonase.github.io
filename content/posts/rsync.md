@@ -1,7 +1,7 @@
 ---
 title: "Using rsync"
 date: 2019-07-05T18:08:42-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags: 
