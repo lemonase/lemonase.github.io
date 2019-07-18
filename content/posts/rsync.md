@@ -1,5 +1,5 @@
 ---
-title: "Using rsync"
+title: "Help! I'm rsync-ing"
 date: 2019-07-05T18:08:42-04:00
 draft: false
 toc: false
