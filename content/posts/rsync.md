@@ -13,8 +13,12 @@ tags:
 
 ## What is rsync?
 
-Rsync is the ultimate tool for copying files either remotely or from the same host.
-It offers many advantages over traditional methods like scp or FTP which are linear file transfer tools.
+We can run the ```whatis rsync``` command to get a short description without opening the man page
+```
+rsync (1)            - a fast, versatile, remote (and local) file-copying tool
+```
+Rsync is the ultimate tool for copying files and is loved by many people.
+It offers many advantages over traditional methods like SCP or FTP which are linear file transfer tools.
 Rsync checks the delta of files between the source and the destination and only transfers the difference.
 Additionally it allows an option for easy compression of files before they are sent over the network.
 
@@ -23,7 +27,7 @@ Additionally it allows an option for easy compression of files before they are s
 Say I have a folder of movies in my home directory on this computer that I wanted to copy to another machine I have ssh access to called **fry**. To do this I could use the command:
 
 ```sh
-rsync -avz ~/Movies fry:~/Videos/
+$ rsync -avz ~/Movies fry:~/Videos/
 ```
 
 First let me cover what these options mean.
@@ -34,7 +38,7 @@ First let me cover what these options mean.
     It will also tell rsync to recurse into directories (-r).
 
 -v, --verbose
-    Prints out files to the stdout
+    Prints out files to the stdout so you can see what's happening
 
 -z, --compress
     Compresses data during transfer
