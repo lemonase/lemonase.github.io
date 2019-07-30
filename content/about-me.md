@@ -13,7 +13,7 @@ I do enjoy playing PC games every now and then, but I don't have much time as of
 to play online with. (this is so sad) :sob: -- My [Steam](https://steamcommunity.com/id/thatonepyro) and [PSN](https://psnprofiles.com/Old_Salty_Lemon)
 
 Another thing I love doing is building PC's. I put my first computer together when I was 12 and have basically been doing it for friends and myself ever since.
-PRO TIP: Head over to [/r/buildapcsales](http://reddit.com/r/buildapcsales) to find some nice deals on parts.
+PRO TIP: If you want the hookup, head over to [/r/buildapcsales](http://reddit.com/r/buildapcsales) to find some nice deals on parts.
 
 On the side I also enjoy tinkering with cars and driving/seeing cool rare cars, but unfortunately that has taken a backseat as the
 cost of college tuition and books looms overhead :school_satchel: I made the executive financial decision to sell my project cars.
