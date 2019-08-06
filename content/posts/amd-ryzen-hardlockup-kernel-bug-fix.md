@@ -1,7 +1,7 @@
 ---
 title: "AMD Ryzen 1700x Hardlockup Kernel Bug 'Fix'"
 date: 2019-08-06T16:07:01-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags: 
@@ -11,6 +11,8 @@ tags:
   - grub
   - halt
 ---
+
+# Problem
 
 I have been experiencing a hard system-lockup on my Ryzen system for a little
 while now which has been both annoying and curious at the same time. When I say hard system-lockup,
@@ -32,7 +34,7 @@ and [kernel.org](https://bugzilla.kernel.org/show_bug.cgi?id=196683)
 Clearly I was not the only one having this issue, but unfortunately the solution
 was not so clear.
 
-
+# Fixes
 ## Kernel Paramters
 
 One suggestion that comes out of this is to add
