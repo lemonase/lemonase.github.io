@@ -1,5 +1,5 @@
 ---
-title: "AMD Ryzen 1700x Hardlockup Kernel Bug 'Fixes'"
+title: "AMD Ryzen 1700x Softlock Kernel Bug"
 date: 2019-08-06T16:07:01-04:00
 draft: false
 toc: false
@@ -7,24 +7,25 @@ images:
 tags: 
   - amd
   - linux
+  - power
+  - kernel
   - bug
-  - grub
   - halt
+  - freeze
 ---
 
 # Problem
 
-I have been experiencing a hard system-lockup on my Ryzen system for a little
-while now which has been both annoying and curious at the same time. When I say hard system-lockup,
+Lately I have been experiencing a hard "softlock" on my Ryzen system 
+which has been both annoying and interesting. Now, when I say hard "softlock",
 I mean the kind where my whole system freezes and I cannot even drop into a virtual terminal
 or do an Alt-SysRq.
-This happens on both my Debian and Ubuntu installs running Linux kernel version
+This happens on both my Debian 10 and Ubuntu 19.04 installs running kernel versions
 4.19 and 5.0.0 respectively.
-It would happen almost randomly but especially when my CPU was mostly idle
-and not much was going on.
+It would happen almost randomly but especially when my CPU was idle and not much was going on.
 
 I felt like this was likely a bug in the firmware/bios of my mobo or
-in the kernel that was causing such a horrendous lockup, so I did
+in the kernel that was causing such a horrible lockup, so I did
 some digging online. I found [this](https://forum.level1techs.com/t/random-freezes-on-ryzen-in-linux-even-if-linux-is-in-vm/138913/11)
 post on the Level1Techs forum that was more or less exactly the problem that I was facing. 
 I also found posts on [AMD's website](https://community.amd.com/thread/225795), 
@@ -32,7 +33,7 @@ I also found posts on [AMD's website](https://community.amd.com/thread/225795),
 and [kernel.org](https://bugzilla.kernel.org/show_bug.cgi?id=196683)
 
 Clearly I was not the only one having this issue, but unfortunately the solution
-was not so clear.
+was not so clear cut.
 
 # Fixes
 ## Kernel Paramters
@@ -41,10 +42,10 @@ One suggestion that comes out of this is to add
 **'rcu_nocbs=0-n'** (where n is the number of cpus in your system)
 to the **kernel command line**, which will theoretically
 limit the number of cpu cores that will be dedicated to handling softirqs(software
-interrupts) as long as your kernel was compiled with this option.
+interrupts), but this will only work if your kernel was compiled with this option.
 Read more about RCU's [here](https://utcc.utoronto.ca/~cks/space/blog/linux/KernelRcuNocbsMeaning).
 Also adding **'idle=nomwait'** which will "Disable mwait for CPU C-states"
-could also help to fix this problem from occurring.
+could help to mitigate the problem as well.
 
 ---
 
