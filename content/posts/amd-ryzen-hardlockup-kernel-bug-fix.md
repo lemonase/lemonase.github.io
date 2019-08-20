@@ -1,5 +1,5 @@
 ---
-title: "AMD Ryzen 1700x Hardlockup Kernel Bug 'Fix'"
+title: "AMD Ryzen 1700x Hardlockup Kernel Bug 'Fixes'"
 date: 2019-08-06T16:07:01-04:00
 draft: false
 toc: false
@@ -84,6 +84,11 @@ worth it to check out.
 It may also be worth it to upgrade/downgrade BIOS versions as sometimes
 settings get added or removed in revisions.
 
+Somebody also made a [Python script](https://github.com/r4m0n/ZenStates-Linux)
+that will let you check or change the C-States on your CPU.
+This is a good option if you don't want to disable C-States in BIOS or just 
+want to confirm that they are actually disabled.
+
 Finally if none of these workarounds help, some users just
 opted to RMA their CPU's or Motherboards as this seems
 like more of a hardware/power related bug than anything
@@ -104,3 +109,4 @@ System:		Kernel: 4.19.0-5-amd64 x86_64
  Graphics:	AMD Radeon RX 480 Graphics (POLARIS10 DRM 3.27.0 4.19.0-5-amd64 LLVM 7.0.1) v: 4.5 Mesa 18.3.6 
 		Driver: amdgpu 
 ```
+
