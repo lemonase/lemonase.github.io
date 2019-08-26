@@ -18,7 +18,6 @@ enableRobotsTXT = true
 
 [taxonomies]
   tag = "tags"
-  # Categories are disabled by default.
 
 [params]
   dateform        = "Jan 2, 2006"
