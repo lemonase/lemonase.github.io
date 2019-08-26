@@ -107,7 +107,7 @@ else.
 
 Just for reference, here are the specs of my machine
 
-```sh
+```config
 System:     Kernel: 4.19.0-5-amd64 x86_64
             Distro: Debian GNU/Linux 10 (buster)
 
