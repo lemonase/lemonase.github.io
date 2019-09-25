@@ -27,10 +27,10 @@ enableRobotsTXT = true
 
   themeColor = "#222249"
 
-  homePrefix = "Hello, World. I am"
-  homeSubtitle = "a motivated student, amature programmer, curious person. he/him"
+  homePrefix = "Hello, World. My name is"
+  homeSubtitle = "a student, tinkerer, amature programmer, curious person. he/him"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  bgImg = "images/backgrounds/sunset4.jpg"  # Homepage background-image URL
+  bgImg = "images/backgrounds/beach.jpg"  # Homepage background-image URL
 
   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
   justifyContent = true  # Set "text-align: justify" to `.content`.
