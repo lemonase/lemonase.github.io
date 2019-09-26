@@ -15,7 +15,7 @@ caught up in, but that's what makes it great.
 The breadth and depth of knowledge out there seems almost infinite;
 it is certainly more than any one person can fit in their head, yet there
 is always the opportunity to carve out your own section and improve it.
-Thanks for listening to my TED talk :laughing: 
+Anyways thanks for listening to my TED talk :laughing: 
 
 ## Areas of interest
 A couple of areas that I gravitate towards are Linux/Unix,
