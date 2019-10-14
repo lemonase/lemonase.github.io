@@ -22,7 +22,7 @@ Virtualization, Containerization and occasionally messing with a Raspberry Pi.
 One day I hope to give something of value back to the community
 by making something really cool and helping others from my experience :metal:.
 Other things I enjoy learning are history, physics, geometry and philosophy,
-not neccesarily in that order.
+not necessarily in that order.
 :crescent_moon:
 
 I do enjoy playing PC games every now and then,
