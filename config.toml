@@ -36,7 +36,7 @@ enableRobotsTXT = true
   justifyContent = true  # Set "text-align: justify" to `.content`.
 
   # Add custom css
-  customCSS = ["css/main.css"]
+  # customCSS = ["css/main.css"]
 
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.
