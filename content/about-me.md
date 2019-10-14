@@ -6,24 +6,23 @@ myPic = "images/me.png"
 
 ## $ whoami
 I am a computer science student who enjoys exploring and learning new concepts
-and interesting technologies.
-I also enjoy learning about the history of the
-field. Doing so has helped me to put the pieces together
-and to satiate some of my curiosity about the inner workings 
-of modern computers. There are so many rabbit holes and twisty turns to get
-caught up in, but that's what makes it great.
-The breadth and depth of knowledge out there seems almost infinite;
+and interesting technologies. I also enjoy learning about the history of the
+craft. Doing so has helped me to put the pieces together and to satiate some
+of my curiosity about the inner workings of modern computers. There are so many
+rabbit holes and twisty turns to get caught up in, but that's what makes it
+great. The breadth and depth of knowledge out there seems almost infinite;
 it is certainly more than any one person can fit in their head, yet there
 is always the opportunity to carve out your own section and improve it.
-Anyways thanks for listening to my TED talk :laughing: 
+Anyways thanks for coming to my TED talk :laughing: 
 
 ## Areas of interest
-A couple of areas that I gravitate towards are Linux/Unix,
-FOSS, Networking, Web APIs, Virtualization, Automation and 
-occasionally messing with Raspberry Pi's.
+A couple of areas that I gravitate towards are Linux/Unix (I'm most familiar
+with Debian based distros), FOSS, Game Development, Networking, Web APIs,
+Virtualization, Containerization and occasionally messing with a Raspberry Pi.
 One day I hope to give something of value back to the community
 by making something really cool and helping others from my experience :metal:.
-Other things I enjoy learning are history, physics, geometry and philosophy.
+Other things I enjoy learning are history, physics, geometry and philosophy,
+not neccesarily in that order.
 :crescent_moon:
 
 I do enjoy playing PC games every now and then,
