@@ -9,7 +9,7 @@ tags:
   - technology
 ---
 
-# Why learn the old stuff ?
+## History repeats itself
 
 For one, you can see how certain technologies have progressed over time and
 whether they were able to stay relevant by adapting or if they where made
