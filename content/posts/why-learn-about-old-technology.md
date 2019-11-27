@@ -3,15 +3,16 @@ title: "Why Learn About Old Technology"
 date: 2019-09-25T20:24:19-04:00
 draft: true
 toc: false
-images:
-tags: 
+images: false
+tags:
   - history
   - technology
 ---
 
-## Why learn the old stuff?
+# Why learn the old stuff ?
+
 For one, you can see how certain technologies have progressed over time and
-whether they were able to stay relevant by adapting or if they where made 
+whether they were able to stay relevant by adapting or if they where made
 obsolete by something else (does not necessarily mean something better).
 Another advantage to learning the history of computers and computer science is
 that you get a way better understanding of WHY things are the
