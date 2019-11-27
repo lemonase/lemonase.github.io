@@ -51,7 +51,7 @@ pre {
   letter-spacing: normal;
   white-space: pre;
   color: #eee;
-  background: $midnightblue;
+  background: $code-grey;
   border-radius: 4px;
   // -webkit-overflow-scrolling: touch;
 
@@ -128,6 +128,11 @@ table {
     font-weight: 700;
     vertical-align: bottom;
   }
+}
+
+// Change code and pre tag backgrounds
+.chroma {
+  background-color: $code-grey;
 }
 
 .section-inner {
@@ -589,7 +594,7 @@ hr.post-end {
 
   img[alt="Pic-Of-Me"]{
     width: 20%;
-  } 
+  }
 
   ul,
   ol {
