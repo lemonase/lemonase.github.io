@@ -16,7 +16,7 @@ There are a number really awesome tools that can be used to view and validate JS
 files right from the command line. As it turns out, one such tool is built right
 into Python as the json.tool module. Usage is as follows:
 
-```python
+```sh
 python -m json.tool [-h] [--sort-keys] [infile] [outfile]
 ```
 If a single argument is given, it will validate the file and (pretty) print it to stdout.

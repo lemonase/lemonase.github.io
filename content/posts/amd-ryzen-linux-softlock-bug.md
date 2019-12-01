@@ -37,7 +37,7 @@ was not so clear cut.
 
 ## Possible Fixes
 
-### Fix 1: Kernel Paramters
+## Fix 1: Kernel Paramters
 
 One suggestion that comes out of this is to add
 **'rcu_nocbs=0-n'** (where n is the number of cpus in your system)

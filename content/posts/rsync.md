@@ -14,7 +14,7 @@ tags:
 ## What is rsync?
 
 We can run the ```whatis rsync``` command to get a short description without opening the man page
-```
+```man
 rsync (1)            - a fast, versatile, remote (and local) file-copying tool
 ```
 Rsync is the ultimate tool for copying files and is loved by many people.
