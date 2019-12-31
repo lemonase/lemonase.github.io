@@ -17,7 +17,7 @@
 			{{- with .Site.Params.homePrefix }}
 			<p id="home-prefix">{{.}}</p>
 			{{- end }}
-			<h1 id="home-title">{{ .Site.Title }}</h1>
+			<h1 id="home-title">{{ .Site.Author.name }}</h1>
 			{{- with .Site.Params.homeSubtitle }}
 			<p id="home-subtitle">{{.}}</p>
 			{{- end }}

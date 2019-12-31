@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "James Dixon"
+title = "A Blog (by James)"
 theme = "hermit"
 
 pygmentsCodefences  = true
