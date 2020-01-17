@@ -2,3 +2,7 @@
 
 I use [Hugo](https://gohugo.io/) to generate the site and manage content.
 I also use a slightly customized version of the [Hermit](https://github.com/Track3/hermit) theme.
+
+To update submodule, run
+```git submodule update --recursive --remote --merge```
+
