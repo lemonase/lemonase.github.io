@@ -2,6 +2,10 @@
 title: "Mosh the Mobile Shell"
 date: 2019-08-20T08:02:28-04:00
 draft: false
+tags:
+  - shell
+  - bash
+  - cli
 ---
 
 ### Do you have a low speed or spotty network connection?
