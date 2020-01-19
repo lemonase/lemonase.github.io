@@ -4,6 +4,7 @@ defaultContentLanguage = "en"
 title = "A Blog (by James)"
 theme = "hermit"
 
+# pygments
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 
@@ -60,4 +61,7 @@ enableRobotsTXT = true
     name = "About"
     url = "about-me/"
     weight = 20
-    bgImg = "images/backgrounds/me.png"
+
+  [[menu.main]]
+    name = "Projects"
+    url = "projects/"
