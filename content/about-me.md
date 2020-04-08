@@ -1,10 +1,9 @@
 +++
 title = "About me"
 date = "2019-03-06"
-myPic = "images/me.png"
 +++
 
-## $ whoami
+## Short Introduction
 
 I am a computer science student who enjoys exploring and learning new concepts
 and interesting technologies. I also enjoy learning about the history of the
@@ -14,42 +13,82 @@ rabbit holes and twisty turns to get caught up in, but that's what makes it
 great. The breadth and depth of knowledge out there seems almost infinite;
 it is certainly more than any one person can fit in their head, yet there
 is always the opportunity to carve out your own section and improve it.
-Anyways thanks for coming to my TED talk :laughing:
 
 ## Areas of interest
 
-A couple of areas that I gravitate towards are Linux/Unix (I'm most familiar
-with Debian based distros), FOSS, Game Development, Networking, Web APIs,
-Virtualization, Containerization and occasionally messing with a Raspberry Pi.
-One day I hope to give something of value back to the community
-by making something really cool and helping others from my experience :metal:.
-Other things I enjoy learning are history, physics, geometry and philosophy,
-not necessarily in that order.
-:crescent_moon:
+### Software
 
-I do enjoy playing PC games every now and then,
-but I don't have much time as of late, and have lost contact with the friends
-I used to play online with. (this is so sad) :sob: --
-My [Steam](https://steamcommunity.com/id/thatonepyro)
-and [PSN](https://psnprofiles.com/Old_Salty_Lemon)
+I have many interests in software, but am in no way an expert in any one in
+particular.
+Some of the broad topics that I find myself gravitating towards include:
+
+- Well Documented FOSS Projects
+
+- Linux / Unix :penguin:
+
+- Networking / Web APIs / Web Servers
+
+- Virtualization / Containerization :whale2:
+
+- Automating things that don't need to be automated
+
+- Game Development :video_game:
+
+- Homelabs / Homeservers / Raspberry Pis
+
+- Distributed protocols like tor, bittorrent and ipfs
+
+- Many other technologies that exist in the present and the future that I am
+not yet aware of :milky_way:
+
+### Languages
+
+- Python :snake:
+
+- Bash :shell:
+
+- Go
+
+- JavaScript
+
+- C / C++
+
+
+## Other hobbies
+
+Other things I enjoy learning about include:
+history, psychology, physics, geometry and philosophy,
+not necessarily in that order.
+
+### PC Gaming
+
+I do enjoy playing PC games as well. You can find me on the following platforms
+
+- [Steam](https://steamcommunity.com/id/thatonepyro)
+
+- [PSN](https://psnprofiles.com/Old_Salty_Lemon)
 
 Another thing I love doing is building PC's.
 I put my first computer together when I was 12 and have basically been doing it
 for friends and myself ever since.
-**PS:** If you happen to be looking for deals on PC parts
-, head over to [/r/buildapcsales](http://reddit.com/r/buildapcsales)
 
-On the side I also enjoy tinkering with cars and driving/seeing cool rare cars,
-but unfortunately that has taken a backseat as the
-cost of college tuition and books looms overhead :school_satchel:
-I made the executive financial decision to sell my project cars.
-Hopefully I can get myself something nice to drive after getting a good job :)
+**PS:** If you happen to be looking for deals on PC parts,
+head over to [/r/buildapcsales](http://reddit.com/r/buildapcsales)
 
-If you would like to contact me, please feel free.
-My :email: is [notjamesdixon@gmail.com](mailto:notjamesdixon@gmail.com)
+### Cars
 
+On the side I also enjoy tinkering with cars and driving/seeing cool rare cars.
+Some of my favorites are old Toyotas, BMWs and VWs. 
+Unfortunately, I have sold my project cars for now, but
+hopefully I can get myself a nice fixer-upper sometime in the future. :blue_car:
 
-<div style="text-align: right">Thanks for reading</div>
-<div style="text-align: right; font-style: italic;">-James</div>
+### Contact
 
-![Pic-Of-Me](/images/me.png)
+Feel free to contact me through any of the methods below:
+
+- Email || [notjamesdixon@gmail.com](mailto:notjamesdixon@gmail.com) :email: :mailbox:
+
+- Telegram || <https://t.me/enraged_lemon>
+
+- Discord ||  <https://discordapp.com/users/374733876519763969>
+
