@@ -6,7 +6,7 @@ I also use a slightly customized version of the [Hermit](https://github.com/Trac
 ## creating a new post
 
 ```sh
-$ hugo new posts/{post_name.md}
+hugo new posts/{post_name.md}
 ```
 
 ## updating submodules
@@ -14,12 +14,11 @@ $ hugo new posts/{post_name.md}
 To init submodules after cloning:
 
 ```sh
-$ git submodule init
+git submodule init
 ```
 
 To update all submodules, run:
 
 ```sh
-$ git submodule update --recursive --remote --merge
+git submodule update --recursive --remote --merge
 ```
-
