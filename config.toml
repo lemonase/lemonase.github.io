@@ -29,7 +29,7 @@ enableRobotsTXT = true
   themeColor = "#222249"
 
   homePrefix = "Hello, World. My name is"
-  homeSubtitle = "a student, tinkerer, amature programmer, curious person. he/him"
+  homeSubtitle = "And I hate technology... (just kidding)... only sometimes"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   bgImg = "images/backgrounds/sunset4.jpg"  # Homepage background-image URL
 
