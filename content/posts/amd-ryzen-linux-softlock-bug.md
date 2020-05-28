@@ -33,69 +33,55 @@ I also found posts on [AMD's website](https://community.amd.com/thread/225795),
 and [kernel.org](https://bugzilla.kernel.org/show_bug.cgi?id=196683)
 
 Clearly I was not the only one having this issue, but unfortunately the solution
-was not so clear cut.
+was not so clear cut. But hey at least there are workarounds!
 
-## Possible Fixes
+## Possible Fixes / Workarounds
 
-## Fix 1: Kernel Paramters
+### Fix 1: Kernel Parameters
 
 One suggestion that comes out of this is to add
 **'rcu_nocbs=0-n'** (where n is the number of cpus in your system)
 to the **kernel command line**, which will theoretically
-limit the number of cpu cores that will be dedicated to handling softirqs(software
+limit the number of cpu cores that will be dedicated to handling softirqs (software
 interrupts), but this will only work if your kernel was compiled with this option.
 Read more about RCU's [here](https://utcc.utoronto.ca/~cks/space/blog/linux/KernelRcuNocbsMeaning).
-Also adding **'idle=nomwait'** which will "Disable mwait for CPU C-states"
-could help to mitigate the problem as well.
+Adding **'idle=nomwait'** will "Disable mwait for CPU C-states" and **'processor.max_cstate=1'**
+will ensure that your cpu will not go into sleep states or in this case sleep paralysis.
+
+On a distro that uses GRUB, this can be done by editing `/etc/default/grub`
+and adding these options to the variable
+
+```shell
+GRUB_CMDLINE_LINUX="idle=nomwait processor.max_cstate=1 rcu_nocbs=0-n"
+```
+
+Where "n" is the number of cpus -- **according to the kernel**, which can be found by running `nproc`
+
+The difference between `GRUB_CMDLINE_LINUX_DEFAULT` and `GRUB_CMDLINE_LINUX` is that the first
+only happens when booting in normal mode and the second happens in both normal and recovery modes.
+
+So the parameters I added on my machine with a Ryzen 1700x are the following:
+
+```shell
+GRUB_CMDLINE_LINUX="idle=nomwait processor.max_cstate=1 rcu_nocbs=0-15"
+```
+
+After that run `update-grub` or `grub-mkconfig -o /boot/grub/grub.cfg` as root and reboot your system and the changes should be in place.
 
 ---
 
-On a distro that uses GRUB, you add these two parameters by editing
-
-```sh
-/etc/default/grub
-```
-
-and adding them to either
-
-```sh
-GRUB_CMDLINE_LINUX_DEFAULT (when booting into **normal mode only**)
-
-OR
-
-GRUB_CMDLINE_LINUX (applies when booting in **normal and recovery** modes)
-```
-
-It should look something like
-
-```sh
-GRUB_CMDLINE_LINUX="idle=nomwait rcu_nocbs=0-7"
-```
-
-because I have an **8 core CPU**.
-
-After that run
-
-```sh
-update-grub
-```
-
-and reboot your system and the changes should be in place
-
----
-
-## Fix 2: BIOS/UEFI Settings
+### Fix 2: BIOS/UEFI Settings
 
 Other suggested fixes include tweaking various settings in the BIOS
-such as memory timing/voltages, C-States(Power States) for the CPU
+such as memory timing/voltages, C-States (Power States) for the CPU
 and idle power settings for the PSU if applicable.
 There may or may not be options for some of these, but it is always
-worth it to check out.
+worth it to check out. They will most likely be under a menu called "AMD CBS"
 
-It may also be worth it to upgrade/downgrade BIOS versions as sometimes
-settings get added or removed in revisions.
+It may be worth it to upgrade/downgrade BIOS versions as sometimes
+settings get added or removed in revisions, but that is a pretty big hassle.
 
-Somebody also made a [Python script](https://github.com/r4m0n/ZenStates-Linux)
+Somebody also made a [handy Python script](https://github.com/r4m0n/ZenStates-Linux)
 that will let you check or change the C-States on your CPU.
 This is a good option if you don't want to disable C-States in BIOS or just
 want to confirm that they are actually disabled.
