@@ -19,19 +19,21 @@ into Python as the json.tool module. Usage is as follows:
 ```sh
 python -m json.tool [-h] [--sort-keys] [infile] [outfile]
 ```
+
 If a single argument is given, it will validate the file and (pretty) print it to stdout.
 
 ---
 
-This is all good and dandy, but what if I want to edit this JSON file now. I 
+This is all good and dandy, but what if I want to edit this JSON file now. I
 could always write it to an output file and edit that, but that's just extra
 steps to take.
 To bring this trick to another level of handiness, I added this mapping to
-my vimrc. 
+my vimrc.
 
 ```vim
 nnoremap =j :%!python -m json.tool<CR>
 ```
+
 This will replace the content of the current buffer with the output of
 this command. Now, whenever I find myself in an ugly crumpled up JSON file,
 it only takes two keystrokes to get it formatted right!

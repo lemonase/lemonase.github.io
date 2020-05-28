@@ -11,12 +11,14 @@ tags:
   - rsync
 ---
 
-## What is rsync?
+## What is rsync
 
 We can run the ```whatis rsync``` command to get a short description without opening the man page
+
 ```man
 rsync (1)            - a fast, versatile, remote (and local) file-copying tool
 ```
+
 Rsync is the ultimate tool for copying files and is loved by many people.
 It offers many advantages over traditional methods like SCP or FTP which are linear file transfer tools.
 Rsync checks the delta of files between the source and the destination and only transfers the difference.
@@ -27,10 +29,11 @@ Additionally it allows an option for easy compression of files before they are s
 Say I have a folder of movies in my home directory on this computer that I wanted to copy to another machine I have ssh access to called **fry**. To do this I could use the command:
 
 ```sh
-$ rsync -avz ~/Movies fry:~/Videos/
+rsync -avz ~/Movies user@fry:~/Videos/
 ```
 
 First let me cover what these options mean.
+
 ```man
 -a, --archive
     Archive basically tells rsync to copy (and perserve) everything about the source files
@@ -49,15 +52,14 @@ If you are using a remote machine (ssh) as the source or destination, you will h
 and optionally a user, protocol, and port to use followed by a colon (:) and the desired path.
 To use the rsync daemon, just add another colon (::).
 
-One thing to note is if you are using -a or -r, you will be recursing into that directory. 
+One thing to note is if you are using -a or -r, you will be recursing into that directory.
 So just watch out if your source is a directory, the trailing forward slash will mean different things.
 
 If it is not present (like in the example) the **directory itself** will be copied to the destination.
 
 If it is present, **the contents** of that directory will be copied to the destination.
 
-
-### Useful options
+### More useful options
 
 ```man
 -h, --human-readable
@@ -74,8 +76,6 @@ If it is present, **the contents** of that directory will be copied to the desti
 
 -C, --cvs-exclude
     Skips folders for version control such as .git and other binary, object and temp files (see FILTER RULES)
-
 ```
 
 While these may be the most common, there are many many more options for rsync and I recommend checking out the man page if you feel the urge.
-

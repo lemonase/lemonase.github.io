@@ -29,7 +29,6 @@ and output a static site composed of HTML, CSS, and JS.
 Chances are there is a Static Site Generator for any language you are using, so
 just give it a search!
 
-
 ## Blogs and Docs
 
 Static Site Generators (SSGs) that are very well equipped for creating blogs, landing pages and docs.
@@ -91,4 +90,3 @@ It might be fun to try out a few, but when it comes time to pick one, make sure 
 and that you don't get "ooh'ed and ahh'ed" by features that you don't need.
 
 For some tools, the best feature is simplicity.
-
