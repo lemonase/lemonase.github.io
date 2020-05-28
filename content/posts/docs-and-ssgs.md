@@ -84,7 +84,7 @@ Also as an ending note, I will say that it is easy to get caught up searching an
 features of tools that all do the same thing at their core. Even for something as simple as
 generating static html, there are thousands of different tools out there with slight variations.
 
-I'm not knocking static site generators, because it is a similar story for 
+I'm not knocking static site generators, because it is a similar story for
 web frameworks (frontend and backend), CMS, or any technology where there are many viable alternatives.
 It might be fun to try out a few, but when it comes time to pick one, make sure it suits YOUR needs
 and that you don't get "ooh'ed and ahh'ed" by features that you don't need.
