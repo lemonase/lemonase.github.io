@@ -38,7 +38,7 @@ This will replace the content of the current buffer with the output of
 this command. Now, whenever I find myself in an ugly crumpled up JSON file,
 it only takes two keystrokes to get it formatted right!
 
-I really like this solution becuase it is short, clean, and doesn't require installing
+I really like this solution because it is short, clean, and doesn't require installing
 any additional programs.
 
 Thanks Python! :green_heart:

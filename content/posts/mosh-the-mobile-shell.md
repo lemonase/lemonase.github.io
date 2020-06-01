@@ -11,7 +11,7 @@ tags:
 ### Do you have a low speed or spotty network connection
 
 If you have ever tried using ssh from a device with a spotty Wi-Fi connection, you know that the experience can range from
-less than ideal to downright infurating.
+less than ideal to downright infuriating.
 
 Sometimes keystrokes are not sent, the latency can be brutal, and your connection may timeout.
 

@@ -22,7 +22,7 @@ not in that much going into depth.
 I'm making my own "study guide" and may provide a
 link to that as it may be of help anyone in the future.
 
-I have been sick these last couple of days too, i'm thinking it's due to
+I have been sick these last couple of days too, I'm thinking it's due to
 seasonal allergies that come up every year.
 
 But I'm used to it. I've been trying to drink lots of water and get rest.

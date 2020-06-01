@@ -10,7 +10,7 @@ tags:
 
 Reading lines of a file is one of the most common things to do with (text) files.
 
-Let's look a ways we can do this in bash and other lanugages.
+Let's look a ways we can do this in bash and other languages.
 
 ## Bash
 
@@ -22,7 +22,7 @@ while read line; do
 done < file.txt
 ```
 
-alternatively, piping cat into the while loop works just aswell
+alternatively, piping cat into the while loop works just as well
 
 ```shell
 cat file.txt | while read line; do
@@ -30,5 +30,5 @@ cat file.txt | while read line; do
 done
 ```
 
-But don't do this online because people will make fun of you because this is pretty usesless
+But don't do this online because people will make fun of you because this is pretty useless
 on its own.

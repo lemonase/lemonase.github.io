@@ -47,7 +47,7 @@ First let me cover what these options mean.
     Compresses data during transfer
 ```
 
-As far as specifing directories, if it is on the local machine, just use the regular path to the directory.
+As far as specifying directories, if it is on the local machine, use the regular path to the directory.
 If you are using a remote machine (ssh) as the source or destination, you will have to specify a hostname at minimum
 and optionally a user, protocol, and port to use followed by a colon (:) and the desired path.
 To use the rsync daemon, just add another colon (::).
@@ -55,9 +55,9 @@ To use the rsync daemon, just add another colon (::).
 One thing to note is if you are using -a or -r, you will be recursing into that directory.
 So just watch out if your source is a directory, the trailing forward slash will mean different things.
 
-If it is not present (like in the example) the **directory itself** will be copied to the destination.
+If it *is not* present (like in the example) the **directory itself** will be copied to the destination.
 
-If it is present, **the contents** of that directory will be copied to the destination.
+If it *is* present, **the contents** of that directory will be copied to the destination.
 
 ### More useful options
 

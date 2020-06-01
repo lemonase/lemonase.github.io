@@ -14,7 +14,7 @@ tags:
 
 ## Disk usage by partition
 
-Checking on disk usage of mounted partitions in linux is one command.
+Checking on disk usage of mounted partitions in Linux is one command.
 
 ```shell
 df -h
@@ -26,9 +26,9 @@ The `-h` makes the output human readable (think MB, GB instead of bytes or kilob
 
 The command used to check disk usage of directories on Linux is `du`.
 
-Note the regular output is in kilobytes, but like other utils that work with filesize, adding `-h` will make the results human readable.
+Note the regular output is in kilobytes, but like other utils that work with sizes, adding `-h` will make the results human readable.
 
-Also the default behaviour is to recursively go through all the files in the directories provided (or the current directory).
+Also the default behavior is to recursively go through all the files in the directories provided (or the current directory).
 Think of commands like `ls -R` or `find`.
 
 Adding a `-s` will "summarize" the output instead of recursing into the directories provided. There is also a `-c` option

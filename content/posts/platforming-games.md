@@ -12,14 +12,14 @@ tags:
   - 3d
 ---
 
-I am in no way qualified to talk about game desgin, but I thought I'd share
+I am in no way qualified to talk about game design, but I thought I'd share
 some of my thoughts on what makes platforming games so great and iconic as
 an average gamer.
 
 ## Platforming games will always be relevant
 
 Throughout the decades, several styles of games have come in and out of fashion.
-Action RPGs, MMOs, FPS, Arena Shooters, MOBAS, Battle Royale.
+Action RPGs, MMOs, FPS, Arena Shooters, MOBAS, Battle Royal.
 
 Platforming is a more fundamental game design principle, and often game studios
 choose add extra layers to it in order to make it more interesting.
