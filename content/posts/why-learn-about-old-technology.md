@@ -14,6 +14,6 @@ I wanted to make some points on why I think it can be worth it to look at older 
 * You get to learn from the mistakes/succsess of the greats.
 * You can see the limitations of technology from a certain time period compared to now and how it would be different today?
 * As software and hardware gets more mature, more people and more projects come to depend on it.
-* The new becomes the old and vice versa. Many ideas are prepetually rehashed.
+* The new becomes the old and vice versa. Many ideas are prepetually rehashed and adapted to fit current needs.
 
 I would encourage everyone to think about all the technology they use everyday and base their opinions on it's merit instead of it's age or popularity.
