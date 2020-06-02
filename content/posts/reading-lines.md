@@ -1,7 +1,7 @@
 ---
 title: "Reading Lines From Files"
 date: 2020-05-28T03:14:39-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags: 
