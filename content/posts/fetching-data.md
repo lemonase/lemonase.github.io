@@ -4,7 +4,7 @@ date: 2020-06-08T19:05:53-04:00
 draft: true
 toc: true
 images:
-tags: 
+tags:
   - basic
   - beginner
   - fetch
@@ -37,7 +37,7 @@ should be indicated by the `Content-Type:` header in the response.
 
 - The **HTTP Status Code** returned in the response should tell whether the request was a success -- or if there was a failure (and what kind).
 
-- Some API's may require **authentication** to use, and some APIs may **rate-limit** unauthenticated requests.
+- Some APIs may require **authentication** to use, and some APIs may **rate-limit** unauthenticated requests.
 Authentication can differ between APIs, so consulting the documentation is never a bad idea.
 
 - Depending on the language and API, there may be both official and unofficial **client libraries**.
@@ -52,7 +52,7 @@ but this would fall in the category of **Web Scraping** and that is the topic of
 
 ## Examples Of Fetching An API
 
-We will go through a couple ways somebody can 'fetch' a resource from the web 
+We will go through a couple ways somebody can 'fetch' a resource from the web
 using curl, JavaScript, Python and Go (because using a browser is cheating).
 
 For the uninitiated, a 'fetch' is basically internet street slang for:
@@ -63,7 +63,7 @@ For the uninitiated, a 'fetch' is basically internet street slang for:
 Code is typically executed **synchronously**, meaning execution goes from top to bottom
 and your program will "wait" or "block" until a call finishes before executing the next line.
 
-An operation such as a request across a network will block execution and your 
+An operation such as a request across a network will block execution and your
 program will wait idly until there is a response, so if you have more than a couple requests,
 your program will quickly become **slow**.
 
@@ -80,9 +80,9 @@ It has been around since 1998 and has grown with the internet and continues to b
 newer protocols come out and bugs are fixed. With that being said, curl has *a lot* of flags
 and options, but in the most basic invocation such as:
 
-`curl http://example.com`, will send a GET request and write the body of the response to stdout. 
+`curl http://example.com`, will send a GET request and write the body of the response to stdout.
 
-Often a necessary argument to add is `-L`, which will "Follow redirects". 
+Often a necessary argument to add is `-L`, which will "Follow redirects".
 This is necessary because some web servers are sitting behind a proxy, or cache or some other
 redirecting mechanism. The server itself can also be configured to "redirect" clients to switch
 protocols, such as upgrading to HTTP/2 over HTTP/1.1.
@@ -107,7 +107,7 @@ X-Cache: HIT
 X-Cache-Hits: 0
 X-Timer: S1591732701.195463,VS0,VE0
 
-HTTP/2 200 
+HTTP/2 200
 server: Apache
 x-frame-options: SAMEORIGIN
 last-modified: Tue, 09 Jun 2020 10:05:06 GMT
@@ -191,7 +191,7 @@ or running code in other environments. There are a few security related restrict
 
 #### Security
 
-Modern browsers have security features that will block your unsolicited requests to domains of 
+Modern browsers have security features that will block your unsolicited requests to domains of
 any other *origin* (a synonym for port, protocol, and domain).
 To my knowledge, these restrictions exist only within browsers, and the only time you will have to deal with
 them is writing frontend JavaScript that is run in a browser. Nevertheless, lets see the why and how.
@@ -327,6 +327,46 @@ Very nice!
 
 ### Go
 
+Let's see how easy it is to make a web request with Go's standard library.
+
+The relevant packages here are:
+- `os` -- for receiving arguments from the command line
+- `io/ioutil` -- for writing to stdout
+- `net/http` -- for sending http requests.
+
+
 ```go
+package main
+
+import (
+	"fmt"
+	"io/ioutil"
+	"net/http"
+	"os"
+)
+
+func main() {
+    // iterate through arguments
+	for _, url := range os.Args[1:] {
+		// send a request and handle errors
+		resp, err := http.Get(url)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "fetch: %v\n", err)
+			os.Exit(1)
+		}
+
+		// store the body as a string, close connection and handle errors
+		b, err := ioutil.ReadAll(resp.Body)
+		resp.Body.Close()
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
+			os.Exit(1)
+		}
+		fmt.Printf("%s", b)
+	}
+}
 ```
+
+You can also use the `io` package directly to copy the body
+of the response to stdout instead of storing it.
 
