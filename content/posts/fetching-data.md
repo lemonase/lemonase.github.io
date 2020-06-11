@@ -1,7 +1,7 @@
 ---
 title: "The Basics of Fetching Data"
 date: 2020-06-08T19:05:53-04:00
-draft: true
+draft: false
 toc: true
 images:
 tags:
