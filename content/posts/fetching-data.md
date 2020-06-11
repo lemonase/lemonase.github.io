@@ -16,7 +16,9 @@ tags:
 
 **Dear Reader:**
 This post is aimed at beginners so if you are already familiar with how APIs work,
-this is probably not the post for you, but you are welcome to skim.
+you might not get mcuh from my explanation, but you are welcome to skim.
+
+---
 
 One of the most common activities a Web Developer will do is fetch data from some API,
 parse it, and then do *something* with that data, like displaying it on the page.
@@ -56,7 +58,7 @@ We will go through a couple ways somebody can 'fetch' a resource from the web
 using curl, JavaScript, Python and Go (because using a browser is cheating).
 
 For the uninitiated, a 'fetch' is basically internet street slang for:
-1. sending an http request (99% of the time, the default method is GET)
+1. sending an http request (the default method is probably GET)
 2. waiting (asynchronously) for a response to come back
 3. doing *something* with the data when the response comes back
 
@@ -69,6 +71,23 @@ your program will quickly become **slow**.
 
 The easiest solution to this is to fetch data **asynchronously** or in **parallel**.
 Each language has a different notion of how works, so I will try my best to explain what's happening in each example.
+
+### Other Language Differences
+
+Things like naming, data structures, best practices and paradigms can differ between languages,
+but they all converge around a similar model when it comes to encapsulating a protocol such as HTTP.
+
+It is virtually guaranteed that there is a top level function or method of some sort that comes from a library
+and acts like an http client.
+At minimum you will supply a URL as the argument, but you may have to supply extra parameters
+to configure how this function behaves or to give it data.
+
+There is a good chance that this function is built from smaller primitive types
+like `Request`, `Response`, `Session`, `Cookies`, `Headers`, `Body` and so on.
+They will be represented and named differently depending on the data structures and
+conventions provided by the language, but the pattern remains.
+
+But first let's not get too far into that quite yet
 
 ### Curl
 
@@ -146,7 +165,7 @@ and the data we get back from doing `curl -sSL https://xkcd.com/info.0.json` is
 {"month": "6", "num": 2317, "link": "", "year": "2020", "news": "", "safe_title": "Pinouts", "transcript": "", "alt": "The other side of USB-C is rotationally symmetric except that the 3rd pin from the top is designated FIREWIRE TRIBUTE PIN.", "img": "https://imgs.xkcd.com/comics/pinouts.png", "title": "Pinouts", "day": "8"}
 ```
 
-Note that all the data comes in on one line, which is hard to read for us humans.
+Note that all the data comes in on one line, which is to be expected from a data stream... but it's still hard to read for us humans.
 Piping this output into `jq` or `python -m json.tool` can help to make this more readable.
 
 ```json
@@ -312,15 +331,58 @@ for post in posts:
     print(post['data']['title']
 ```
 
-Notice data from the request can be accessed using the `text` field or `json()` method
-
-Using `json()` actually converts JSON to a Python dictionary.
+Python is great because calling `type()` and `dir()` on an object can
+give you so much information at a glance.
 
 ```python
+In [3]: type(r)
+Out[3]: requests.models.Response
+
+In [5]: dir(r)
+Out[5]:
+ ...
+ 'apparent_encoding',
+ 'close',
+ 'connection',
+ 'content',
+ 'cookies',
+ 'elapsed',
+ 'encoding',
+ 'headers',
+ 'history',
+ 'is_permanent_redirect',
+ 'is_redirect',
+ 'iter_content',
+ 'iter_lines',
+ 'json',
+ 'links',
+ 'next',
+ 'ok',
+ 'raise_for_status',
+ 'raw',
+ 'reason',
+ 'request',
+ 'status_code',
+ 'text',
+ 'url']
+```
+
+Some things to be aware of:
+
+- The headers are automatically stored in `r.headers` as a case-insensitive Python dictionary.
+- The status code is in `r.status_code` and `r.raise_for_status` makes for easy error handling.
+- There are multiple representations of the data in the body of the request like:
+    - `r.content` for bytes
+    - `r.text` for a str 
+    - `r.json()` for a dict.
+
+```text
 >>> type(r.json())
 <class 'dict'>
 >>> type(r.text)
 <class 'str'>
+>>> type(r.content)
+<class 'bytes'>
 ```
 
 Very nice!
@@ -346,7 +408,8 @@ import (
 )
 
 func main() {
-    // iterate through arguments
+
+	// iterate through arguments
 	for _, url := range os.Args[1:] {
 		// send a request and handle errors
 		resp, err := http.Get(url)
@@ -355,15 +418,20 @@ func main() {
 			os.Exit(1)
 		}
 
-		// store the body as a string, close connection and handle errors
+		// store the body as a string and handle errors
 		b, err := ioutil.ReadAll(resp.Body)
-		resp.Body.Close()
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
 			os.Exit(1)
 		}
+
+		// close body after function ends
+		defer resp.Body.Close()
+
+		// print the response
 		fmt.Printf("%s", b)
 	}
+
 }
 ```
 
