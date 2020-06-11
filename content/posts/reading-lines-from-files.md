@@ -2,7 +2,7 @@
 title: "Reading Lines From Files"
 date: 2020-05-28T03:14:39-04:00
 draft: false
-toc: false
+toc: true
 images:
 tags: 
   - bash
