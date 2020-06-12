@@ -16,7 +16,7 @@ tags:
 
 **Dear Reader:**
 This post is aimed at beginners so if you are already familiar with how APIs work,
-you might not get mcuh from my explanation, but you are welcome to skim.
+you might not get much from my explanation, but you are welcome to skim.
 
 ---
 
@@ -320,7 +320,7 @@ package provides an even easier way to interact with HTTP servers.
 
 Chances are you already have dependencies installed anyway, so might as well `pip install requests`.
 
-```python
+```python3
 import requests
 
 r = requests.get('https://reddit.com/r/movies.json')
@@ -334,7 +334,7 @@ for post in posts:
 Python is great because calling `type()` and `dir()` on an object can
 give you so much information at a glance.
 
-```python
+```python3
 In [3]: type(r)
 Out[3]: requests.models.Response
 
@@ -387,6 +387,163 @@ Some things to be aware of:
 
 Very nice!
 
+But all of this is synchronous. What happens if we want to send lots of requests and we don't necessarily want
+to wait on all of them to get back.
+
+#### Concurrency With Python
+
+Python does have some standard libraries that allow various types of concurrency.
+However, due to the design of Python's interpreter, fully concurrent execution cannot be achieved 
+like compiled languages.
+
+Libraries like `threading` and `multiprocessing` are for dealing with individual threads
+and processes respectively. The `concurrent.futures` library also provides an easy model for
+concurrent execution by creating a thread pool or a process pool.
+
+These modules are more useful for CPU intensive tasks, like number crunching or
+compression. The downside is that they add a lot of extra complexity and potential
+for bugs. For tasks where the main bottleneck is disk or network, `asyncio` is a
+much better solution (especially with Python 3.7).
+
+#### Async With Python3
+
+The syntax of asynchronous code in Python is similar to JavaScript and NodeJS. 
+Python3.7 has `async` for functions and `await` for "futures", which are
+more or less the Python version of JS promises.
+
+`asyncio` has both low level and high level APIs,
+but they both are built around the idea of the **event loop**
+which is a concept that should be familiar to Node people.
+
+Here is a simple example using `asyncio`
+
+```python3
+import asyncio
+import requests
+
+# a regular function made await-able
+async def get_body(url):
+    r = requests.get(url)
+    r.raise_for_status()
+    return r.text
+
+async def main():
+    # creating an awaitable task from the function above
+    fetch_task = asyncio.create_task(get_body('https://example.com'))
+
+    # using await on the task here is what runs the get_body() function
+    body = await fetch_task
+
+    print(body)
+
+# main function must be run in the event loop
+asyncio.run(main())
+```
+
+That's is fine for running a few functions asynchronously,
+but what is you want to call *a lot* of functions asynchronously?
+This is where the event loop comes in handy.
+
+First, here's the synchronous way:
+
+```python3
+import requests
+import time
+
+# requests wrapper function
+def fetch(url):
+    r = requests.get(url)
+    r.raise_for_status()
+    return r
+
+def main():
+    url_list = [
+        "https://example.com",
+        "https://google.com",
+        "https://bing.com",
+        "https://yahoo.com",
+        "https://docs.python.org",
+        "https://realpython.com",
+        "https://github.com"
+    ]*10
+
+    results = []
+
+    for url in url_list:
+        results.append(fetch(url))
+
+    for result in results:
+        print(result, result.url)
+
+
+start = time.perf_counter()
+main()
+end = time.perf_counter()
+
+print(f"Time Elapsed: {end - start} sec")
+
+# Time Elapsed: 28.453063446999295 sec
+```
+
+Now add some async:
+
+```python3
+import asyncio
+import time
+
+import requests
+
+# requests wrapper function
+def fetch(url):
+    r = requests.get(url)
+    r.raise_for_status()
+    return r
+
+async def main():
+    # create a long url list
+    url_list = [
+        "https://example.com",
+        "https://google.com",
+        "https://bing.com",
+        "https://yahoo.com",
+        "https://docs.python.org",
+        "https://realpython.com",
+        "https://github.com"
+    ]*5
+
+    # get the event loop so we can run functions in a thread pool
+    loop = asyncio.get_running_loop()
+    futures = []
+
+    for url in url_list:
+        # create a "future-like" awaitable from the fetch function and add it to the list
+        futures.append(loop.run_in_executor(None, fetch, url))
+
+    # first our future list is expanded into parameters for asyncio.gather()
+    # awaiting this function will run all the futures passed to it in a different thread
+    # a list of response objects returned from all the function calls is returned
+    results = await asyncio.gather(*futures)
+
+    for result in results:
+        print(result, result.url)
+
+
+# do some performance testing
+start = time.perf_counter()
+asyncio.run(main())
+end = time.perf_counter()
+
+print(f"Time Elapsed: {end - start} sec")
+
+# Time Elapsed: 2.476593152008718 sec
+```
+
+At the risk of creating more confusion, I will redirect you to
+a more accurate and clear explanation of event loops and executors,
+which are the true magic behind all of this.
+Thank you [docs.python.org](https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.run_in_executor).
+You are the best.
+
 ### Go
 
 Let's see how easy it is to make a web request with Go's standard library.
@@ -395,7 +552,6 @@ The relevant packages here are:
 - `os` -- for receiving arguments from the command line
 - `io/ioutil` -- for writing to stdout
 - `net/http` -- for sending http requests.
-
 
 ```go
 package main
@@ -437,4 +593,79 @@ func main() {
 
 You can also use the `io` package directly to copy the body
 of the response to stdout instead of storing it.
+
+But wait, this code is synchronous and will slow down with lots of requests.
+Unacceptable! Let's fix it using Go's builtin concurrency mechanisms: goroutines and channels.
+
+```go
+package main
+
+import (
+	"fmt"
+	"io"
+	"io/ioutil"
+	"net/http"
+	"os"
+	"time"
+)
+
+func main() {
+	// start timer
+	start := time.Now()
+
+	// a channel allows communication between a goroutine and the current context
+	ch := make(chan string)
+
+	for _, url := range os.Args[1:] {
+		go fetch(url, ch) // start a goroutine
+	}
+
+	for range os.Args[1:] {
+		fmt.Println(<-ch) // receive from channel ch
+	}
+
+	// print total time
+	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
+}
+
+func fetch(url string, ch chan<- string) {
+	// start fetch timer
+	start := time.Now()
+
+	// get  the url
+	resp, err := http.Get(url)
+	if err != nil {
+		ch <- fmt.Sprint(err) // send to channel ch
+		return
+	}
+
+	// get the number of bytes from the body
+	nbytes, err := io.Copy(ioutil.Discard, resp.Body)
+	if err != nil {
+		ch <- fmt.Sprintf("while reading %s: %v", url, err)
+		return
+	}
+	defer resp.Body.Close() // don't leak resources
+
+	// end timer
+	secs := time.Since(start).Seconds()
+
+	// pass data back to the channel
+	ch <- fmt.Sprintf("%.2fs  %7d  %s", secs, nbytes, url)
+}
+```
+
+So all the fetching in this program takes place in goroutines.
+The only special thing about the `fetch` function is that it takes 
+a channel as an argument. This is the main way data is shared.
+
+This goroutine does not "return" data in the traditional sense, but
+it does communicate data back to the function that called it by
+way of this channel.
+
+You will notice after the first for loop, there is another which
+collects or receives the data that has been buffered in `ch` from the various goroutines.
+
+There's much more to say about Go's concurrency model, but this post is long enough
+but I hope this at least this covers the basics.
 
