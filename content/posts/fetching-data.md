@@ -509,7 +509,7 @@ async def main():
         "https://docs.python.org",
         "https://realpython.com",
         "https://github.com"
-    ]*5
+    ]*10
 
     # get the event loop so we can run functions in a thread pool
     loop = asyncio.get_running_loop()
