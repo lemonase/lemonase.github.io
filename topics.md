@@ -2,9 +2,7 @@
 
 ## Topics
 
-### General
+## General
 
 - Powershell Basics
 - Lockdown Your SSH Server
-- DNS Over HTTPS
-
