@@ -96,12 +96,15 @@ Of course the big caveat with these extra utilities is that they are almost guar
 to **not** be on any machine by default, which is a big thing for POSIX people who
 like to stick to standard tools.
 
-These days the process of installing stuff is easier
-than ever with git, docker images and package managers.
-There is really no harm in giving these things a try.
+Then again, these days the process of installing stuff is easier than ever with
+git, docker images and package managers.
+There is no harm in trying out these extra tools after learning
+the standard ones. Who knows? They might even be better, faster or
+help you work faster.
 
-In some extreme cases, `find` may not even be on some machines,
-but that doesn't mean you can't search for files with other tools.
+On the other end of the spectrum, there are machines with very limited environments,
+where `find` may not even be there, but that doesn't mean you can't search
+for files with other tools.
 
 ## Find without `find`
 
