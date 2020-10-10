@@ -6,6 +6,8 @@ toc: false
 images:
 tags:
   - cli
+  - linux
+  - windows
   - commands
   - where
   - which
