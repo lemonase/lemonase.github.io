@@ -141,7 +141,7 @@ The commands are pretty uniform and easy to understand.
 
 #### Listing units
 
-```
+```sh
 systemctl list-units
 systemctl list-unit-files
 systemctl list-dependencies
@@ -149,14 +149,14 @@ systemctl list-dependencies
 
 #### Checking/Observing units
 
-```
+```sh
 systemctl status <unit>
 systemctl show <unit>
 ```
 
 #### Changing unit states
 
-```
+```sh
 systemctl enable <unit>
 systemctl disable <unit>
 systemctl start <unit>
@@ -165,7 +165,7 @@ systemctl stop <unit>
 
 #### Changing power states
 
-```
+```sh
 systemctl poweroff
 systemctl reboot
 systemctl suspend

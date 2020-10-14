@@ -24,7 +24,7 @@ date created, size, permissions, user, and more.
 The syntax and options may seem irregular compared to other commands,
 but I'll show a few examples:
 
-### Examples
+### Find Examples
 
 List every file and directory recursively under the current directory
 
@@ -78,7 +78,7 @@ This frees you from doing "manual" regex pattern matching for the name of a file
 
 It also uses stdin and stdout, so it plays nice with other commands
 
-### Examples
+### FZF Examples
 
 Find recently modified files, filter them with fzf and send selected file(s) to stdout
 
@@ -127,9 +127,9 @@ so you will have to use other filters to trim down results.
 
 Pipe output to `grep` or `less`
 
-### Examples
+## More Examples
 
-Finding my_file with `ls`
+Finding my_file with recursive `ls`
 
 ```sh
 ls -R | grep my_file

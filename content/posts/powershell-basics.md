@@ -67,7 +67,7 @@ run this simple script and they're gone.
 The best part about this is that you don't have to install more bloatware to
 get rid of the bloatware.
 
-### Huge Market
+### Windows Has The Desktop Market
 
 The fact of the matter is that Windows still dominates the desktop market,
 hovering between 70% to 80% marketshare.
@@ -157,7 +157,8 @@ hotkey or a macro.
 ### The Need For PowerShell
 
 PowerShell aims to be "the definitive shell" of Windows going forward, while
-`cmd.exe` will slowly fade away, but probably stay on the system.
+`cmd.exe` will slowly fade away, but likely stay on systems for many years
+to come.
 
 This leads me to the real reasons why I want to learn PowerShell, not only to see what
 it is capable of, but to see what the future of Windows CLI will be like.

@@ -87,4 +87,8 @@ There are circumstances when there are multiple programs of the same name in
 ### Getting Bearings
 
 Although the FHS standard exists and is mostly conformed to, there are near
-infinite ways to layout a Linux file system. Executables can be **anywhere**
+infinite ways to layout a Linux file system. Executables can be **anywhere**.
+On Windows, the %PATH% variable is still important for doing command line stuff,
+but most of the time programs are launched from Explorer, and the complexity
+of "which program do I use to open a file" is stored in the Regsitry or in
+context menus and can be edited accordingly.
