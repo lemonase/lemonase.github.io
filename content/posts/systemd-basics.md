@@ -1,7 +1,7 @@
 ---
 title: "Booting, init and systemd basics"
 date: 2020-07-22T15:05:41-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:

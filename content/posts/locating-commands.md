@@ -1,7 +1,7 @@
 ---
 title: "Locating Commands"
 date: 2020-10-09T21:40:26-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:

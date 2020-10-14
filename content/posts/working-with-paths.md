@@ -1,7 +1,7 @@
 ---
 title: "Working With Absolute and Relative Paths"
 date: 2020-10-10T01:26:21-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:

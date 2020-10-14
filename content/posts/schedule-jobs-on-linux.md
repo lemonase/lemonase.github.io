@@ -1,7 +1,7 @@
 ---
 title: "Schedule Jobs on Linux"
 date: 2020-07-21T01:47:17-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
