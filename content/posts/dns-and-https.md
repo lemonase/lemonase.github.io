@@ -258,7 +258,7 @@ The solution purposed for this is to move DNS over an encrypted protocol, such a
 The RFC has been around since 2018, and Firefox kicked off this feature in browsers last year.
 [Here](https://support.mozilla.org/en-US/kb/firefox-dns-over-https) is the article about it.
 
-#### Firefox
+### Firefox
 
 As of February 2020, Firefox's default setting **ignores the DNS settings of your OS** and uses **their own**.
 
@@ -270,7 +270,7 @@ but I hope they come back to respecting their user's system preferences soon.
 
 I went back to see how Chrome and Chromium do DoH, and this is what I found.
 
-#### Chrome
+### Chrome
 
 As of writing, Chrome's adoption of DoH has been slower, but it seems they are taking a much more
 reasonable approach.
@@ -287,7 +287,7 @@ Think about Chrome's near 70% share in the browser market.
 If they did what Firefox did, and updated Chrome to use Google's DNS by default,
 it would be a massive blow to every other DNS provider out there and raise eyebrows.
 
-## DNS Tools
+## DNS Utils
 
 There are more interesting ways that we can poke at DNS to find out more about
 a certain domain.
@@ -442,4 +442,3 @@ history or underlying protocol.
 When registering a domain, there is typically an option
 to have the registrar protect your information -- specifically when
 somebody performs a `whois` on your domain.
-

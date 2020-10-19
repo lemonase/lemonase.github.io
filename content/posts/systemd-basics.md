@@ -1,7 +1,7 @@
 ---
-title: "Booting, Init and systemd Basics"
+title: "Booting, init and systemd basics"
 date: 2020-07-22T15:05:41-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
@@ -11,7 +11,7 @@ tags:
   - linux
 ---
 
-# Init Systems
+## Init Systems
 
 The **initial process** that runs on a Unix/Linux system is responsible for
 forking the rest of the processes that are needed in order to "boot" the
@@ -141,7 +141,7 @@ The commands are pretty uniform and easy to understand.
 
 #### Listing units
 
-```
+```sh
 systemctl list-units
 systemctl list-unit-files
 systemctl list-dependencies
@@ -149,14 +149,14 @@ systemctl list-dependencies
 
 #### Checking/Observing units
 
-```
+```sh
 systemctl status <unit>
 systemctl show <unit>
 ```
 
 #### Changing unit states
 
-```
+```sh
 systemctl enable <unit>
 systemctl disable <unit>
 systemctl start <unit>
@@ -165,7 +165,7 @@ systemctl stop <unit>
 
 #### Changing power states
 
-```
+```sh
 systemctl poweroff
 systemctl reboot
 systemctl suspend

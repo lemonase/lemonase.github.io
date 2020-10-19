@@ -4,7 +4,7 @@ date: 2020-05-28T03:14:39-04:00
 draft: false
 toc: true
 images:
-tags: 
+tags:
   - bash
   - python
   - posix
@@ -22,7 +22,7 @@ Let's look at a couple ways we can do this in Bash and other languages like Pyth
 
 ## Bash
 
-The syntax of bash always seemed a little out of place to me.
+The syntax of bash always seems a bit awkward.
 
 For this example, assume we have a file called `test.txt` and we want
 to echo every line.
@@ -40,6 +40,7 @@ cat file.txt | while read -r line; do
     echo $line
 done
 ```
+
 In practice, echoing lines this way is useless, because cat already does that.
 However it is a perfect demonstration of how working in the shell relies
 heavily on the redirection of input/output.
@@ -51,7 +52,7 @@ Piping input into a while read loop looks rather odd, but it makes sense in the
 context of a shell, and how the `read` builtin works.
 
 Another big thing to note here is that there are some complex rules regarding white-space
-and the `read` command. I won't go into too much detail, but the `IFS` variable 
+and the `read` command. I won't go into too much detail, but the `IFS` variable
 controls what fields the arguments to `read` are separated by. The default is space, but can be changed
 to a newline, comma, tab, or anything else. Regular shell escaping with backslashes still applies,
 so it is recommended to use `-r` to stop that behavior.
@@ -91,7 +92,7 @@ is can save yourself much confusion down the line.
 In Unix shells, the concept of files, and file descriptors (stdin, stdout, and stderr) are often interchangeable.
 
 Using operators such as the pipe `|`, and redirecting stdin `<` and stdout `>` are absolutely vital to
-understanding how the shell operates. Command substitution `$()`, file substitution `<()` and subshells `()` 
+understanding how the shell operates. Command substitution `$()`, file substitution `<()` and subshells `()`
 are great tools for bash scripting as well.
 
 With so many tools at your disposal, the shell is a great place to be creative and find solutions that
@@ -114,7 +115,7 @@ You may already see why someone would prefer not to script with the shell at all
 Inconsistent syntax, weird default behavior, lots of escaping quotes, lack of proper debugging, no libraries, etc,..
 These little inconsistencies start to add up with time and complexity, and the inconvenience starts to outweigh the convenience.
 
-Languages like Perl, Ruby, Python, and Node.js and continue to fill the gap between a statically typed, compiled language 
+Languages like Perl, Ruby, Python, and Node.js and continue to fill the gap between a statically typed, compiled language
 like C/C++ and shell scripts.
 
 ## Python
@@ -135,9 +136,9 @@ Iterating over this file assigns `line` to a string representing the current lin
 Compared to Bash/Shell, Python is much easier to write and understand.
 Partly because the simpler syntax, but also because of sane defaults.
 The price that Python pays for having such friendly default abstractions is performance,
-which granted, is not as much of a requirement for the majority of applications.
+which granted, is not as much of a priority for the majority of applications.
 
-Digging deeper, we will have to go to a lower level of abstraction, so let's C. 
+Digging deeper, we will have to go to a lower level of abstraction, so let's C.
 
 **Disclaimer** I am not an expert C Programmer, but I am learning, so if anything
 sticks out as wrong, please let me know.
@@ -170,7 +171,7 @@ FILE *fopen(const char *pathname, const char *mode);
 FILE *fdopen(int fd, const char *mode);
 ```
 
-If you don't *need* the file descriptor, and would rather work with pointers to a file 
+If you don't *need* the file descriptor, and would rather work with pointers to a file
 (aka file streams), this seems to be the preferred method as far as I can tell.
 So let's see a program that reads a file line by line
 
@@ -254,7 +255,7 @@ And it returns the *number of characters* read.
 
 So here's a quick rundown of what happens inside this example:
 The variables `line` and `len` get passed by reference into `getline`
-where they get mutated. `line` gets allocated a size of `len` and `nread` 
+where they get mutated. `line` gets allocated a size of `len` and `nread`
 is assigned the return value -- the length of chars read from the stream into `line`.
 
 In addition to having better error handling than our first example,
@@ -278,11 +279,10 @@ it, NULL terminated strings, bounds checking, pointers and *tons* of issues that
 Note these are important details about how the program works, but all the nitty gritty details can get in the way of implementing application logic.
 The syscalls exposed by the kernel and the C Standard Library are great for low level access to hardware and memory.
 
-Although the implementations may differ between platforms (C++ for Win32, POSIX/UNIX for BSD, Slimmed down stdlibs for Embedded),
+Although the implementations may differ between platforms (C++ for Win32, POSIX/UNIX for BSD and Linux, Slimmed down stdlibs for Embedded),
 I believe that understanding how compiled languages and assembly work is a great way to understand how a computer operates
 and will expose the various layers of abstraction that actually make modern computing possible.
 
 If you made it this far, thanks for reading!
 I hope this was a decent tour of how files to open and read files at higher and lower level languages.
 And stay tuned for more posts to come!
-

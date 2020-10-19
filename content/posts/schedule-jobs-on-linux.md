@@ -1,7 +1,7 @@
 ---
 title: "Schedule Jobs on Linux"
 date: 2020-07-21T01:47:17-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
@@ -20,7 +20,7 @@ Initially released in 1975, `cron` has stood the test of time when it comes
 to running a task on a schedule and it continues to be the standard solution
 for all kinds of users.
 
-## How does it work?
+## How does it work
 
 There is a file called `crontab` which tells the cron daemon what to run
 and when to run it.
@@ -53,7 +53,7 @@ There are five fields you must specify:
 
 minute, hour, day, month, day of the week.
 
-```
+```text
 ┌───────────── minute (0 - 59)
 │ ┌───────────── hour (0 - 23)
 │ │ ┌───────────── day of the month (1 - 31)
@@ -67,19 +67,19 @@ minute, hour, day, month, day of the week.
 
 So running something every hour would be done like this:
 
-```
+```text
 0 * * * *	echo "hourly job"
 ```
 
 To run something every minute you can do:
 
-```
+```text
 * * * * *	echo "minute job"
 ```
 
 And to run something every day you can do:
 
-```
+```text
 * 0 * * *	echo "day job"
 ```
 
@@ -89,7 +89,7 @@ You can also specify ranges with a `-`, steps with a `/`, and use `,` as a separ
 
 An example using all:
 
-```
+```text
 */30 9-17 * * 1,5
 ```
 
@@ -127,7 +127,7 @@ mostly serves the same purpose which is to run a task periodically.
 The default anacrontab looks very similar to a crontab with some
 minor differences.
 
-```
+```text
 # /etc/anacrontab: configuration file for anacron
 
 # See anacron(8) and anacrontab(5) for details.

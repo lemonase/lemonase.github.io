@@ -1,5 +1,5 @@
 ---
-title: "The Basics of Fetching Data"
+title: "The Basics of Fetching Data (using curl, JavaScript, Python and Go)"
 date: 2020-06-08T19:05:53-04:00
 draft: false
 toc: true
@@ -57,10 +57,10 @@ but this would fall in the category of **Web Scraping** and that is the topic of
 We will go through a couple ways somebody can 'fetch' a resource from the web
 using curl, JavaScript, Python and Go (because using a browser is cheating).
 
-For the uninitiated, a 'fetch' is basically internet street slang for:
-1. sending an http request (the default method is probably GET)
-2. waiting (asynchronously) for a response to come back
-3. doing *something* with the data when the response comes back
+For the uninitiated, a 'fetch' in a web context means:
+    1. sending an http request (the default method is probably GET)
+    2. waiting (asynchronously) for a response to come back
+    3. doing *something* with the data when the response comes back
 
 Code is typically executed **synchronously**, meaning execution goes from top to bottom
 and your program will "wait" or "block" until a call finishes before executing the next line.
@@ -228,9 +228,8 @@ was extremely helpful for me in understanding how CORS works.
 
 The short version is this: CORS gives Web Admins control as to
 **what outside domains** can request their resources and CSP allows Web Admins to specify
-**what kind** of content can be requested in a browser.
-And all this information is sent through specific
-directives in HTTP request/response Headers.
+**what kind of content** can be requested in an outside browser.
+And all this information is sent through specific directives in HTTP request/response Headers.
 
 Browsers simply don't allow fetching of other domains unless the current origin is explicitly whitelisted by the requested origin.
 This basically hinges on the response having a `Access-Control-Allow-Origin: *` or  `Access-Control-Allow-Origin: <current domain>`
@@ -267,7 +266,7 @@ function fetchRedditMovies() {
 fetchRedditMovies();
 ```
 
-Getting blocked by CORS )^:
+Getting blocked by CORS :frowning:
 
 ![CORS_ERROR](/images/posts/fetching-images/cors_error.png)
 
@@ -277,7 +276,10 @@ on behalf of the browser, adding the necessary headers
 `Access-Control-Allow-Origin: *` to allow the browser access to data
 that would otherwise be blocked.
 
-Yep, it's a [CORS Proxy](https://github.com/Rob--W/cors-anywhere)
+Solution:
+
+Use a [CORS Proxy](https://github.com/Rob--W/cors-anywhere) to add the
+correct headers for you.
 
 ```js
 function fetchWithProxy(fetchUrl) {
@@ -307,7 +309,7 @@ fetchWithProxy('https://reddit.com/r/movies.json');
 console.log("Hello from before the request");
 ```
 
-**Note** Don't use this kind of thing in production. A public server like this can
+**Note**: Don't use this kind of thing in production. A public server like this can
 potentially log or leak a lot of sensitive information.
 
 If you *have to* bypass CORS, it is **much** more secure to use your own server as a proxy.
@@ -318,7 +320,8 @@ Making web requests with Python is really easy. The builtin libraries like `http
 and `urllib` are great for working with HTTP, but the [requests](https://requests.readthedocs.io/en/master/)
 package provides an even easier way to interact with HTTP servers.
 
-Chances are you already have dependencies installed anyway, so might as well `pip install requests`.
+Chances are you already have it installed as a dependency somwhere, but if not,
+just do a `python -m pip install requests`.
 
 ```python3
 import requests
@@ -372,9 +375,9 @@ Some things to be aware of:
 - The headers are automatically stored in `r.headers` as a case-insensitive Python dictionary.
 - The status code is in `r.status_code` and `r.raise_for_status` makes for easy error handling.
 - There are multiple representations of the data in the body of the request like:
-    - `r.content` for bytes
-    - `r.text` for a str 
-    - `r.json()` for a dict.
+  - `r.content` for bytes
+  - `r.text` for a str
+  - `r.json()` for a dict.
 
 ```text
 >>> type(r.json())
@@ -393,7 +396,7 @@ to wait on all of them to get back.
 #### Concurrency With Python
 
 Python does have some standard libraries that allow various types of concurrency.
-However, due to the design of Python's interpreter, fully concurrent execution cannot be achieved 
+However, due to the design of Python's interpreter, fully concurrent execution cannot be achieved
 like compiled languages.
 
 Libraries like `threading` and `multiprocessing` are for dealing with individual threads
@@ -407,13 +410,13 @@ much better solution (especially with Python 3.7).
 
 #### Async With Python3
 
-The syntax of asynchronous code in Python is similar to JavaScript and NodeJS. 
+The syntax of asynchronous code in Python is similar to JavaScript and Node.js.
 Python3.7 has `async` for functions and `await` for "futures", which are
 more or less the Python version of JS promises.
 
 `asyncio` has both low level and high level APIs,
 but they both are built around the idea of the **event loop**
-which is a concept that should be familiar to Node people.
+which is a concept that should also be familiar to Node.js people.
 
 Here is a simple example using `asyncio`
 
@@ -424,7 +427,7 @@ import requests
 # a regular function made await-able
 async def get_body(url):
     r = requests.get(url)
-    r.raise_for_status()
+    r.raise_for_status() # do error handling
     return r.text
 
 async def main():
@@ -469,9 +472,11 @@ def main():
 
     results = []
 
+    # fetch urls
     for url in url_list:
         results.append(fetch(url))
 
+    # print results
     for result in results:
         print(result, result.url)
 
@@ -513,17 +518,20 @@ async def main():
 
     # get the event loop so we can run functions in a thread pool
     loop = asyncio.get_running_loop()
+
+    # create a list of future jobs to run asynchronously
     futures = []
 
     for url in url_list:
-        # create a "future-like" awaitable from the fetch function and add it to the list
+        # create an awaitable object out of our fetch function
         futures.append(loop.run_in_executor(None, fetch, url))
 
-    # first our future list is expanded into parameters for asyncio.gather()
-    # awaiting this function will run all the futures passed to it in a different thread
-    # a list of response objects returned from all the function calls is returned
+    # 1. *futures will expand our list of awaitable objects into parameters
+    # 2. asyncio.gather(*futures) will run each awaitable in a different thread
+    # 3. a list of response objects is returned from all the function calls
     results = await asyncio.gather(*futures)
 
+    # print results
     for result in results:
         print(result, result.url)
 
@@ -538,17 +546,18 @@ print(f"Time Elapsed: {end - start} sec")
 # Time Elapsed: 2.476593152008718 sec
 ```
 
+#### Further Reading
+
 At the risk of creating more confusion, I will redirect you to
-a more accurate and clear explanation of event loops and executors,
+a more accurate and clear explanation of [asyncio event loops and executors](https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.run_in_executor),
 which are the true magic behind all of this.
-Thank you [docs.python.org](https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.run_in_executor).
-You are the best.
 
 ### Go
 
 Let's see how easy it is to make a web request with Go's standard library.
 
 The relevant packages here are:
+
 - `os` -- for receiving arguments from the command line
 - `io/ioutil` -- for writing to stdout
 - `net/http` -- for sending http requests.
@@ -655,9 +664,12 @@ func fetch(url string, ch chan<- string) {
 }
 ```
 
-So all the fetching in this program takes place in goroutines.
-The only special thing about the `fetch` function is that it takes 
-a channel as an argument. This is the main way data is shared.
+#### Explanation
+
+All the fetching in this program takes place in [goroutines](https://gobyexample.com/goroutines).
+The only special thing about the `fetch` function is that it takes
+a channel as an argument. This is the main way data is shared between concurrent
+functions.
 
 This goroutine does not "return" data in the traditional sense, but
 it does communicate data back to the function that called it by
@@ -669,3 +681,9 @@ collects or receives the data that has been buffered in `ch` from the various go
 There's much more to say about Go's concurrency model, but this post is long enough
 but I hope this at least this covers the basics.
 
+## Conclusion
+
+Fetching data from the internet (even asynchronously) is a relatively painless
+these days thing to do thanks to modern programming languages and libraries.
+It is easier than ever to write networking code, and even having a basic
+knowledge is enough to open up so many doors for future projects.
