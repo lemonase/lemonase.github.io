@@ -13,23 +13,10 @@ tags:
 
 ## Getting the current directory
 
-The environment variable and the command are synonymous. `pwd` has flags for
-dealing with symlinks.
+The environment variable `$PWD` and the command `pwd` are essentially synonymous.
+`pwd` has flags for dealing with symlinks.
 
-- `$PWD`
-- `pwd`
-
-## Getting elements from a directory string
-
-- `dirname NAME`
-
-  - Strips the last part from a directory
-
-- `basename NAME`
-
-  - Strips the beginning directory, leaving the last part
-
-## Getting absolute (canonical) directory
+## Getting absolute (canonical) path
 
 - `realpath`
 
@@ -39,5 +26,16 @@ dealing with symlinks.
 
   - Older version of `realpath`
 
-NOTE: These tools have options for different behaviours when working with
-symlinks
+## Getting elements of a directory
+
+- `dirname NAME`
+
+  - Strips the rightmost path from a given directory
+
+- `basename NAME`
+
+  - Strips all base directories, leaving the last(rightmost) path/file
+
+NOTE: These commands do not check if a file/directory actually exists, they just
+manipulate path strings. Also, be careful when dealing with symbolic links and
+read the man page to get the desired behaviour.

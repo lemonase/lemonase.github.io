@@ -1,7 +1,7 @@
 ---
 title: "Well, would you look at that. It's my first post. :D"
 date: 2019-03-06T20:27:09-05:00
-draft: false
+draft: true
 toc: false
 images:
 tags:
@@ -28,9 +28,7 @@ Here is something to compensate for my complete and udder lack of creativity
 
 ```md
 ---
-
 < See ya l8r >
-
 ---
 
         \   ^__^

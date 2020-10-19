@@ -1,10 +1,10 @@
 ---
 title: "Google Summer of Code 2019"
 date: 2019-03-21T11:11:56-04:00
-draft: false
+draft: true
 toc: false
 images:
-tags: 
+tags:
   - excitement
   - close
   - ready
