@@ -15,7 +15,7 @@
 	<div id="spotlight" class="animated fadeIn">
 		<div id="home-center">
 			{{- with .Site.Params.homePrefix }}
-			<p id="home-prefix">{{.}}</p>
+      <p id="home-prefix">{{.}} <span class="wave">👋</span></p>
 			{{- end }}
 			<p id="home-title">My name is <b style="color: white;">{{ .Site.Author.name }}</b></p>
 			<p id="home-subtitle">And I do <em>computer</em></p>
