@@ -3,15 +3,14 @@ title = "About me"
 date = "2019-03-06"
 +++
 
-I am a computer science student who enjoys diving into new concepts
+I am a college student who enjoys diving into new concepts
 and interesting technologies. I also enjoy learning about the history
 of computer science and how that shapes modern day computing.
 
 ## Areas of Interest
 
 I have many interests in software, but am not committed to any one in particular.
-
-### Here's some of the broad topics that I find interesting
+Here's some of the broad topics that I find interesting
 
 - Linux and Free Software :penguin:
 
@@ -23,13 +22,13 @@ I have many interests in software, but am not committed to any one in particular
 
 - Game Development :video_game:
 
-- Homeservers / Raspberry Pis
+- Self-hosting / Raspberry Pis
 
 - Well Documented Open Source Projects
 
-### Languages
+## Languages
 
-#### Intermediate
+### Intermediate
 
 - Python :snake:
 
@@ -37,19 +36,21 @@ I have many interests in software, but am not committed to any one in particular
 
 - Bash :shell:
 
-#### Beginner
+### Beginner
+
+- PowerShell
 
 - Go :cloud:
 
 - C :dragon:
 
-#### Prior Class Experience
+- C++
+
+### Classroom Experience
 
 - C# / .NET
 
 - Java
-
-- C++
 
 ### Certifications
 
@@ -58,20 +59,17 @@ I have many interests in software, but am not committed to any one in particular
 ## Other hobbies
 
 Other things I enjoy learning about include:
-history, psychology, physics, geometry and philosophy,
+history, art, psychology, physics, geometry and philosophy,
 not necessarily in that order.
 
 ### PC Gaming
 
-I do enjoy playing PC games as well. You can find me on the following platforms
+I do enjoy assembling high-end (or even budget) PCs and playing games as well.
+You can find me on the following platforms
 
 - [Steam](https://steamcommunity.com/id/thatonepyro)
 
 - [PSN](https://psnprofiles.com/Old_Salty_Lemon)
-
-Another thing I love doing is building PC's.
-I put my first computer together when I was 12 and have basically been doing it
-for friends and myself ever since.
 
 ### Contact
 
