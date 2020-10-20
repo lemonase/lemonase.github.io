@@ -38,4 +38,4 @@ The environment variable `$PWD` and the command `pwd` are essentially synonymous
 
 NOTE: These commands do not check if a file/directory actually exists, they just
 manipulate path strings. Also, be careful when dealing with symbolic links and
-read the man page to get the desired behaviour.
+read the man page to get the desired behavior.

@@ -4,7 +4,7 @@ date: 2019-07-05T18:08:42-04:00
 draft: false
 toc: false
 images:
-tags: 
+tags:
   - files
   - transfer
   - copying
@@ -13,7 +13,7 @@ tags:
 
 ## What is rsync
 
-We can run the ```whatis rsync``` command to get a short description without opening the man page
+We can run the `whatis rsync` command to get a short description without opening the man page
 
 ```man
 rsync (1)            - a fast, versatile, remote (and local) file-copying tool
@@ -36,7 +36,7 @@ First let me cover what these options mean.
 
 ```man
 -a, --archive
-    Archive basically tells rsync to copy (and perserve) everything about the source files
+    Archive basically tells rsync to copy (and preserve) everything about the source files
     except hardlinks and extended attributes.
     It will also tell rsync to recurse into directories (-r).
 
@@ -55,9 +55,9 @@ To use the rsync daemon, just add another colon (::).
 One thing to note is if you are using -a or -r, you will be recursing into that directory.
 So just watch out if your source is a directory, the trailing forward slash will mean different things.
 
-If it *is not* present (like in the example) the **directory itself** will be copied to the destination.
+If it _is not_ present (like in the example) the **directory itself** will be copied to the destination.
 
-If it *is* present, **the contents** of that directory will be copied to the destination.
+If it _is_ present, **the contents** of that directory will be copied to the destination.
 
 ### More useful options
 
@@ -72,7 +72,7 @@ If it *is* present, **the contents** of that directory will be copied to the des
     Test out an operation before you actually do it.
 
 -u, --update
-    Will skip files that are newer on reciever
+    Will skip files that are newer on receiver
 
 -C, --cvs-exclude
     Skips folders for version control such as .git and other binary, object and temp files (see FILTER RULES)

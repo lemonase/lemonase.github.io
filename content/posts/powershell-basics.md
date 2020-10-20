@@ -341,5 +341,5 @@ Get-Process | Select-Object -First 10 -Property Id,ProcessName
 
 ### Filtering Things
 
-To filter properties based on rules or experssions, you can use `Where-Object`,
+To filter properties based on rules or expressions, you can use `Where-Object`,
 specifying the Property and how to filter.

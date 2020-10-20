@@ -58,14 +58,16 @@ The protocols mentioned so far are considered standard and have lower port numbe
 The first 1024 ports are usually reserved by the OS specifically for these protocols.
 For example some common ones are:
 
-    PROTO     PORT    NAME
-    ----------------------
-    TCP/UDP   22      SSH
-    UDP       56      DNS
-    TCP       68-69   DHCP (Dynamic Host Configuration Protocol)
-    TCP       80      HTTP
-    TCP       443     HTTPS
-    TCP       123     NTP (Network Time Protocol)
+```text
+  PROTO     PORT    NAME
+  ----------------------
+  TCP/UDP   22      SSH
+  UDP       56      DNS
+  TCP       68-69   DHCP (Dynamic Host Configuration Protocol)
+  TCP       80      HTTP
+  TCP       443     HTTPS
+  TCP       123     NTP (Network Time Protocol)
+```
 
 Using `netstat -tan` or `ss -tan`, you can see all the ports that your computer is listening, or sending data to.
 These commands actually show open sockets, but that's another topic.
@@ -121,7 +123,7 @@ If you don't know what that means, it's ok, we will get to that later.
 A domain name is essentially a public record of a hostname,
 so you must make an account with a registrar who can reserve
 the domain on your behalf.
-The price of a domain can range from $5 to tens of millions
+The price of a domain can range from \$5 to tens of millions
 and it all depends on scarcity and demand.
 
 A TLD (Top Level Domain) is the last (rightmost) part of a domain.
@@ -133,7 +135,7 @@ for specific services (`.travel .jobs .bike`)
 and even specific businesses (`.bmw .bosch .nike`).
 
 A full list can be found [here](http://www.iana.org/domains/root/db).
-IANA is the *Internet Assigned Numbers Authority*, and they are the
+IANA is the _Internet Assigned Numbers Authority_, and they are the
 organization that gives your ISP a block of IP Addresses.
 They also own the "Root Zone Database" for DNS Records.
 
@@ -146,9 +148,9 @@ What comes immediately to the left of the TLD is a "child" domain name.
 For example there can be a second level domain such as `.co.uk`.
 This is where the "recursive" part of DNS happens as soon as you start adding subdomains.
 The `.` is the one and only delimiter that separates subdomains, so domains are
-nice, clean and *uniform*, unlike some URLs.
+nice, clean and _uniform_, unlike some URLs.
 
-All TLDs have at least one *subdomain* and there is no uniform specification
+All TLDs have at least one _subdomain_ and there is no uniform specification
 for how subdomains should be set up, however, there are best practices.
 Some examples are `en.wikipedia.org` `mail.google.com` `www.github.com`.
 
@@ -165,13 +167,15 @@ For example browsers automatically assume 'https://' as the scheme of the URL an
 as the default port, so this leaves the user to type in -- at minimum -- the domain name,
 and the ending part of the URL, often refereed to as the 'slug' or 'path' is optional.
 
-Although a URL may seem like a basic thing *to use*, it can be surprisingly tricky *to make*.
+Although a URL may seem like a basic thing _to use_, it can be surprisingly tricky _to make_.
 It is interesting to see what characters it does and does not allow and why.
 
 To give a run down of the syntax from the [URL Wikipedia Page](https://en.wikipedia.org/wiki/URL)
 
-    URI = scheme:[//authority]path[?query][#fragment]
-    authority = [userinfo@]host[:port]
+```text
+  URI = scheme:[//authority]path[?query][#fragment]
+  authority = [userinfo@]host[:port]
+```
 
 Here we see after a `scheme:`, the `[//authority]` is often shortened to a `//host`, or the DNS
 equivalent of a host -- a Domain Name. From there, a path is required. If no
@@ -208,7 +212,7 @@ Wikipedia could have used `wikipedia.org/en/` for example, but it is unlikely
 that the English version of Wikipedia will go away or change, so I think a subdomain
 here is the right choice. Articles on the other hand are very likely to change, at the
 server level, so it makes sense to have them in the URL Slug.
-I think generally people are better at remembering *Subdomains* than *URL Slugs*,
+I think generally people are better at remembering _Subdomains_ than _URL Slugs_,
 but I'm really just speaking for myself.
 
 #### APIs
@@ -219,16 +223,16 @@ or `api.paypal.com/v2/` `api.spotify.com/v1/`. This is a very common scheme, but
 endpoints that use slugs like `example.com/api/v1` or just a plain JSON file that can be requested instead of
 html like `example.com/data.json`.
 
-#### WWW.
+#### WWW
 
 Since we're on the topic of Domains, URLs and Slugs,
 it is only appropriate to mention the `www.` subdomain prefix,
 why it matters and why people still use it.
 
-The `www.` was traditionally used to indicate what *type* of server the domain was for,
+The `www.` was traditionally used to indicate what _type_ of server the domain was for,
 if there was any doubt whether it was `ftp` or `irc` server, you could tell by the domain.
 
-This was never a *rule* and was never *enforced*, but has become **very common practice** over the years.
+This was never a _rule_ and was never _enforced_, but has become **very common practice** over the years.
 There is virtually no downside to creating a [CNAME](https://en.wikipedia.org/wiki/CNAME_record) entry for `www.yoursite.com` that
 just points back to an A Record (`yoursite.com`). Another method is to use [HTTP Redirects](https://developer.mozilla.org/en-US/docs/Web/HTTP/Redirections).
 
@@ -301,7 +305,7 @@ Here's some CLI tools to get info on hosts and domains.
 
 ## getent
 
-*Gets* an *entry* from NSS (Name Switch Service) Libraries.
+_Gets_ an _entry_ from NSS (Name Switch Service) Libraries.
 Almost guaranteed to be on any GNU/Linux system with a network stack.
 `getent hosts` is basically the command equivalent of calling
 the `gethostbyname()` function in a C program.
@@ -315,13 +319,13 @@ system databases found in `/etc/` like `passwd`, `group`, `hosts`, `services`.
 
 So instead of doing
 
-```
+```shell
 cat /etc/hosts | grep myhostname
 ```
 
 use
 
-```
+```shell
 getent hosts myhostname
 ```
 
@@ -339,49 +343,49 @@ For example, it will give you the type of record, nameservers and much more.
 
 See all the root servers
 
-```
+```shell
 dig
 ```
 
 Doing a regular lookup
 
-```
+```shell
 dig cats.com
 ```
 
 Getting the short answer
 
-```
+```shell
 dig +short +noall cats.com
 ```
 
 Getting nameservers
 
-```
+```shell
 dig NS stackoverflow.com
 ```
 
 Doing a reverse lookup
 
-```
+```shell
 dig -x 74.125.196.102
 ```
 
 Using another resolver
 
-```
+```shell
 dig @8.8.8.8 reddit.com
 ```
 
 **Tracing** a DNS lookup (this is really cool)
 
-```
+```shell
 dig +trace youtube.com
 ```
 
 **Tracing** a DNS lookup but the output is **YAML**
 
-```
+```shell
 dig +trace +yaml yaml.net
 ```
 
@@ -393,32 +397,32 @@ Windows by default.
 
 A regular lookup (A Records)
 
-```
+```shell
 nslookup yahoo.com
 ```
 
 A reverse lookup
 
-```
+```shell
 nslookup 98.138.219.231
 ```
 
 Getting nameservers
 
-```
+```shell
 nslookup -type=ns yahoo.com
 ```
 
 Getting start of authority
 
-```
+```shell
 nslookup -type=soa yahoo.com
 ```
 
 ## whois
 
 Finally, there is the famous `whois` tool, which is
-used when you want *all* the details on a domain.
+used when you want _all_ the details on a domain.
 In addition to DNS information,
 it will give you all kinds of info about the registrar,
 domain creation date, contact info, cities,

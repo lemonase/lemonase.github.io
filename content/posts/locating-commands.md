@@ -55,7 +55,7 @@ Specifically, finding what type of file a command is using `file $(which COMMAND
 
 ## Getting the location of commands in Windows/DOS
 
-### `cmd`
+### `cmd.exe`
 
 In `cmd`, there is one way to find the location of a given command:
 
@@ -90,5 +90,5 @@ Although the FHS standard exists and is mostly conformed to, there are near
 infinite ways to layout a Linux file system. Executables can be **anywhere**.
 On Windows, the %PATH% variable is still important for doing command line stuff,
 but most of the time programs are launched from Explorer, and the complexity
-of "which program do I use to open a file" is stored in the Regsitry or in
+of "which program do I use to open a file" is stored in the Registry or in
 context menus and can be edited accordingly.

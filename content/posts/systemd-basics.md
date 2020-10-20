@@ -124,7 +124,7 @@ has not stopped expanding since it's creation.
 Daemons can be controlled and configured through a variety of
 IPC (Inter Process Communication) mechanisms like sockets, pipes, and signals.
 These are typically placed in the `/run/` directory.
-There are configuration files that can change the default behaviour of
+There are configuration files that can change the default behavior of
 a daemon as well.
 
 `systemctl` for example, uses a private socket `/run/systemd/private` for communication

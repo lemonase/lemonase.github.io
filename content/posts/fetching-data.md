@@ -21,7 +21,7 @@ you might not get much from my explanation, but you are welcome to skim.
 ---
 
 One of the most common activities a Web Developer will do is fetch data from some API,
-parse it, and then do *something* with that data, like displaying it on the page.
+parse it, and then do _something_ with that data, like displaying it on the page.
 
 ## Basic Info About APIs
 
@@ -32,35 +32,32 @@ parse it, and then do *something* with that data, like displaying it on the page
 - A specific URL to an API where data may be requested or sent is called an **endpoint**.
 
 - Most APIs use **JSON** for the serialization of data between client and server, but in reality, any type of
-data may be served.
+  data may be served.
 
 - If there is no file extension (.txt, .png, .html, .xml) the [mime type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
-should be indicated by the `Content-Type:` header in the response.
+  should be indicated by the `Content-Type:` header in the response.
 
 - The **HTTP Status Code** returned in the response should tell whether the request was a success -- or if there was a failure (and what kind).
 
 - Some APIs may require **authentication** to use, and some APIs may **rate-limit** unauthenticated requests.
-Authentication can differ between APIs, so consulting the documentation is never a bad idea.
+  Authentication can differ between APIs, so consulting the documentation is never a bad idea.
 
 - Depending on the language and API, there may be both official and unofficial **client libraries**.
-If possible, I would recommend using a library as they often simplify getting credentials and authentication
-set up.
+  If possible, I would recommend using a library as they often simplify getting credentials and authentication
+  set up.
 
 - Always consult documentation if you are uncertain of how an API works.
 
 - If there is no public API, and no unofficial API exposed, there are still ways to fetch data from
-a website. You may have parse HTML using XPATH or CSS selectors to get the specific data you need,
-but this would fall in the category of **Web Scraping** and that is the topic of another blog post.
+  a website. You may have parse HTML using XPATH or CSS selectors to get the specific data you need,
+  but this would fall in the category of **Web Scraping** and that is the topic of another blog post.
 
 ## Examples Of Fetching An API
 
 We will go through a couple ways somebody can 'fetch' a resource from the web
 using curl, JavaScript, Python and Go (because using a browser is cheating).
 
-For the uninitiated, a 'fetch' in a web context means:
-    1. sending an http request (the default method is probably GET)
-    2. waiting (asynchronously) for a response to come back
-    3. doing *something* with the data when the response comes back
+For the uninitiated, a 'fetch' in a web context means: 1. sending an http request (the default method is probably GET) 2. waiting (asynchronously) for a response to come back 3. doing _something_ with the data when the response comes back
 
 Code is typically executed **synchronously**, meaning execution goes from top to bottom
 and your program will "wait" or "block" until a call finishes before executing the next line.
@@ -96,7 +93,7 @@ I don't think it is a stretch to say `curl` is the most commonly used CLI http c
 It is like the swiss army knife for doing http(s) stuff (and more!).
 For the latest info about supported protocols and docs checkout the [curl website](https://curl.haxx.se/).
 It has been around since 1998 and has grown with the internet and continues to be developed as
-newer protocols come out and bugs are fixed. With that being said, curl has *a lot* of flags
+newer protocols come out and bugs are fixed. With that being said, curl has _a lot_ of flags
 and options, but in the most basic invocation such as:
 
 `curl http://example.com`, will send a GET request and write the body of the response to stdout.
@@ -162,7 +159,19 @@ The endpoint is <https://xkcd.com/info.0.json>
 and the data we get back from doing `curl -sSL https://xkcd.com/info.0.json` is
 
 ```json
-{"month": "6", "num": 2317, "link": "", "year": "2020", "news": "", "safe_title": "Pinouts", "transcript": "", "alt": "The other side of USB-C is rotationally symmetric except that the 3rd pin from the top is designated FIREWIRE TRIBUTE PIN.", "img": "https://imgs.xkcd.com/comics/pinouts.png", "title": "Pinouts", "day": "8"}
+{
+  "month": "6",
+  "num": 2317,
+  "link": "",
+  "year": "2020",
+  "news": "",
+  "safe_title": "Pinouts",
+  "transcript": "",
+  "alt": "The other side of USB-C is rotationally symmetric except that the 3rd pin from the top is designated FIREWIRE TRIBUTE PIN.",
+  "img": "https://imgs.xkcd.com/comics/pinouts.png",
+  "title": "Pinouts",
+  "day": "8"
+}
 ```
 
 Note that all the data comes in on one line, which is to be expected from a data stream... but it's still hard to read for us humans.
@@ -211,7 +220,7 @@ or running code in other environments. There are a few security related restrict
 #### Security
 
 Modern browsers have security features that will block your unsolicited requests to domains of
-any other *origin* (a synonym for port, protocol, and domain).
+any other _origin_ (a synonym for port, protocol, and domain).
 To my knowledge, these restrictions exist only within browsers, and the only time you will have to deal with
 them is writing frontend JavaScript that is run in a browser. Nevertheless, lets see the why and how.
 
@@ -232,7 +241,7 @@ The short version is this: CORS gives Web Admins control as to
 And all this information is sent through specific directives in HTTP request/response Headers.
 
 Browsers simply don't allow fetching of other domains unless the current origin is explicitly whitelisted by the requested origin.
-This basically hinges on the response having a `Access-Control-Allow-Origin: *` or  `Access-Control-Allow-Origin: <current domain>`
+This basically hinges on the response having a `Access-Control-Allow-Origin: *` or `Access-Control-Allow-Origin: <current domain>`
 in the response header. This process is mostly hidden from end users -- unless something breaks of course.
 
 I understand the urge to shrug away these overbearing and overly complicated security features, but
@@ -245,22 +254,22 @@ Let's try to fetch some JSON data from Reddit using declarative JavaScript :D
 
 ```javascript
 function fetchRedditMovies() {
-    fetch('https://reddit.com/r/movies.json')
-        .then(res => {
-            if (res.status != 200) {
-                let err = new Error(res.statusText);
-                err.response = res
-                throw err;
-            } else {
-                return res.json()
-            }
-        })
-        .then(json => {
-            json.data.children.forEach(post => {
-                console.log(post.data.title);
-            });
-        })
-        .catch(error => console.info(error))
+  fetch("https://reddit.com/r/movies.json")
+    .then((res) => {
+      if (res.status != 200) {
+        let err = new Error(res.statusText);
+        err.response = res;
+        throw err;
+      } else {
+        return res.json();
+      }
+    })
+    .then((json) => {
+      json.data.children.forEach((post) => {
+        console.log(post.data.title);
+      });
+    })
+    .catch((error) => console.info(error));
 }
 
 fetchRedditMovies();
@@ -283,27 +292,27 @@ correct headers for you.
 
 ```js
 function fetchWithProxy(fetchUrl) {
-    let corsProxy = 'https://cors-anywhere.herokuapp.com/';
+  let corsProxy = "https://cors-anywhere.herokuapp.com/";
 
-    fetch(corsProxy + fetchUrl)
-        .then(res => {
-            if (res.status != 200) {
-                let err = new Error(res.statusText);
-                err.response = res
-                throw err;
-            } else {
-                return res.json()
-            }
-        })
-        .then(json => {
-            json.data.children.forEach(post => {
-                console.log(post.data.title);
-            });
-        })
-        .catch(error => console.info(error))
+  fetch(corsProxy + fetchUrl)
+    .then((res) => {
+      if (res.status != 200) {
+        let err = new Error(res.statusText);
+        err.response = res;
+        throw err;
+      } else {
+        return res.json();
+      }
+    })
+    .then((json) => {
+      json.data.children.forEach((post) => {
+        console.log(post.data.title);
+      });
+    })
+    .catch((error) => console.info(error));
 }
 
-fetchWithProxy('https://reddit.com/r/movies.json');
+fetchWithProxy("https://reddit.com/r/movies.json");
 
 // execution continues
 console.log("Hello from before the request");
@@ -312,7 +321,7 @@ console.log("Hello from before the request");
 **Note**: Don't use this kind of thing in production. A public server like this can
 potentially log or leak a lot of sensitive information.
 
-If you *have to* bypass CORS, it is **much** more secure to use your own server as a proxy.
+If you _have to_ bypass CORS, it is **much** more secure to use your own server as a proxy.
 
 ### Python
 
@@ -320,7 +329,7 @@ Making web requests with Python is really easy. The builtin libraries like `http
 and `urllib` are great for working with HTTP, but the [requests](https://requests.readthedocs.io/en/master/)
 package provides an even easier way to interact with HTTP servers.
 
-Chances are you already have it installed as a dependency somwhere, but if not,
+Chances are you already have it installed as a dependency somewhere, but if not,
 just do a `python -m pip install requests`.
 
 ```python3
@@ -444,7 +453,7 @@ asyncio.run(main())
 ```
 
 That's is fine for running a few functions asynchronously,
-but what is you want to call *a lot* of functions asynchronously?
+but what is you want to call _a lot_ of functions asynchronously?
 This is where the event loop comes in handy.
 
 First, here's the synchronous way:
