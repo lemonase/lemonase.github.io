@@ -17,10 +17,8 @@
 			{{- with .Site.Params.homePrefix }}
 			<p id="home-prefix">{{.}}</p>
 			{{- end }}
-			<h1 id="home-title">{{ .Site.Author.name }}</h1>
-			{{- with .Site.Params.homeSubtitle }}
-			<p id="home-subtitle">{{.}}</p>
-			{{- end }}
+			<p id="home-title">My name is <b style="color: white;">{{ .Site.Author.name }}</b></p>
+			<p id="home-subtitle">And I do <em>computer</em></p>
 			{{- with .Site.Params.social }}
 			<div id="home-social">
 				{{ partialCached "social-icons.html" . }}

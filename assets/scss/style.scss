@@ -398,8 +398,9 @@ p.img-404 {
 
 #home-prefix{
   margin-bottom: 0px;
-  font-size: .7em;
+  font-size: 1.5em;
   text-align: center;
+  color: $theme;
 }
 
 #home-center {
@@ -411,19 +412,18 @@ p.img-404 {
 }
 
 #home-title {
-  font-size: 2.5em;
-  margin: 0;
+  font-size: 2em;
+  margin: 5px;
   text-align: center;
+  color: $theme-alternate;
 }
 
 #home-subtitle {
   margin-top: 0;
   margin-bottom: 1.5em;
   text-align: center;
-  line-height: normal;
-  font-size: .7em;
-  font-style: italic;
-  opacity: .9;
+  font-size: .8em;
+  color: $neutral-gold;
 }
 
 #home-social {
@@ -432,13 +432,11 @@ p.img-404 {
   opacity: .8;
 
   a {
-    margin: 0 .2em;
+    margin: 0 .3em;
   }
 }
 
 #home-nav {
-  opacity: .8;
-
   a {
     display: block;
     text-align: center;
@@ -448,7 +446,7 @@ p.img-404 {
 
 #home-footer {
   text-align: center;
-  font-size: .6em;
+  font-size: .5em;
   line-height: normal;
   @include dimmed;
 
@@ -506,7 +504,7 @@ p.img-404 {
 .bg-img {
   width: 100vw;
   height: 100vh;
-  opacity: .3;
+  opacity: .4;
   z-index: -1;
   position: fixed;
   top: 0;
