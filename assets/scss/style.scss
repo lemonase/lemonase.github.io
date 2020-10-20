@@ -35,6 +35,7 @@ select,
 textarea {
   color: $text;
   font-family: $fonts;
+  font-size: $body-font-size;
 }
 
 pre,
@@ -341,7 +342,7 @@ table {
   justify-content: center;
   max-width: 93%;
   margin: auto;
-  font-size: 1.5rem;
+  font-size: $spotlight-font-size;
 
   &.error-404 {
     flex-direction: row;
