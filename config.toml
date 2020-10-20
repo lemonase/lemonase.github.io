@@ -35,7 +35,7 @@ googleAnalytics = "UA-169246857-1"
   bgImg = "images/backgrounds/sunset4.jpg"  # Homepage background-image URL
 
   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
-  justifyContent = true  # Set "text-align: justify" to `.content`.
+  justifyContent = false  # Set "text-align: justify" to `.content`.
 
   # Add custom css
   # customCSS = ["css/main.css"]

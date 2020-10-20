@@ -143,7 +143,7 @@ table {
 }
 
 .thin {
-  max-width: 720px;
+  max-width: $content-thin-fullscreen-size;
   margin: auto;
 }
 
@@ -553,6 +553,7 @@ hr.post-end {
   {{- end }}
 
   @include aTag;
+  font-size: $content-font-size;
 
   figure {
     max-width: 100%;
@@ -841,7 +842,7 @@ hr.post-end {
   }
 
   .thin {
-    max-width: 960px;
+    max-width: $content-thin-less-size;
   }
 
   figure.left {
