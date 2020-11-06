@@ -11,8 +11,6 @@ tags:
   - files
 ---
 
-## Exploring Chromium Browser Data
-
 These days, browsers are much like mini operating systems in and of themselves.
 I'm not talking about ChromeOS either, just plain old Chrome/Chromium.
 
