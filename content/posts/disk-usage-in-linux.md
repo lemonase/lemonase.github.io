@@ -5,11 +5,10 @@ draft: false
 toc: true
 images:
 tags:
-  - du
-  - df
+  - cli
+  - gui
+  - linux
   - disk usage
-  - command
-  - visualize
 ---
 
 ## Disk usage by partition

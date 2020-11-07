@@ -8,11 +8,9 @@ tags:
   - bash
   - python
   - posix
+  - shell
   - c
   - files
-  - lines
-  - shell
-  - read
 ---
 
 Reading input line by line is something that seems like a basic

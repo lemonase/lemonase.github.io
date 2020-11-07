@@ -7,6 +7,7 @@ images: false
 tags:
   - history
   - technology
+  - 'big think'
 ---
 
 I wanted to make some points on why I think it can be worth it to look at older technology compared to what is more current.

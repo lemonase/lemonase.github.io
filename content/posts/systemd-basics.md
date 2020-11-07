@@ -6,6 +6,7 @@ toc: false
 images:
 tags:
   - init
+  - booting
   - systemd
   - unix
   - linux

@@ -7,9 +7,6 @@ images:
 tags:
   - amd
   - linux
-  - firmware
-  - cbs
-  - power
   - kernel
   - bug
   - halt

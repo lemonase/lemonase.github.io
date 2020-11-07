@@ -8,10 +8,9 @@ tags:
   - cli
   - linux
   - windows
-  - commands
-  - where
-  - which
-  - locate
+  - bash
+  - cmd
+  - powershell
 ---
 
 ## Getting the location of commands in Unix

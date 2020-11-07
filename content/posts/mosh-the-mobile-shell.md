@@ -4,7 +4,7 @@ date: 2019-08-20T08:02:28-04:00
 draft: false
 tags:
   - shell
-  - bash
+  - ssh
   - cli
 ---
 

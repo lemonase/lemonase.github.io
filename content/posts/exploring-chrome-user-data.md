@@ -6,13 +6,11 @@ toc: false
 images:
 tags:
   - chromium
-  - browser
-  - user
-  - data
+  - chrome
+  - urls
   - json
   - database
   - sqlite
-  - files
 ---
 
 ## Exposition

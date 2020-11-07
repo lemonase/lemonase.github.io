@@ -6,7 +6,6 @@ toc: false
 images:
 tags:
   - update
-  - info
   - timeline
   - comptia
   - network+

@@ -7,10 +7,9 @@ images:
 tags:
   - basic
   - beginner
+  - curl
   - fetch
-  - request
   - http
-  - https
   - network
 ---
 

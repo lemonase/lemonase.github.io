@@ -5,12 +5,12 @@ draft: false
 toc: true
 images:
 tags:
-  - network
+  - unix
+  - linux
   - dns
-  - data
-  - ip
-  - internet
-  - protocol
+  - dig
+  - https
+  - network
 ---
 
 Browsing the web involves lots of different protocols that most people probably don't consider.

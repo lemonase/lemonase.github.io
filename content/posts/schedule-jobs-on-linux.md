@@ -6,7 +6,8 @@ toc: false
 images:
 tags:
   - cron
-  - Linux
+  - unix
+  - linux
   - schedule
   - timer
   - jobs

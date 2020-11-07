@@ -5,9 +5,10 @@ draft: false
 toc: false
 images:
 tags:
+  - cli
+  - linux
   - find
   - ls
-  - files
   - directories
   - fzf
 ---

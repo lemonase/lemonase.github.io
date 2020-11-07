@@ -5,9 +5,7 @@ draft: true
 toc: false
 images:
 tags:
-  - excitement
-  - close
-  - ready
+  - personal
 ---
 
 ## Much excite for GSoC 2019

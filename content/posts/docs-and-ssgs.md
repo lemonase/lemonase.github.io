@@ -9,6 +9,8 @@ tags:
   - documentation
   - ssg
   - "static site generator"
+  - hugo
+  - jekyll
 ---
 
 Documenting your code is incredibly important.

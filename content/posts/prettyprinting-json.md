@@ -8,7 +8,6 @@ tags:
   - python
   - json
   - cli
-  - tip
   - prettyprint
 ---
 
