@@ -13,6 +13,9 @@ tags:
   - network
 ---
 
+![Arrows](/images/posts/fetch/arrow.png)
+> horizontal by Ben Davis from the Noun Project
+
 **Dear Reader:**
 This post is aimed at beginners so if you are already familiar with how APIs work,
 you might not get much from my explanation, but you are welcome to skim.

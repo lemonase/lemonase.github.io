@@ -14,6 +14,9 @@ tags:
   - freeze
 ---
 
+![Penguins](/images/posts/first-gen-amd-ryzen-kernel-freeze-bug/small-glacier.jpg)
+> Image by <a href="https://pixabay.com/users/enriquelopezgarre-3764790/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5584259">enriquelopezgarre</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5584259">Pixabay</a>
+
 ## The Problem
 
 I have been experiencing a hard freeze on my first gen Ryzen 1700x system
@@ -123,3 +126,4 @@ I can also confirm that there is no issue with the CPU on Microsoft Windows 10.
 It seems like a bug somewhere in the Linux's microcode/firmware for
 power management in AMD CPUs. AMD has also not given a definitive answer/fix yet
 which is unfortunate.
+

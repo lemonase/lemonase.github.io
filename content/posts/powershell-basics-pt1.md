@@ -12,10 +12,13 @@ tags:
   - IT
 ---
 
+![PowerShell_Logo](/images/posts/powershell/PowerShell.jpg)
+> <a href="https://docs.microsoft.com/en-us/powershell/scripting/community/digital-art?view=powershell-7">For non-commercial purposes documentation or on a website) that reference your connection with Microsoft PowerShell.
+ </a>
+
 ## Things To Know About PowerShell
 
-First and foremost,
-PowerShell is unlike traditional Unix/Linux shells such as bash or zsh.
+First and foremost, PowerShell is unlike traditional Unix/Linux shells such as bash or zsh.
 It is _explicitly_ object oriented and the most of the benefits come from the
 fact that the majority of "builtin" commands (also known as cmdlets) and
 everything related to input/output comes in the form of

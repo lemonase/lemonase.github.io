@@ -13,6 +13,8 @@ tags:
   - jobs
 ---
 
+![Calendar_Icon](/images/posts/cron/cal.png)
+
 If you want to schedule a program to run on a Unix based OS, there are
 a handful of options, but the prominent ones found on Linux are
 cron and systemd timers.

@@ -13,6 +13,8 @@ tags:
   - network
 ---
 
+![Globe](/images/posts/dns/globe.png)
+
 Browsing the web involves lots of different protocols that most people probably don't consider.
 
 DNS is one of those protocols, so in this post, we'll briefly go over the basics of DNS, why browsers

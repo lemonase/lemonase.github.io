@@ -13,8 +13,11 @@ tags:
   - files
 ---
 
-Reading input line by line is something that seems like a basic
-operation, but one that is common nonetheless.
+![Rows](/images/posts/rows/rows.jpg)
+
+Reading input line by line is something that seems like a basic and banal
+operation, but it's not really as basic as some higher level languages
+make it out.
 
 Let's look at a couple ways we can do this in Bash and other languages like Python and C.
 

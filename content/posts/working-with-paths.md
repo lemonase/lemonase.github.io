@@ -11,6 +11,9 @@ tags:
   - shell
 ---
 
+![Path](/images/posts/paths/path.jpg)
+> <a href="https://commons.wikimedia.org/wiki/File:Forest_path_and_trees.jpg">Denis Zastanceanu</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
+
 ## Getting the current directory
 
 The environment variable `$PWD` and the command `pwd` are essentially synonymous.
