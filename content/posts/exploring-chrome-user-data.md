@@ -1,13 +1,17 @@
 ---
 title: "Exploring Chromium User Data"
 date: 2020-11-06T11:48:04-05:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
+  - chromium
   - browser
   - user
   - data
+  - json
+  - database
+  - sqlite
   - files
 ---
 
@@ -53,7 +57,7 @@ I've tried to organize a list of the one's I found interesting.
 
 | URL                   | Description                                                             |
 | --------------------- | ----------------------------------------------------------------------- |
-| `chrome://system`     | Info about chrome version, OS, extensions, and mem usage.               |
+| `chrome://system`     | Info about chrome version, OS, extensions, and memory usage.            |
 | `chrome://gpu`        | Graphics features like OpenGL, Video Decoding and Hardware Acceleration |
 | `chrome://device-log` | Shows input devices relevant to the browser (more useful for ChromeOS)  |
 
@@ -66,10 +70,10 @@ I've tried to organize a list of the one's I found interesting.
 
 ### Omnibox
 
-| URL                   | Description                                                                                                |
-| --------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `chrome://omnibox`    | Provides a debug view for the omnibar and shows additional information like where a suggestions comes from |
-| `chrome://predictors` | Shows how chrome "predicts" things frequently typed into the omnibar                                       |
+| URL                   | Description                                                                                        |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
+| `chrome://omnibox`    | Provides a debug view for the omnibox and shows extra information like where suggestions come from |
+| `chrome://predictors` | Shows how chrome "predicts" words frequently typed into the omnibox                                |
 
 ### Website Engagement
 
@@ -185,19 +189,19 @@ sqlite3 <database> '.schema' '.tables' '.exit'
 Once you know the table and column where data stored, you can do pretty
 much anything with it a few examples would be
 
-Export your browsing history from History db as a csv
+Export whole url table from History database as a csv
 
 ```sh
 sqlite3 History '.mode csv' 'SELECT * FROM urls' '.exit' > ~/history.csv
 ```
 
-Get the urls where you have login data saved from 'Login Data' db
+Get all origin_urls from logins table in 'Login Data' database
 
 ```sh
 sqlite3 'Login Data' 'SELECT origin_url FROM logins' '.exit' > ~/login_urls.txt
 ```
 
-Get search engine "keywords" from 'Web Data' db
+Get "keywords" used for search engines stored in 'Web Data' database. Output is in json format
 
 ```sh
 sqlite3 'Web Data' '.mode json' 'SELECT * FROM keywords' | jq
@@ -209,7 +213,10 @@ There are probably better ways to do this, but I learned a lot from looking
 at some of these tucked away files. Specifically, I found it
 interesting that Chrome keeps media and site engagement metrics as well as
 the preloading/prediction that happens when you start to type in an often
-visited URL.
+visited URL. These are the kind of features you don't see or think about much
+as a user, but it's always there in the background.
 
-Next to digging through the C++ implementation of how all these metrics are
-created and captured, this was both insightful and relatively easy.
+I also learned that sqlite can output data in json format. That's neat.
+
+Compared to digging through the C++ implementation of how all these metrics are
+created and captured within Chromium, this was both insightful and relatively easy.
