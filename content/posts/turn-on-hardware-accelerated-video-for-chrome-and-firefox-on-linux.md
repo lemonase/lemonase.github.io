@@ -1,7 +1,7 @@
 ---
 title: "Turn on Hardware Accelerated Video for Chrome/Firefox on Linux"
 date: 2020-11-12T12:51:47-05:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
