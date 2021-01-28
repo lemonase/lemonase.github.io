@@ -1,5 +1,5 @@
 ---
-title: "Cc Search Gsuite Addon"
+title: "Creative Commons Search Add-on (GSuite)"
 date: 2019-09-13T00:15:17Z
 draft: false
 ---
@@ -24,8 +24,8 @@ but Google hosts and runs the code along with the app that it targets
 (Slides/Sheets/Docs). It also provides OAuth and various APIs for GSuite.
 
 Links:
-[Creative Commons Search Backend API](https://github.com/creativecommons/cccatalog-api)
-[Creative Common Frontend](https://github.com/creativecommons/cccatalog-frontend)
-[Crative Commons Search](https://search.creativecommons.org/)
+- [Creative Commons Search Backend API](https://github.com/creativecommons/cccatalog-api)
+- [Creative Common Frontend](https://github.com/creativecommons/cccatalog-frontend)
+- [Crative Commons Search](https://search.creativecommons.org/)
 
-[Google App Script](https://developers.google.com/apps-script/)
+- [Google App Script](https://developers.google.com/apps-script/)
