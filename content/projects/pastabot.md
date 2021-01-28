@@ -5,5 +5,4 @@ draft: false
 ---
 
 [PastaBot](https://github.com/lemonase/pastabot)
-
-PastaBot is a discord bot that takes the copy out of copypasta.
+is a discord bot that takes the copy out of copypasta.
