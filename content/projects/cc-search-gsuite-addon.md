@@ -4,8 +4,6 @@ date: 2019-09-13T00:15:17Z
 draft: false
 ---
 
-## Creative Commons Image Search Add-on for GSuite
-
 <https://github.com/lemonase/CC-Search-G-Suite-Addon>
 
 This was a project done for Google Summer of Code (GSoC) 2019
