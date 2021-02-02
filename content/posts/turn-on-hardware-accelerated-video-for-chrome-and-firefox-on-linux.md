@@ -31,15 +31,14 @@ For example here is mine:
 ```sh
 ~ $ cat ~/.config/chromium-flags.conf
 --ignore-gpu-blocklist
+--disable-gpu-driver-workarounds
 --enable-gpu-rasterization
---enable-zero-copy
---use-gl=desktop
 --enable-accelerated-video-decode
 ```
 
 ## Firefox
 
-1. Open firefox and type `about:config` in the address bar.
+1. Open Firefox and type `about:config` in the address bar.
 
 2. Click "Accept the Risk and Continue" (don't worry the risk here is very minimal)
 
