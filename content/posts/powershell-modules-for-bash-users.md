@@ -11,8 +11,6 @@ tags:
   - scripts
 ---
 
-# PowerShell Modules
-
 I've been trying to get used to PowerShell for a little while now and while it
 is difficult to adjust coming from other shells, there are some modules I have installed
 that make it much less of a pain.
