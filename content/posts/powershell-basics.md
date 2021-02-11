@@ -1,7 +1,7 @@
 ---
 title: "PowerShell Basics"
 date: 2020-06-29T16:11:02-04:00
-draft: true
+draft: false
 toc: true
 images:
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "The State of Windows Package Managers (2021)"
 date: 2021-02-06T22:48:36-05:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
@@ -100,7 +100,7 @@ As far as I know, this is the largest collection of searchable/installable Windo
 programs on the whole internet.
 
 Someone even keeps an up-to-date package for 
-[Dwarf Fotress](https://chocolatey.org/packages/dwarf-fortress), which is
+[Dwarf Fortress](https://chocolatey.org/packages/dwarf-fortress), which is
 just awesome.
 
 ## Scoop
