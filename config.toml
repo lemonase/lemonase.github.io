@@ -14,8 +14,6 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 enableGitInfo = true
 enableRobotsTXT = true
 
-googleAnalytics = "UA-169246857-1"
-
 [author]
   name = "James"
 
