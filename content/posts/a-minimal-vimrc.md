@@ -26,7 +26,7 @@ anyway.
 
 For more info on this, open vim and type `:help starting` or go [here](https://vimhelp.org/starting.txt.html)
 
-## Explaining the parts "minimal" vimrc
+## Explaining parts of my "minimal" vimrc
 
 ### Sourcing the default config
 
