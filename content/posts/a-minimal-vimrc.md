@@ -11,28 +11,23 @@ tags:
   - settings
 ---
 
-## What is a vimrc?
+## Parts of a "minimal" vimrc
 
-A `.vimrc` file is sourced - or loaded by `vim` at startup.
-It contains settings and configurations that tell vim how to look and behave.
+What makes a minimal vimrc?
 
-It can be a few places, but most common ones are: `~/.vimrc` and `~/.vim/vimrc`
-(or `$HOME/_vimrc` and `$HOME/vimfiles/vimrc` on Windows)
+My opinion of a "minimal" vimrc might be different from yours, but for me, it means
 
-It is also worth noting that Vim has a `defaults.vim` file with (you guessed it)
-default configurations.  This file can be different depending on the platform and 
-the version of vim installed, but these are not intended to be edited by users
-anyway. 
+1. Not extensively using any external plugins
+2. < ~100 lines
+3. Reduces major pain-points
 
-For more info on this, open vim and type `:help starting` or go [here](https://vimhelp.org/starting.txt.html)
+So here's what I do:
 
-## Explaining parts of my "minimal" vimrc
-
-### Sourcing the default config
+### Source default settings
 
 While this may not be necessary most of the time, it is still worth it to check
-that it has been sourced IMO. It is a small file too, so the performance impact is minimal
-and you really want these defaults if you're living off the land.
+that it has been sourced IME. It is a small fine to pay for ensuring you have
+the defaults you deserve.
 
 ```vim
 if filereadable(expand('$VIMRUNTIME/defaults.vim'))
@@ -41,10 +36,14 @@ if filereadable(expand('$VIMRUNTIME/defaults.vim'))
 endif
 ```
 
+And we're done...
+
+jkjk there's more
+
 ### Settings
 
 Most of these will already be set in `defaults.vim`, but that's not really a concern
-of mine -- I just wanted to talk about them :)
+of mine -- I still want to talk about them :)
 
 #### "UI" Settings
 
@@ -56,7 +55,7 @@ set ruler	"show cursor position in status bar
 set showcmd	"shows the normal mode command before it gets executed
 ```
 
-Gotta have those line numbers, and I use `wildmenu` all the time. The rest are just
+Gotta have those line numbers, and I use `wildmenu` *all the time*. The rest are just
 nice-to-haves.
 
 #### File Format and Encoding
@@ -82,7 +81,7 @@ See `h:fileformats` for more info.
 set hlsearch	"highlights searches
 set incsearch	"incremental search (searches character by character)
 set ignorecase	"ignores the case of a search
-set smartcase	"only ignores case if there are no capital letters in search (only works after ignorecase has been set
+set smartcase	"only ignores case if there are no capital letters in search (only works after ignorecase has been set)
 ```
 
 While this is the search behavior that I like personally, I know that
@@ -112,7 +111,7 @@ It is 8 by default, but I set it to 4 because 4 is between 2 and 8 :D.
 
 `shiftwidth` only applies when doing specific editing operators (>> and <<).
 
-So if I set `softtabstop=2` and `tabstop=4`, I would have to hit my \<Tab\> key twice
+So if I set `softtabstop=2` and `tabstop=4`, I would have to hit the \<Tab\> key twice
 to get an actual `\t` (tab character). And if I set `softtabstop=8` while
 `tabstop=4`, I would get 2 tab characters when I press tab.
 
@@ -149,7 +148,7 @@ runtime macros/matchit.vim	"allows jumping between brackets with % in normal mod
 These are probably the settings the give the most "bank for buck" when it comes
 to vanilla vim.
 
-Syntax highlighting, file/language specific settings and plugins
+Syntax highlighting, filetype/language specific settings and plugins
 are great, but they are a bit outside of the scope a truly minimal vimrc.
 
 Once you start diving into the specifics of a language or ecosystem, you will likely
@@ -185,7 +184,7 @@ I have a few autocommands at the end here just in case I want to add specific
 commands or mappings.
 
 Autocommands are kind-of like 'events' that get fired when stuff happens inside
-of Vim. They are an easy way set settings for filetypes.
+of Vim. They are an easy way set settings for filetypes or events.
 
 For example, the following settings will only be applied to bash and go files
 respectively.
