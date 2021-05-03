@@ -17,7 +17,7 @@ What makes a minimal vimrc?
 
 My opinion of a "minimal" vimrc might be different from yours, but for me, it means
 
-1. Not extensively using any external plugins
+1. Not using external plugins
 2. < ~100 lines
 3. Reduces major pain-points
 
