@@ -19,7 +19,7 @@ My opinion of a "minimal" vimrc might be different from yours, but for me, it me
 
 1. Not using external plugins
 2. < ~100 lines
-3. Reduces major pain-points
+3. Reducing vi related pain-points
 
 So here's what I do:
 
