@@ -7,4 +7,4 @@ draft: false
 [PastaBot](https://github.com/lemonase/pastabot)
 is a discord bot that takes the copy out of copypasta.
 
-Add [here](https://top.gg/bot/802369923845455933)
+[Click here](https://top.gg/bot/802369923845455933) for instructions on adding it to your server.
