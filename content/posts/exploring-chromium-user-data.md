@@ -14,6 +14,7 @@ tags:
 ---
 
 ![Chromium_Icon](/images/posts/chromium/chromium_material.png)
+
 > <a href="https://commons.wikimedia.org/wiki/File:Chromium_Material_Icon.png">The Chromium Development Documentation Project [1] / &quot;The Chromium Authors&quot; as per the open source development agreement</a>, <a href="https://creativecommons.org/licenses/by/2.5">CC BY 2.5</a>, via Wikimedia Commons
 
 ## Exposition

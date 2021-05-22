@@ -15,7 +15,7 @@ that allows you to customize the theme of your Spotify client and I thought
 I would share.
 
 [Installing it](https://github.com/khanhas/spicetify-cli/wiki/Installation)
-is a few commands on all platforms and people have already made tons of 
+is a few commands on all platforms and people have already made tons of
 themes and extensions.
 
 ### Example

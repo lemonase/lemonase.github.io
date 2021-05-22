@@ -99,7 +99,7 @@ programs to the hottest and newest apps.
 As far as I know, this is the largest collection of searchable/installable Windows
 programs on the whole internet.
 
-Someone even keeps an up-to-date package for 
+Someone even keeps an up-to-date package for
 [Dwarf Fortress](https://chocolatey.org/packages/dwarf-fortress), which is
 just awesome.
 
@@ -144,4 +144,3 @@ it's also been in development a year.
 In my opinion, the other two package mangers will have an edge on `winget` in
 terms of stability, features, community and number of packages for some time to come.
 Feel free to tell me what you think :)
-

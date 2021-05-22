@@ -4,7 +4,7 @@ date: 2021-02-17T00:46:08-05:00
 draft: true
 toc: false
 images:
-tags: 
+tags:
   - untagged
 ---
 
@@ -27,4 +27,3 @@ I'll take my faux industry experience but I wanted to put my thoughts out there 
 I think this practice sets a bad precedent across the board, but I'm probably
 the minority on this. It seems like most people these days either don't care or
 accept the fact and move on.
-

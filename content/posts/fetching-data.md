@@ -14,6 +14,7 @@ tags:
 ---
 
 ![Arrows](/images/posts/fetch/arrow.png)
+
 > horizontal by Ben Davis from the Noun Project
 
 **Dear Reader:**
@@ -257,7 +258,7 @@ Let's try to fetch some JSON data from Reddit using declarative JavaScript :D
 ```javascript
 function fetchRedditMovies() {
   fetch("https://reddit.com/r/movies.json")
-    .then((res) => {
+    .then(res => {
       if (res.status != 200) {
         let err = new Error(res.statusText);
         err.response = res;
@@ -266,12 +267,12 @@ function fetchRedditMovies() {
         return res.json();
       }
     })
-    .then((json) => {
-      json.data.children.forEach((post) => {
+    .then(json => {
+      json.data.children.forEach(post => {
         console.log(post.data.title);
       });
     })
-    .catch((error) => console.info(error));
+    .catch(error => console.info(error));
 }
 
 fetchRedditMovies();
@@ -297,7 +298,7 @@ function fetchWithProxy(fetchUrl) {
   let corsProxy = "https://cors-anywhere.herokuapp.com/";
 
   fetch(corsProxy + fetchUrl)
-    .then((res) => {
+    .then(res => {
       if (res.status != 200) {
         let err = new Error(res.statusText);
         err.response = res;
@@ -306,12 +307,12 @@ function fetchWithProxy(fetchUrl) {
         return res.json();
       }
     })
-    .then((json) => {
-      json.data.children.forEach((post) => {
+    .then(json => {
+      json.data.children.forEach(post => {
         console.log(post.data.title);
       });
     })
-    .catch((error) => console.info(error));
+    .catch(error => console.info(error));
 }
 
 fetchWithProxy("https://reddit.com/r/movies.json");

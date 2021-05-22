@@ -13,8 +13,9 @@ tags:
 ---
 
 ![PowerShell_Logo](/images/posts/powershell/PowerShell.jpg)
+
 > <a href="https://docs.microsoft.com/en-us/powershell/scripting/community/digital-art?view=powershell-7">For non-commercial purposes documentation or on a website) that reference your connection with Microsoft PowerShell.
- </a>
+> </a>
 
 ## Things To Know About PowerShell
 

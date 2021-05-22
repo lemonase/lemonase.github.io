@@ -172,7 +172,7 @@ FILE *fopen(const char *pathname, const char *mode);
 FILE *fdopen(int fd, const char *mode);
 ```
 
-If you don't *need* the file descriptor, and would rather work with pointers to a file
+If you don't _need_ the file descriptor, and would rather work with pointers to a file
 (aka file streams), this seems to be the preferred method as far as I can tell.
 So let's see a program that reads a file line by line
 
@@ -248,11 +248,11 @@ int main(int argc, char *argv[])
 
 This code is slightly different because getline takes:
 
-1. a *pointer to the line* -- which getline() will set to the the address of the line in memory (NULL in this example)
-1. a *pointer to the length* -- which will be set to the address of the length (0 in this example)
-1. a *pointer to a file* also known as a file stream (FILE * in this example)
+1. a _pointer to the line_ -- which getline() will set to the the address of the line in memory (NULL in this example)
+1. a _pointer to the length_ -- which will be set to the address of the length (0 in this example)
+1. a _pointer to a file_ also known as a file stream (FILE \* in this example)
 
-And it returns the *number of characters* read.
+And it returns the _number of characters_ read.
 
 So here's a quick rundown of what happens inside this example:
 The variables `line` and `len` get passed by reference into `getline`
@@ -268,12 +268,12 @@ This works because stdout is a file-like stream.
 - `getline()` uses `malloc()` internally, so there is potential to run out of memory depending on the file.
 
 - `fgets()` takes a buffer that has already been allocated with size len and reads a file until len chars,
-or the end of the line -- whatever comes first. This is the safer option, but is less flexible and more
-work to implement.
+  or the end of the line -- whatever comes first. This is the safer option, but is less flexible and more
+  work to implement.
 
 As expected with a lower level language, there is more manual work involved in opening a file and reading it.
 There is more the programmer has to worry about, such as allocating the correct amount of memory, remembering to free
-it, NULL terminated strings, bounds checking, pointers and *tons* of issues that come along with that.
+it, NULL terminated strings, bounds checking, pointers and _tons_ of issues that come along with that.
 
 ## Why do this / Why does this matter
 

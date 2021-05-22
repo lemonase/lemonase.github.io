@@ -4,7 +4,7 @@ date: 2021-02-07T02:11:01-05:00
 draft: false
 toc: false
 images:
-tags: 
+tags:
   - powershell
   - bash
   - modules

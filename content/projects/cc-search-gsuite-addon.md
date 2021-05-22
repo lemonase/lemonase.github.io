@@ -18,10 +18,11 @@ type and it automatically creates attribution text so the user doesn't forget.
 
 The side-pane is written in vanilla HTML/CSS/JavaScript and the code that
 interacts with the Slides app uses "Google App Script" which is also JavaScript
-but Google hosts and runs the code along with the app that it targets 
+but Google hosts and runs the code along with the app that it targets
 (Slides/Sheets/Docs). It also provides OAuth and APIs for the GSuite apps.
 
 More Links:
+
 - [Creative Commons Search](https://search.creativecommons.org/)
 - [Creative Commons Search Backend API](https://github.com/creativecommons/cccatalog-api)
 - [Creative Common Frontend](https://github.com/creativecommons/cccatalog-frontend)

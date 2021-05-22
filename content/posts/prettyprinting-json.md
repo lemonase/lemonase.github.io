@@ -4,7 +4,7 @@ date: 2019-07-21T18:45:29-04:00
 draft: false
 toc: false
 images:
-tags: 
+tags:
   - python
   - json
   - cli

@@ -4,7 +4,7 @@ date: 2021-05-02T20:07:18-04:00
 draft: false
 toc: true
 images:
-tags: 
+tags:
   - vim
   - minimal
   - config
@@ -55,7 +55,7 @@ set ruler	"show cursor position in status bar
 set showcmd	"shows the normal mode command before it gets executed
 ```
 
-Gotta have those line numbers, and I use `wildmenu` *all the time*. The rest are just
+Gotta have those line numbers, and I use `wildmenu` _all the time_. The rest are just
 nice-to-haves.
 
 #### File Format and Encoding
@@ -152,7 +152,7 @@ Syntax highlighting, filetype/language specific settings and plugins
 are great, but they are a bit outside of the scope a truly minimal vimrc.
 
 Once you start diving into the specifics of a language or ecosystem, you will likely
-have an easier time using external tools provided to do the "heavy lifting" and 
+have an easier time using external tools provided to do the "heavy lifting" and
 integrate with vim via plugin(s).
 
 If you want to learn more about filetypes and plugins, see `:h filetypes`.
