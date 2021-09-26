@@ -37,7 +37,7 @@ foreach ($mod in $modules)
 }
 ```
 
-And then to source, import or configure these modules, edit your `$env:PROFILE`
+And then to source, import or configure these modules, edit your `$PROFILE`
 
 ```powershell
 # Posh
