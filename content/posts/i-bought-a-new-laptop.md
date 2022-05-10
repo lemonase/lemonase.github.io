@@ -1,7 +1,7 @@
 ---
 title: "I Bought A New Laptop"
 date: 2022-05-09T16:37:53-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
