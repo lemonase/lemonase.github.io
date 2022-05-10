@@ -3,17 +3,23 @@ title = "About Me"
 date = "2019-03-06"
 +++
 
-I am a college student and general technologist who enjoys exploring new (and old)
-experiences with technology, gaming, computers and whatever else pops into my
-consciousness.
+## About Me
+
+Hello, World 👋
+
+I enjoy exploring technology new and old - so that will be a focus on this blog -
+many posts will be about my experiences with technology, gaming, computers and
+whatever else pops into my attention.
+
+## Education
+
+I graduated with a B.T. in Computer Science in 2021 from CSU.
 
 ## Areas of Interest
 
-"General technologist" goes to say I have a pretty broad interest
-in computers and I'm not particularly specialized in any one area.
 Here's a list of the things I like to mess around with in no particular order:
 
-- Linux and Free Software
+- Linux and Free Software Projects
 - Networking / Web APIs / Web Servers
 - Virtualization / Containerization
 - Databases
@@ -22,15 +28,8 @@ Here's a list of the things I like to mess around with in no particular order:
 - Game Development
 - Cryptocurrency and DeFi
 
-I'm not ashamed to say that there are tons of people who have far more knowledge
-and experience with everything I listed. I also understand that each of these topics
-are incredibly complex in their own right -- even before people build systems
-and frameworks around them.
-
-That's probably the main reason I wanted to start a blog.
-I wanted to share some of my thoughts and findings because maybe someone out there
-would find it useful.
-If nothing else, it will be my way of documenting my journey through tech.
+I wanted to share some of my thoughts and findings working with these technologies
+and doing projects as a way of documenting my journey through tech.
 
 ## Languages
 
