@@ -16,9 +16,10 @@ tags:
 So I thought I would give a little update on what's new with my setup - specifically my mobile setup.
 
 Well, here's the news - I bought a new M1 MacBook Air (2020) about 2 or 3 weeks ago.
-It is actually the lowest spec version too - so 8GB of RAM, 256GB SSD and all the hype.
+It is the lowest spec version too - so 8GB of RAM, 256GB SSD and all the hype.
 
-This is also my first Apple computer - my first Mac - so that's pretty cool.
+This is also my first Apple computer - my first Mac - so that's pretty neat.
+The ARM processor is also a big reason I wanted to get one of these things.
 
 I haven't had too much time to really customize it that much, but I have installed
 [Homebrew](https://brew.sh/), switched the default shell to the newest version of
@@ -44,7 +45,7 @@ were not that surprising:
 
 ## What I don't like
 
-- The price: this laptop cost $1000 buckaroos and the specs are lacking to say the least.
+- The price: this laptop costs $1000 buckaroos and the specs are lacking to say the least.
 - Learning new keyboard shortcuts (default CMD/Option key behavior is strange)
 - Window management still lacking (no keyboard shortcuts for windows snapping by default)
 - Supporting Apple - a trillion dollar corporation that is the epitome of proprietary software/hardware
@@ -52,3 +53,4 @@ were not that surprising:
 ## Moving forward
 
 I will be posting updates here about my experience using macOS for development and daily tasks.
+Let's see what happens!
