@@ -13,7 +13,7 @@ whatever else pops into my attention.
 
 ## Education
 
-I graduated with a B.T. in Computer Science in 2021 from CSU.
+I graduated with a B.T. in Computer Science in 2021 from [CSU](https://www.charlestonsouthern.edu/).
 
 ## Areas of Interest
 
