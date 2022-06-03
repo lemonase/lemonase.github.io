@@ -7,23 +7,28 @@ date = "2019-03-06"
 
 Hello, World 👋
 
-I enjoy exploring technology new and old - so that will be a focus on this blog -
-many posts will be about my experiences with technology, gaming, computers and
-whatever else pops into my attention.
+I enjoy exploring the technology (both new and old) that powers our lives.
+That will be a focus on this blog - many posts will be about my experiences
+with technology, gaming, computers and whatever else pops into my attention.
 
 ## Education
 
-I graduated with a B.T. in Computer Science in 2021 from [CSU](https://www.charlestonsouthern.edu/).
+I graduated with a B.T. in Computer Science in 2021 from [CSU](https://www.charlestonsouthern.edu/)
+in North Charleston, SC.
 
 ## Areas of Interest
 
 Here's a list of the things I like to mess around with in no particular order:
 
+- Web APIs
+- Web Servers
+- Virtualization
+- Containerization
+- Computer Networking
 - Linux and Free Software Projects
-- Networking / Web APIs / Web Servers
-- Virtualization / Containerization
-- Databases
+- Relational Databases
 - Security and Hardening
+- Reverse Engineering
 - Self-hosting / Raspberry Pis
 - Game Development
 - Cryptocurrency and DeFi
@@ -33,12 +38,12 @@ and doing projects as a way of documenting my journey through tech.
 
 ## Languages
 
-I think programming languages and syntax matter less than most people realize
-but that doesn't stop it from being a real barrier to entry and yet another
-source for internet tribalism _cough_ sorry ecosystems to grow around.
+Much like natural language, programming languages are simply tools of the mind.
+If you think about text, letters, symbols - the alphabet. These concepts are used
+to represent abstract ideas in natural languages and programming languages are no different
+(albeit much more _precise_ or _verbose_).
 
-I'll still list the ones I use(d) so people can judge me for not being a
-"real programmer":
+Here are the programming languages that I like to use:
 
 ### Intermediate Level
 
@@ -51,9 +56,13 @@ These are the languages I tend to reach for first in order to solve problems.
 ### Beginner Level
 
 These are languages that I use less often, where I would consider myself a beginner.
+I have used these languages in smaller projects outside of class.
 
 - C/C++ :dragon:
 - Go :cloud: :whale:
+- Java :coffee:
+- C# / .NET :knife:
+- SQL (sqlite, MySQL)
 
 ### Classroom Experience Level
 
@@ -62,18 +71,12 @@ purposes.
 
 - Ruby :red_circle:
 - PHP :elephant:
-- C# / .NET :knife:
-- Java :coffee:
 
 ### Tech I would like to learn and use in the future (for fun and profit)
 
 - Rust
 - Godot Game Engine
 - Ansible (or other configuration management/automation)
-
-### Misc. Certifications
-
-- CompTIA Network+
 
 ## Other hobbies
 
