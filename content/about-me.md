@@ -14,7 +14,7 @@ with technology, gaming, computers and whatever else pops into my attention.
 ## Education
 
 I graduated with a B.T. in Computer Science in 2021 from [CSU](https://www.charlestonsouthern.edu/)
-in North Charleston, SC.
+located around Charleston, SC.
 
 ## Areas of Interest
 
