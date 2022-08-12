@@ -73,9 +73,27 @@
 	}
 
 	function startTyping() {
-		// setTimeout(typeWriter, 100, "home-prefix", document.getElementById("home-prefix").innerText);
-		setTimeout(typeWriter, 1000, "home-title", "My name is James");
-		setTimeout(typeWriter, 2000, "home-subtitle", "And I do computer");
+		let subtitleTexts = [
+			"I do 'computer stuff'",
+			"I shoot troubled computers",
+			"The imposter syndrome is kicking in right about now",
+			"I don't know JavaScript",
+			"Don't trust strangers on the internet",
+			`You are lucky visitor #${Math.floor(Math.random() * 100000)}`,
+			"Have you tried turning it off and on again?",
+			"The printer just ran out of ink",
+			"Have a nice day!",
+			"a blog on the internet",
+			"Opinions are not mine"
+		]
+
+		let idx = Math.floor(Math.random() * subtitleTexts.length)
+		let subText = subtitleTexts[idx]
+
+
+		setTimeout(typeWriter, 100, "home-prefix", document.getElementById("home-prefix").innerText);
+		setTimeout(typeWriter, 1000, "home-title", "Welcome to my blog.");
+		setTimeout(typeWriter, 2000, "home-subtitle", subText);
 		document.querySelector(".wave").focus();
 	}
 	startTyping();
