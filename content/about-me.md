@@ -3,9 +3,7 @@ title = "About Me"
 date = "2019-03-06"
 +++
 
-## About Me
-
-Hello, World 👋
+## Hello, World 👋
 
 I enjoy exploring the technology (both new and old) that powers our lives.
 That will be a focus on this blog - many posts will be about my experiences
