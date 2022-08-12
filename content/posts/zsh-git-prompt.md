@@ -1,7 +1,7 @@
 ---
 title: "Zsh Git Prompt"
 date: 2022-08-11T23:22:10-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
