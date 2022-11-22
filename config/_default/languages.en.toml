@@ -3,7 +3,9 @@ title = "A Portfolio & Blog (by James)"
 [author]
   name = "James Dixon"
   headline = "Freelance Web Developer and Tech Wrangler"
-  image = "img/blowfish_logo_transparent.png"
+  # image = "img/blowfish_logo_transparent.png"
+  # image = "img/logo.png"
+  image = "img/gh_profile.jpg"
   bio = "Freelance Web Developer"
   links = [
     { email = "mailto:notjamesdixon@gmail.com" },
