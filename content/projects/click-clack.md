@@ -1,5 +1,5 @@
 ---
-title: "Click Clack"
+title: "Click Clack (Typing Game)"
 date: 2020-04-12T03:13:56-04:00
 draft: false
 ---

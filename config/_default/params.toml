@@ -4,7 +4,7 @@ colorScheme = "blowfish"
 defaultAppearance = "light" # valid options: light or dark
 autoSwitchAppearance = true
 
-enableSearch = true
+enableSearch = false
 enableCodeCopy = true
 
 [header]
@@ -18,5 +18,5 @@ enableCodeCopy = true
   showScrollToTop = true
 
 [homepage]
-  showRecent = true
+  showRecent = false
   showMoreLink = true

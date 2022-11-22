@@ -1,6 +1,6 @@
 +++
 title = "About Me"
-date = "2019-03-06"
+date = "2022-11-22"
 +++
 
 ## Hello, World 👋
@@ -11,7 +11,7 @@ with technology, gaming, computers and whatever else pops into my attention.
 
 ## Education
 
-I graduated with a B.T. in Computer Science in 2021 from [CSU](https://www.charlestonsouthern.edu/)
+I graduated with a B.T. in Computer Science in Fall of 2021 from [CSU](https://www.charlestonsouthern.edu/)
 located around Charleston, SC.
 
 ## Areas of Interest

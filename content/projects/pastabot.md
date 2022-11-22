@@ -1,5 +1,5 @@
 ---
-title: "Pastabot"
+title: "Pastabot (Discord Bot)"
 date: 2021-01-27T22:16:16Z
 draft: false
 ---
