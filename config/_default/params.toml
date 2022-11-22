@@ -1,11 +1,12 @@
 # List of color schemes:
 # https://nunocoracao.github.io/blowfish/docs/getting-started/#colour-schemes
 colorScheme = "blowfish"
-defaultAppearance = "light" # valid options: light or dark
+defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 
 enableSearch = false
 enableCodeCopy = true
+
 
 [header]
   layout = "basic"
@@ -18,5 +19,15 @@ enableCodeCopy = true
   showScrollToTop = true
 
 [homepage]
+  # defaultBackgroundImage = "/images/backgrounds/beach.jpg"
+  # layout = "background"
+  layout = "hero"
+  homepageImage = "/images/backgrounds/beach.jpg"
   showRecent = false
   showMoreLink = true
+
+[article]
+  showDate = true
+  showReadingTime = false
+  showWordCount = false
+  showSummary = false
