@@ -5,7 +5,7 @@ draft: false
 
 cascade:
   cardView: true
-  showDate: false
   showCards: true
+  showDate: false
   showTaxonomies: true
 ---

@@ -36,3 +36,5 @@ enableCodeCopy = true
 
 [list]
   showPagination = false
+  showHero = true
+  heroStyle = "background"
