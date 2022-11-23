@@ -2,6 +2,7 @@
 title: "Creative Commons Image Search Add-on (GSuite)"
 date: 2019-09-13T00:15:17Z
 draft: false
+tags: ["google app script", "js", "css", "html"]
 ---
 
 <https://github.com/lemonase/CC-Search-G-Suite-Addon>

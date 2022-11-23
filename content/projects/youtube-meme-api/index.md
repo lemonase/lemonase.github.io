@@ -3,8 +3,8 @@ title: "Youtube 'Meme' API (REST API Server)"
 date: 2020-10-14T17:14:12-04:00
 draft: false
 tags:
-  - "api"
   - "go"
+  - "api"
   - "server"
   - "google sheets"
 ---

@@ -2,6 +2,7 @@
 title: "Pastabot (Discord Bot)"
 date: 2021-01-27T22:16:16Z
 draft: false
+tags: ["python", "discord", "aws", "PRAW", "top.gg"]
 ---
 
 [PastaBot](https://github.com/lemonase/pastabot)
