@@ -1,4 +1,4 @@
-# My personal blog @ [jamesdixon.dev](https://jamesdixon.dev)
+# My personal blog and portfolio @ [jamesdixon.dev](https://jamesdixon.dev)
 
 I am currently using [Hugo](https://gohugo.io/) to generate the static (HTML/CSS/JS) portion site and
 [Blowfish](https://github.com/nunocoracao/blowfish/) as my theme...
@@ -18,19 +18,19 @@ hugo serve -D
 ## creating a new post
 
 ```sh
-hugo new posts/{post_name.md}
+hugo new posts/{post_name}/{post_name.md}
 ```
 
 ## creating a new project
 
 ```sh
-hugo new projects/{project_name.md}
+hugo new projects/{project_name}/{project_name.md}
 ```
 
 ## creating a new website (website showcase)
 
 ```sh
-hugo new websites/{website_name.md}
+hugo new websites/{website_name}/{website_name.md}
 ```
 
 ## updating submodules for themes
