@@ -7,5 +7,4 @@ cascade:
   showDate: true
   showTaxonomies: true
   showWordCount: true
-  showCards: true
 ---
