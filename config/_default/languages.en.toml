@@ -2,11 +2,9 @@ title = "A Portfolio & Blog (by James)"
 
 [author]
   name = "James Dixon"
-  headline = "Freelance Web Developer and Tech Wrangler"
-  # image = "img/blowfish_logo_transparent.png"
-  # image = "img/logo.png"
+  headline = "Fullstack Web Developer - Linux/FOSS Enthusiast - PC Gamer - Tech Wrangler - Cool Guy 😎"
+  bio = "Fullstack Web Developer and Tech Wrangler"
   image = "img/gh_profile.jpg"
-  bio = "Freelance Web Developer"
   links = [
     { email = "mailto:notjamesdixon@gmail.com" },
     { github = "https://github.com/lemonase" },
