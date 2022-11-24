@@ -16,6 +16,11 @@ enableSearch = true
 enableCodeCopy = true
 
 
+# uses firebase (firestore and auth)
+showViews = true
+showLikes = true
+
+
 [header]
   layout = "basic"
 
@@ -39,8 +44,20 @@ enableCodeCopy = true
   showWordCount = false
   showSummary = false
   showPagination = true
+  # uses firebase (firestore and auth)
+  showViews = true
+  showLikes = true
 
 [list]
   showPagination = false
   showHero = true
   heroStyle = "background"
+
+[firebase]
+  apiKey = "AIzaSyC_Cd2HKriaqccPVQ3drJNCCNd-nwFGqWU"
+  authDomain = "blowfish-blog.firebaseapp.com"
+  projectId = "blowfish-blog"
+  storageBucket = "blowfish-blog.appspot.com"
+  messagingSenderId = "538996582078"
+  appId = "1 =538996582078 =web =9c4febc0a90e914e9660ef"
+  measurementId = "G-1X7K2XEM40"
