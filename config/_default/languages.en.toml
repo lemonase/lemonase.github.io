@@ -2,8 +2,8 @@ title = "A Portfolio & Blog (by James)"
 
 [author]
   name = "James Dixon"
-  headline = "Fullstack Web Developer - Linux/FOSS Enthusiast - PC Gamer - Tech Wrangler - Cool Guy 😎"
-  bio = "Fullstack Web Developer and Tech Wrangler"
+  headline = "Fullstack Web Developer"
+  bio = "Fullstack Web Developer - FOSS Enthusiast - PC Gamer - Tech Wrangler"
   image = "img/gh_profile.jpg"
   links = [
     { email = "mailto:notjamesdixon@gmail.com" },
