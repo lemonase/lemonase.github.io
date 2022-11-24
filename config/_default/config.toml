@@ -2,3 +2,6 @@ theme = "blowfish"
 baseURL = "https://jamesdixon.dev/"
 defaultContentLanguage = "en"
 languageCode = "en"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
