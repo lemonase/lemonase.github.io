@@ -54,7 +54,7 @@ git submodule update --recursive --remote --merge
 Here is just a quick rundown of how and where I deploy my site.
 
 I have a small [DigitalOcean Droplet VPS](https://www.digitalocean.com/products/droplets) running
-[nginx](https://www.nginx.com/) (for servering) and [certbot](https://certbot.eff.org/) (for certs).
+[nginx](https://www.nginx.com/) (for servering) and [certbot](https://certbot.eff.org/) (for certs). Digital Ocean Referral Link below!
 
 There is a `deploy.sh` script which is just a wrapper around running `hugo && rsync user@server:/var/www/html`. I have a [git hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) that runs this script on every `git push`.
 
@@ -69,3 +69,5 @@ I do not currently use any CI/CD solutions, app platforms or containerization as
 Maybe sometime in the future, I will containerize everything make a blog post about it... :)
 
 Thank you for reading!
+
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=1f0004d6e4a6&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
