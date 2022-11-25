@@ -1,5 +1,5 @@
 ---
-title: "Re-Learning How to Solve Rubiks Cube"
+title: "Re-Learning How to Solve The Rubiks Cube"
 date: 2022-11-25T08:52:07-05:00
 draft: false
 tags: ["rubicks", "cube", "puzzle"]
