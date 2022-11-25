@@ -2,11 +2,14 @@ title = "A Portfolio & Blog (by James)"
 
 [author]
   name = "James Dixon"
-  headline = "Fullstack Web Developer - Linux/FOSS Enthusiast - PC Gamer - Tech Wrangler - Cool Guy 😎"
-  bio = "Fullstack Web Developer and Tech Wrangler"
+  headline = "Fullstack Web Developer"
+  bio = "Fullstack Web Developer - FOSS Enthusiast - PC Gamer - Tech Wrangler"
   image = "img/gh_profile.jpg"
   links = [
     { email = "mailto:notjamesdixon@gmail.com" },
     { github = "https://github.com/lemonase" },
     { linkedin = "https://linkedin.com/in/james-dixon-147431109/" },
+    { goodreads = "https://www.goodreads.com/user/show/126275796-james" },
+    { steam = "https://steamcommunity.com/id/thatonepyro" },
+    { discord = "https://discord.gg/TNKD3QU2Jt" },
   ]
