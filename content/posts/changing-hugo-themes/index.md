@@ -5,7 +5,7 @@ draft: false
 tags: ["hugo", "theme", "content management"]
 ---
 
-# Revisiting Hugo Themes :heart:
+## Revisiting Hugo Themes :heart:
 
 I started using Hugo in 2019 and have stuck with the same theme for my blog for
 the most of that time... until now.
