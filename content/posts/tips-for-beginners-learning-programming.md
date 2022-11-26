@@ -60,6 +60,8 @@ The best approach is to...
 
 ![shia_gif](/images/posts/tips-for-beginners-learning-programming/shia.gif)
 
+JUST DO IT!!
+
 **Use the thing**, let it sink in, and don't worry if you don't know a certain syntax
 or a special command that you've practically _never used_ because you _don't have a use-case_ yet.
 Finding a use-case for a technology is often a problem in and of itself, so don't
