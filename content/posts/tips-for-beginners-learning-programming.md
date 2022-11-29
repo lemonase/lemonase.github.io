@@ -58,8 +58,6 @@ or any kind of memory for that matter.
 I think Shia has the right idea here. There's no easy way to learn something.
 The best approach is to...
 
-![shia_gif](/images/posts/tips-for-beginners-learning-programming/shia.gif)
-
 JUST DO IT!!
 
 **Use the thing**, let it sink in, and don't worry if you don't know a certain syntax
