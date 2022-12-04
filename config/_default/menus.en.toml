@@ -17,3 +17,8 @@
   name = "About Me"
   pageRef = "about-me"
   weight = 30
+
+[[main]]
+  name = "Resume"
+  url = "resume/current_resume.pdf"
+  weight = 40
