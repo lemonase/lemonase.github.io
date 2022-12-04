@@ -2,6 +2,14 @@
 title: "Adding Github Credentials On Linux/Mac"
 date: 2022-12-01T11:43:48-05:00
 draft: false
+tags:
+  - git
+  - github
+  - macos
+  - linux
+  - pat
+  - ssh
+  - auth
 ---
 
 This post is going to be a very short guide on creating/adding a PAT (personal access token)
