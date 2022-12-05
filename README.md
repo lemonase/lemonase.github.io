@@ -5,9 +5,7 @@ I am currently using [Hugo](https://gohugo.io/) to generate the static (HTML/CSS
 
 Many thanks to the maintainers of these projects!
 
-## hugo commands
-
-common hugo commands
+## Hugo Commands
 
 ## running hugo dev server (watching for file changes and drafts)
 
@@ -15,37 +13,28 @@ common hugo commands
 hugo serve -D
 ```
 
-## creating a new post
+## creating new pages
 
 ```sh
-hugo new posts/{post_name}/{post_name.md}
+# create a new post
+hugo new posts/{post_name}/index.md
+
+# create a new project page
+hugo new projects/{project_name}/index.md
+
+# create a new website showcase page
+hugo new websites/{website_name}/index.md
 ```
 
-## creating a new project
-
-```sh
-hugo new projects/{project_name}/{project_name.md}
-```
-
-## creating a new website (website showcase)
-
-```sh
-hugo new websites/{website_name}/{website_name.md}
-```
-
-## updating submodules for themes
+## Updating Git Submodules (for themes)
 
 Note: Git submodules **do not** get initialized or updated automatically upon cloning/pulling!
 
-To init submodules after cloning:
+To init/update submodules after cloning:
 
 ```sh
 git submodule init
-```
 
-To update all submodules, run:
-
-```sh
 git submodule update --recursive --remote --merge
 ```
 
