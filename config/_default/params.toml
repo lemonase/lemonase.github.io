@@ -61,3 +61,7 @@ showLikes = true
   messagingSenderId = "538996582078"
   appId = "1 =538996582078 =web =9c4febc0a90e914e9660ef"
   measurementId = "G-1X7K2XEM40"
+
+[buymeacoffee]
+  globalWidget = true
+  identifier = "notjames"
