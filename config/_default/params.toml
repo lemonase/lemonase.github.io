@@ -4,7 +4,7 @@
 # colorScheme = "autumn"
 # colorScheme = "forest"
 # colorScheme = "avocado"
-# colorScheme = "congo"
+colorScheme = "congo"
 # colorScheme = "noir"
 # colorScheme = "slate"
 # colorScheme = "fire"
@@ -34,6 +34,8 @@ showLikes = true
 [homepage]
   # layout = "background"
   layout = "hero"
+  # layout = "profile"
+  # layout = "card"
   homepageImage = "/images/backgrounds/beach.jpg"
   showRecent = false
   showMoreLink = true
