@@ -26,7 +26,7 @@ hugo new projects/{project_name}/index.md
 hugo new websites/{website_name}/index.md
 ```
 
-## Updating Git Submodules (for themes)
+## updating git submodules (for themes)
 
 Note: Git submodules **do not** get initialized or updated automatically upon cloning/pulling!
 
