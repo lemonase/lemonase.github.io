@@ -2,6 +2,12 @@
 title: "Selfhost a Minecraft Server With Docker"
 date: 2022-12-19T15:22:46-05:00
 draft: false
+tags:
+  - docker
+  - hosting
+  - selfhosting
+  - minecraft
+  - server
 ---
 
 ## Self-Hosting a Minecraft server
