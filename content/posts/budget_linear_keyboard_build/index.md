@@ -2,6 +2,12 @@
 title: "Budget Linear Keyboard Build (December 2022)"
 date: 2022-12-02T14:29:06-05:00
 draft: false
+tags:
+  - mechanical keyboard
+  - linear
+  - gateron
+  - yellow
+  - gmmk
 ---
 
 ## Keyboards, keyboards, keyboards
