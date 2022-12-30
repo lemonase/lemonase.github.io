@@ -5,7 +5,7 @@ I am currently using [Hugo](https://gohugo.io/) to generate the static (HTML/CSS
 
 Many thanks to the maintainers of these projects!
 
-## Hugo Commands
+## Working Locally with Hugo
 
 ## running hugo dev server (watching for file changes and drafts)
 
@@ -13,7 +13,7 @@ Many thanks to the maintainers of these projects!
 hugo serve -D
 ```
 
-## creating new pages
+## Creating new pages
 
 ```sh
 # create a new post
@@ -26,7 +26,7 @@ hugo new projects/{project_name}/index.md
 hugo new websites/{website_name}/index.md
 ```
 
-## updating git submodules (for themes)
+## Updating git submodules (for themes)
 
 Note: Git submodules **do not** get initialized or updated automatically upon cloning/pulling!
 
@@ -38,25 +38,17 @@ git submodule init
 git submodule update --recursive --remote --merge
 ```
 
-## deploying
+## Deploying
 
-Here is just a quick rundown of how and where I deploy my site.
+### Hosting
 
-I have a small [DigitalOcean Droplet VPS](https://www.digitalocean.com/products/droplets) running
-[nginx](https://www.nginx.com/) (for servering) and [certbot](https://certbot.eff.org/) (for certs). Digital Ocean Referral Link below!
+- [Github Pages](https://docs.github.com/en/pages)
 
-There is a `deploy.sh` script which is just a wrapper around running `hugo && rsync user@server:/var/www/html`. I have a [git hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) that runs this script on every `git push`.
+### Building and Deploying Hugo
 
-And that is the whole process.
+- [Github Actions](https://docs.github.com/en/actions)
+- [Hugo Github Action](https://github.com/peaceiris/actions-hugo)
 
-I do not currently use any CI/CD solutions, app platforms or containerization as of now for a few reasons:
+### Using a custom domain
 
-1. small static site (can be served anywhere for cheap)
-2. i don't mind managing my VPS and nginx (compared to something like docker compose)
-3. it works
-
-Maybe sometime in the future, I will containerize everything make a blog post about it... :)
-
-Thank you for reading!
-
-[![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=1f0004d6e4a6&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+- [Github Pages - Setting up custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
