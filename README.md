@@ -1,4 +1,4 @@
-# My personal blog and portfolio @ [jamesdixon.dev](https://jamesdixon.dev)
+# My personal blog and portfolio @ [lemonase.github.io](https://lemonase.github.io)
 
 I am currently using [Hugo](https://gohugo.io/) to generate the static (HTML/CSS/JS) portion site and
 [Blowfish](https://github.com/nunocoracao/blowfish/) as my theme...
