@@ -1,10 +1,11 @@
-title = "A Portfolio & Blog (by James)"
+title = "An Angry Tech Blog"
+logo = "img/mad_jam_text_random.png"
 
 [author]
-  name = "James Dixon"
-  headline = "Fullstack Web Developer : DevOps : Sys Admin"
-  bio = "Fullstack Web Developer - FOSS Enthusiast - PC Gamer - Tech Wrangler"
-  image = "img/gh_profile.jpg"
+  name = "Mad Jam"
+  headline = "WebDev, FOSS, DevOps, Gaming, Linux, and whatever else"
+  bio = "FOSS Enthusiast - PC Gamer - Sys Admin - Tech Wrangler"
+  image = "img/mad_jam_center.png"
   links = [
     { email = "mailto:notjamesdixon@gmail.com" },
     { github = "https://github.com/lemonase" },

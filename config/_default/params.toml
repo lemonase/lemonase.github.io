@@ -4,8 +4,8 @@
 # colorScheme = "autumn"
 # colorScheme = "forest"
 # colorScheme = "avocado"
-# colorScheme = "congo"
-colorScheme = "noir"
+colorScheme = "congo"
+# colorScheme = "noir"
 # colorScheme = "slate"
 # colorScheme = "fire"
 
@@ -14,7 +14,6 @@ autoSwitchAppearance = true
 
 enableSearch = true
 enableCodeCopy = true
-
 
 # uses firebase (firestore and auth)
 showViews = true
@@ -32,8 +31,8 @@ showLikes = true
   showScrollToTop = true
 
 [homepage]
-  # layout = "background"
-  layout = "hero"
+  layout = "background"
+  # layout = "hero"
   # layout = "profile"
   # layout = "card"
   homepageImage = "/images/backgrounds/beach.jpg"
