@@ -1,6 +1,8 @@
 title = "An Angry Tech Blog"
 logo = "img/mad_jam_text_random.png"
 
+copyright = "CC BY-SA 4.0"
+
 [author]
   name = "Mad Jam"
   headline = "WebDev, FOSS, DevOps, Gaming, Linux, and whatever else"

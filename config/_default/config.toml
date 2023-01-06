@@ -3,5 +3,12 @@ baseURL = "https://lemonase.github.io/"
 defaultContentLanguage = "en"
 languageCode = "en"
 
+enableRobotsTXT = true
+paginate = 20
+summaryLength = 30
+
+[imaging]
+  anchor = 'Center'
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]

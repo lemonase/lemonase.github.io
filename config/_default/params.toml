@@ -31,9 +31,9 @@ showLikes = true
   showScrollToTop = true
 
 [homepage]
-  layout = "background"
+  # layout = "background"
   # layout = "hero"
-  # layout = "profile"
+  layout = "profile"
   # layout = "card"
   homepageImage = "/images/backgrounds/beach.jpg"
   showRecent = false
