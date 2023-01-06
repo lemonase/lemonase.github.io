@@ -21,7 +21,7 @@ showLikes = true
 
 
 [header]
-  layout = "basic"
+  layout = "fixed"
 
 [footer]
   showMenu = true
@@ -32,11 +32,11 @@ showLikes = true
 
 [homepage]
   # layout = "background"
-  # layout = "hero"
-  layout = "profile"
+  layout = "hero"
+  # layout = "profile"
   # layout = "card"
   homepageImage = "/images/backgrounds/beach.jpg"
-  showRecent = false
+  showRecent = true
   showMoreLink = true
 
 [article]
