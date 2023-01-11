@@ -1,5 +1,5 @@
 ---
-title: "Adding Github Credentials On Linux/Mac"
+title: "Adding Github (SSH and PAT) Credentials On Linux and macOS"
 date: 2022-12-01T11:43:48-05:00
 draft: false
 tags:
