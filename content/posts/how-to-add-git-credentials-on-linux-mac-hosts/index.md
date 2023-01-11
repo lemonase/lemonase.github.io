@@ -1,5 +1,5 @@
 ---
-title: "Adding Github (SSH and PAT) Credentials On Linux and macOS"
+title: "How To Add Git Credentials On Linux and macOS Hosts (SSH and PAT)"
 date: 2022-12-01T11:43:48-05:00
 draft: false
 tags:
@@ -21,7 +21,7 @@ August 13, 2021](https://github.blog/changelog/2021-08-12-git-password-authentic
 This means all authentication on the platform can only be done two ways:
 
 1. [SSH/GPG Keys](https://github.com/settings/keys)
-1. [PAT Tokens](https://github.com/settings/tokens)
+1. [PAT (Personal Access Tokens)](https://github.com/settings/tokens)
 
 ## Generating SSH Keys
 
