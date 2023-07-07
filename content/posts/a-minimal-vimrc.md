@@ -1,6 +1,6 @@
 ---
 title: "A Minimal Vimrc"
-date: 2021-05-02T20:07:18-04:00
+date: 2023-07-07T20:07:18-04:00
 draft: false
 toc: true
 images:
@@ -11,19 +11,21 @@ tags:
   - settings
 ---
 
-## Parts of a "minimal" vimrc
+## A "minimal" .vimrc
 
-What makes a minimal vimrc?
+What makes a minimal .vimrc? You may ask.
 
-My opinion of a "minimal" vimrc might be different from yours, but for me, it means
+Is the most minimal .vimrc - none at all?
+
+Well, here is my rough definition and requirements:
 
 1. Not using external plugins
-2. < ~100 lines
-3. Reducing vi related pain-points
+2. < 100 lines
+3. Reduce `vi` related pain-points
 
-So here's what I do:
+Let's get started:
 
-### Source default settings
+### 1. Source default settings
 
 While this may not be necessary most of the time, it is still worth it to check
 that it has been sourced IME. It is a small fine to pay for ensuring you have
@@ -40,7 +42,7 @@ And we're done...
 
 jkjk there's more
 
-### Settings
+### 2. Set Some Settings
 
 Most of these will already be set in `defaults.vim`, but that's not really a concern
 of mine -- I still want to talk about them :)
@@ -55,7 +57,7 @@ set ruler	"show cursor position in status bar
 set showcmd	"shows the normal mode command before it gets executed
 ```
 
-Gotta have those line numbers, and I use `wildmenu` _all the time_. The rest are just
+Line numbers are essential and I use `wildmenu` _all the time_. The rest are just
 nice-to-haves.
 
 #### File Format and Encoding
@@ -65,7 +67,7 @@ set encoding=utf-8
 set fileformats=unix,dos,mac
 ```
 
-Lots of stuff is UTF-8 encoded these days (web pages, emojis, code, etc.)
+Lots of text is [UTF-8](https://en.wikipedia.org/wiki/UTF-8) encoded these days (web pages, emojis, code, etc.)
 this is the reasoning behind utf-8.
 
 Setting `fileformats` instead of `fileformat` allows more than one EOL type to
@@ -73,7 +75,7 @@ be detected. For example: Windows uses both `<CR><NL>` to mark the end of a line
 while Unix uses only one.
 This is one reason you may see `^M` symbols at the end of each line.
 
-See `h:fileformats` for more info.
+See `:help fileformats` for more info.
 
 #### Searching
 
@@ -137,7 +139,7 @@ set timeoutlen=1000	"time(ms) to wait for key mappings
 These adjust the 'wait times' for different commands. These settings are
 necessary to get rid of delay when running `vim` inside of `tmux`.
 
-#### Syntax, Filetype and Matchit
+### 3. Syntax, Filetype and Matchit
 
 ```vim
 syntax enable			"turn syntax highlighting on
@@ -145,19 +147,16 @@ filetype plugin indent on	"load plugin and indent files associated a detected fi
 runtime macros/matchit.vim	"allows jumping between brackets with % in normal mode
 ```
 
-These are probably the settings the give the most "bang for buck" when it comes
-to vanilla vim.
-
 Syntax highlighting, filetype/language specific settings and plugins
-are great, but they are a bit outside of the scope a truly minimal vimrc.
+are great, but they are a bit outside of the scope a truly minimal .vimrc.
 
 Once you start diving into the specifics of a language or ecosystem, you will likely
 have an easier time using external tools provided to do the "heavy lifting" and
 integrate with vim via plugin(s).
 
-If you want to learn more about filetypes and plugins, see `:h filetypes`.
+If you want to learn more about filetypes and plugins, see `:help filetypes`.
 
-#### Autocommands
+### 4. Autocommands
 
 ```vim
 augroup general
