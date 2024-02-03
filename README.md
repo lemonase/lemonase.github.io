@@ -1,9 +1,6 @@
 # My personal blog and portfolio @ [lemonase.github.io](https://lemonase.github.io)
 
-I am currently using [Hugo](https://gohugo.io/) to generate the static (HTML/CSS/JS) portion site and
-[Blowfish](https://github.com/nunocoracao/blowfish/) as my theme...
-
-Many thanks to the maintainers of these projects!
+I am currently using [Hugo](https://gohugo.io/) to generate the static (HTML/CSS/JS) portion of this site.
 
 ## Working Locally with Hugo
 
