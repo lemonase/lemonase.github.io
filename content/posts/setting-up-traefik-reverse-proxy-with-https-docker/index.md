@@ -29,11 +29,9 @@ in front of a `wordpress` and `whoami` service.
 This file is also taken from the [Traefik docs](https://doc.traefik.io/traefik/user-guides/docker-compose/acme-tls/)
 but slightly modified to add Wordpress to the mix.
 
-{{< alert >}}
 Notice: 
 The arguments for `command:` passed to Traefik are the default configuraion.
 The `labels:` for `wordpress` and `whoami` direct - or inform Traefik on things like hostname, resolver and cert.
-{{< /alert >}}
 
 ```yml
 # docker-compose.yml
