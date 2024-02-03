@@ -1,6 +1,6 @@
 +++
 title = "About Me"
-date = "2022-11-22"
+date = "2024-02-03"
 +++
 
 ## Hello, World 👋
@@ -9,6 +9,12 @@ I really enjoy exploring the technology (both new and old) that powers our lives
 That will be a focus on this blog - many posts will be about my experiences
 with technology, gaming, computers and whatever else I feel like writing about
 on a given day.
+
+## Work
+
+I am currently working as a Data Center Technician at Google as of Feb. 2023.
+**Opinions are my own and not the views of my employer**
+
 
 ## Education
 
@@ -19,7 +25,7 @@ Fall of 2021 from [CSU](https://www.charlestonsouthern.edu/).
 
 I am located in the greater Charleston area.
 
-## Languages
+## Programming Languages
 
 Here are the programming languages that I like to use:
 
