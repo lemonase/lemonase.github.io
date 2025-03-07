@@ -19,7 +19,7 @@ solutions that do not rely on plugins or plugin managers like `oh-my-zsh`.
 If you are looking for a portable zsh function for getting git status in
 your zsh prompt, here is what I am using currently (adapted from my bash git prompt):
 
-{{< gist lemonase c034f055c7f5aef24f05b052c2253189 ".zshrc" >}}
+https://github.com/lemonase/dotfiles/blob/master/config/zsh/.zshrc#L225-L247
 
 This function gets the git status and branch - greps out a few keywords that
 I'm interested in and prints out some characters accordingly.

@@ -1,20 +1,23 @@
-+++
-title = "About Me"
-date = "2024-02-03"
-+++
+---
+title: "About"
+date: "2024-02-03"
+---
 
 ## Hello, World 👋
+
+Welcome to my blog!
 
 I really enjoy exploring the technology (both new and old) that powers our lives.
 That will be a focus on this blog - many posts will be about my experiences
 with technology, gaming, computers and whatever else I feel like writing about
 on a given day.
 
+FOSS, Gaming, Linux, and whatever else.
+
 ## Work
 
 I am currently working as a Data Center Technician at Google as of Feb. 2023.
 **Opinions are my own and not the views of my employer**
-
 
 ## Education
 
@@ -78,14 +81,15 @@ You can find me on the following platforms
 
 ### Contact
 
-Feel free to contact me through any of the methods below:
+Social: 
+- [GitHub](https://github.com/lemonase)
+- [Goodreads](https://www.goodreads.com/user/show/126275796-james)
+- [Steam](https://steamcommunity.com/id/thatonepyro)
+- [Discord](https://discord.gg/TNKD3QU2Jt)
 
-- Email || [notjamesdixon@gmail.com](mailto:notjamesdixon@gmail.com) :email: :mailbox:
+Feel free to reach out!
+
+- Email || [notjamesdixon@gmail.com](mailto:notjamesdixon@gmail.com)
 - Telegram || <https://t.me/enraged_lemon>
 - Discord || <https://discordapp.com/users/374733876519763969>
 
-### Donations
-
-ETH: 0x90bbcC87DCE3C2832d25f692A5e5fcB6e2b4502B
-
-BTC: 1PWWyjhRC1xvsBQh2dkc1cm2d64nSW2ECk

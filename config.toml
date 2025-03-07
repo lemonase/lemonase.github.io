@@ -1,38 +1,25 @@
 baseURL = "https://lemonase.github.io/"
-title = "A Blog by (James Dixon)"
-theme = "etch"
-languageCode = "en-US"
-enableInlineShortcodes = true
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+languageCode = "en-us"
+theme = "poison"
+pluralizelisttitles = false
+
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
-  description = "My ramblings"
-  copyright = "CC BY-SA 4.0"
-  dark = "auto"
-  highlight = true
+  brand = "Jam[es?]"
+  brand_image = "/img/me.jpg"
+  description = "A blog for writing and reading"
+  dark_mode = true
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/"
-    weight = 10
+  front_page_content = ["posts"]
 
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    title = "about"
-    url = "/about/"
-    weight = 20
-
-[permalinks]
-  posts = "/:title/"
-
-[markup.goldmark.renderer]
-  # Allows HTML in Markdown
-  # unsafe = true
-
-[outputs]
-  home = ["HTML", "RSS"]
+  # MENU PLACEHOLDER
+  # Menu dict keys:
+  # Name:         The name to display on the menu.
+  # URL:          The directory relative to the content directory.
+  # HasChildren:  If the directory's files should be listed.  Default is true.
+  # Limit:        If the files should be listed, how many should be shown.
+  menu = [
+    {Name = "About", URL = "/about/", HasChildren = false},
+    {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+  ]
