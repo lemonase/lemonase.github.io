@@ -10,6 +10,8 @@ ignoreLogs = ['warning-goldmark-raw-html']
   brand_image = "/img/me.jpg"
   description = "A blog for writing and reading"
   dark_mode = true
+  favicon = "/img/logo.png"
+
 
   front_page_content = ["posts"]
 
