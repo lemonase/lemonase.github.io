@@ -2,6 +2,12 @@
 title: "PC and Homelab Upgrades (Coming Soon)"
 date: 2025-03-06T22:01:35-05:00
 draft: false
+tags:
+  - hardware
+  - gaming
+  - pc
+  - lenovo
+  - server
 ---
 
 It has been some time since posting and that is mostly because I have fallen
