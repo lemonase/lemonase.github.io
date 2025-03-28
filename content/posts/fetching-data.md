@@ -335,7 +335,7 @@ package provides an even easier way to interact with HTTP servers.
 Chances are you already have it installed as a dependency somewhere, but if not,
 just do a `python -m pip install requests`.
 
-```python3
+```python
 import requests
 
 r = requests.get('https://reddit.com/r/movies.json')
@@ -349,7 +349,7 @@ for post in posts:
 Python is great because calling `type()` and `dir()` on an object can
 give you so much information at a glance.
 
-```python3
+```python
 In [3]: type(r)
 Out[3]: requests.models.Response
 
@@ -432,7 +432,7 @@ which is a concept that should also be familiar to Node.js people.
 
 Here is a simple example using `asyncio`
 
-```python3
+```python
 import asyncio
 import requests
 
@@ -461,7 +461,7 @@ This is where the event loop comes in handy.
 
 First, here's the synchronous way:
 
-```python3
+```python
 import requests
 import time
 
@@ -504,7 +504,7 @@ print(f"Time Elapsed: {end - start} sec")
 
 Now add some async:
 
-```python3
+```python
 import asyncio
 import time
 

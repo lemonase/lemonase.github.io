@@ -40,25 +40,25 @@ read the man page to get the desired behavior.
 
 ## Using the os module
 
-```python3
+```python
 import os
 ```
 
 ### Current working directory
 
-```python3
+```python
 os.getcwd()
 ```
 
 ### Absolute (cannonical) path
 
-```python3
+```python
 os.path.abspath("blog")
 ```
 
 ### Elements of a directory
 
-```python3
+```python
 os.path.dirname("blog")
 os.path.basename("blog")
 ```
@@ -82,7 +82,7 @@ in Python, it might be worth it to try out `pathlib`.
 
 I'll give some example usage:
 
-```python3
+```python
 from pathlib import Path
 
 # get (absolute) current directory

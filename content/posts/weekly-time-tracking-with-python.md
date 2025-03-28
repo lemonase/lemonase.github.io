@@ -36,7 +36,7 @@ used hrs 163.5 / 168
 
 ## The Script
 
-```python3
+```python
 #!/usr/bin/env python3
 
 # this is a very simplified, rough estimate of time as there is much more
