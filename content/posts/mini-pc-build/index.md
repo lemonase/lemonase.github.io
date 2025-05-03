@@ -2,6 +2,16 @@
 title: "Mini PC Build"
 date: 2025-04-26T09:22:20-04:00
 draft: false
+tags:
+  - Mini ITX
+  - PC Build
+  - Small Form Factor
+  - MINISFORUM BD795i SE
+  - Ryzen 9 7945HX
+  - RX 9070
+  - PC Hardware
+  - Windows 11
+  - Arch Linux
 ---
 
 This is an update post for the Mini PC build promised earlier in
