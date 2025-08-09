@@ -1,17 +1,17 @@
 baseURL = "/"
 languageCode = "en-us"
+# Example config: https://github.com/lukeorth/poison?tab=readme-ov-file#example-config
 theme = "poison"
 pluralizelisttitles = false
 
 ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
-  brand = "Jam[es?]"
+  brand = "Jam{es}"
   brand_image = "/img/me.jpg"
-  description = "A blog for writing and reading"
+  description = "Computers, keyboards, Linux, gaming and misc things of interest"
   dark_mode = true
   favicon = "/img/logo.png"
-
 
   front_page_content = ["posts"]
 
@@ -25,3 +25,9 @@ ignoreLogs = ['warning-goldmark-raw-html']
     {Name = "About", URL = "/about/", HasChildren = false},
     {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
   ]
+
+  # sidebar customizations
+  sidebar_bg_color = "#121122"
+
+  # post/content customizations
+  post_title_color_dark = "#3a66bd"
