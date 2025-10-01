@@ -13,7 +13,32 @@ ignoreLogs = ['warning-goldmark-raw-html']
   dark_mode = true
   favicon = "/img/logo.png"
 
+  # Links to your socials.  Comment or delete any you don't need/use.
+  discord_url = "https://discord.gg/nU2aEQJezE"
+  email_url = "mailto:notjamesdixon@gmail.com"
+  # facebook_url = "https://facebook.com"
+  # flickr_url = "https://flickr.com"
+  github_url = "https://github.com/lemonase/lemonase.github.io"
+  # gitlab_url = "https://gitlab.com"
+  # instagram_url = "https://instagram.com"
+  # linkedin_url = "https://linkedin.com"
+  # mastodon_url = "https://mastodon.social"
+  # matrix_url = "https://matrix.org"
+  telegram_url = "https://t.me/enraged_lemon"
+  # tryhackme_url = "https://tryhackme.com"
+  # twitter_url = "https://twitter.com"
+  # x_url = "https://x.com"
+  # xmpp_url = "https://xmpp.org"
+  # youtube_url = "https://youtube.com"
+  # signal_url = "https://signal.org"
+  # bluesky_url = "https://bsky.app"
+
+  # front page is posts
   front_page_content = ["posts"]
+
+  # enable rss
+  rss_icon = true
+  rss_section = "posts"
 
   # MENU PLACEHOLDER
   # Menu dict keys:
