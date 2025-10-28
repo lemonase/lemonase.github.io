@@ -52,9 +52,23 @@ alias nobara-update-all='sudo dnf upgrade && flatpak update && sudo nobara-updat
 
 There is also a GUI version to update packages for Nobara without using the CLI.
 
+### Screenfetch
+
+Here is ~screenfetch~ fastfetch for ya:
+
+![fastfetch](/images/posts/nobara/fastfetch.png)
+
+Lil tip - to install fastfetch on Fedora
+
+```
+sudo dnf install fastfetch
+```
+
 ### Conclusion
 
 Overall, I am really happy with the stability and performance of Nobara and I have little reason to hop to another distro.
+
+Unless something breaks in a way that is really annoying or unrecoverable, I am probably going to stick with Nobara for a the forseeable future (at least on this machine). XD
 
 Thank you for reading and happy gaming!
 
