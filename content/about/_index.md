@@ -3,51 +3,111 @@ title: "About"
 date: "2024-02-03"
 ---
 
+Updated: 2025-11-22
+
 ## Hello, World 👋
 
-Welcome to my blog!
+My name is James :3
 
-I really enjoy exploring the technology (both new and old) that powers our lives.
-That will be a focus on this blog - many posts will be about my experiences
+Welcome to my blog and place on the internet!
+
+I really enjoy exploring the technology (both new and old) and hope you do as well.
+
+That will be the general focus on this blog - many posts will be about my experiences
 with technology, gaming, computers and whatever else I feel like writing about
 on a given day.
 
-FOSS, Gaming, Linux, and whatever else.
+"Strong opinions, held weekly" or something like that
 
-## Work
+I have worked on computers most of my life -- from the time I was a teen and
+was able to build my first PC to present day.
 
-I am currently working as a Data Center Technician at Google as of Feb. 2023.
-**Opinions are my own and not the views of my employer**
+After learning about hardware, I took to learning the operating system and
+software side of things and have not looked back ever since.
 
 ## Education
 
-I graduated with a B.T. in Computer Science in 
-Fall of 2021 from [CSU](https://www.charlestonsouthern.edu/).
+I graduated with a Bachelors degree in Computer Science
+from [Charleston Southern University](https://www.charlestonsouthern.edu/) in the Fall of 2021.
+
+Prior to that, I studied at [Trident Technical
+College](https://www.tridenttech.edu/index.html) after High School (around
+2017~2019).
+
+I always tell people -- most of the things I have learned about computers and
+programming has come from helpful strangers and communities on the internet as
+well as experimenting and doing projects of my own.
+The wisdom of the crowd as well as the curiosity and drive to figure it out.
+
+My genuine thanks to all those who share their knowledge and expertise
+(both on and offline).
+
+## Work
+
+**DISCLAIMER: Opinions are my own and not the views of my employer**
+
+I am currently employed as a Data Center Technician at Google.
+
+I was hired on as a full time Data Center Technician on Feb. 2023. Prior to
+that I had worked logistics at the Data Center.
 
 ## Location
 
-I am located in the greater Charleston area.
+I am located in South Carolina in the greater Charleston area. The beaches
+here are wonderful, and so is the traffic. The drivers not so much. Please
+be careful on the roads.
+
+##  My Machines and Operating Systems
+
+I have used all major operating systems (Windows/Mac/Linux) in both personal and professional settings.
+
+I bought my first Mac in 2022 -- an [M1 MacBook Air](/posts/i-bought-a-new-laptop).
+Until then, I was mostly a Windows/Linux user on the desktop and laptop
+(Machines include my gaming rig and Thinkpad T Series and X1 Carbon laptops).
+
+My preferences are:
+
+- A stable Linux Distro (Arch is ok too) for desktop and server use.
+- MacOS/Macbook for laptops for many reasons such as battery life, trackpad and screen quality.
+- Android is my mobile OS of choice as well (although there are some free and open source phones coming out).
 
 ## Programming Languages
 
-Here are the programming languages that I like to use:
+One of the things I like to do (both as a hobby and for work) is to program.
 
-### Intermediate Level
+Generally, I try to avoid frameworks and large libraries, however these things
+do have a place and can speed up development and be very productive.
+I generally take the same approach for AI tools when it comes to programming.
+Less is more.
+
+Here are some of the programming languages that I use:
+
+### Often Use
 
 - Python
 - PowerShell/Bash
+- Golang
 - HTML/CSS/JavaScript
 
-### Beginner Level
+### Occasionally Use
 
-- C/C++
-- Go
-- Java
 - SQL (sqlite, MySQL)
+- C/C++
+- Java
 - C# / .NET
 - PHP
 - Ruby
 - Perl
+
+There are many things to consider when choosing a language to use for a
+specific task.
+
+In many cases the programming language is dictated by the environment.
+
+For personal projects it is much more of an open decision where language does
+not matter as much, however if you are doing work for a client/company - there
+are likely requirements for what language is better supported by your team and
+going off the beaten path will set you back.
 
 ## Tech Areas of Interest
 
@@ -65,26 +125,100 @@ Here's a list of the things I like to mess around with in no particular order:
 - Security and Hardening
 - Reverse Engineering
 
+## Text Editors
+
+I am a huge nerd when it comes to text editors and IDEs
+
+I have tried the following text editors and here is the order
+of preference:
+
+- Vim
+- Neovim
+- Visual Studio Code
+- Kate
+- Emacs
+- Helix
+- Nano
+
+### Choosing a text editor
+
+There is no such thing as a perfect text editor, but I do find editors that are
+configurable and customizable lead to a much better experience in the long run.
+
+The trade off with this kind of editor is usually the learning curve of new
+keybinds and configuration language, but *once you do* begin to configure
+things - it can become a great experience that you have crafted yourself over
+time.
+This is certainly the case with Emacs and (Neo)vim.
+
+Editors like VS Code (incl. fork/derivative editors) and IDEs like the ones
+Jetbrains make are also great if you do not care for absolute extensibility,
+but still want a very rich plugin experience.
+
+## Keyboards
+
+I also like to test different types and kinds of mechanical keyboards.
+
+My keyboard preference will depend on what I am doing, but generally.
+
+- For gaming I prefer Cherry Red / Linear type switches and a smaller 60% or 75% keyboard layout.
+- For typing I prefer Cherry Brown / Tactile type switches and a
+[Tenkeyless](https://www.daskeyboard.com/blog/what-is-tkl-keyboard/) layout
+(TKL).
+
 ## Other hobbies
 
 Other subjects I enjoy learning about include:
 history, art, psychology, physics, geometry and philosophy,
 not necessarily in that order.
 
-### PC Gaming
+### Cool Subreddits
 
-I do enjoy assembling high-end (or even budget) PCs and playing games as well.
-You can find me on the following platforms
+A curated list of my favorite random subreddits listed below (some useful
+non-meme ones too)
 
-- [Steam](https://steamcommunity.com/id/thatonepyro)
-- [PSN](https://psnprofiles.com/Old_Salty_Lemon)
+- [/r/assholedesign](https://www.reddit.com/r/assholedesign/)
+- [/r/babiestrappedinknees](https://www.reddit.com/r/babiestrappedinknees/)
+- [/r/badphilosophy](https://www.reddit.com/r/badphilosophy/)
+- [/r/BatmanArkham](https://www.reddit.com/r/BatmanArkham/)
+- [/r/BikiniBottomTwitter](https://www.reddit.com/r/BikiniBottomTwitter/)
+- [/r/bonehurtingjuice](https://www.reddit.com/r/bonehurtingjuice/)
+- [/r/boottoobig](https://www.reddit.com/r/boottoobig/)
+- [/r/Bossfight](https://www.reddit.com/r/Bossfight/)
+- [/r/BreadStapledToTrees](https://www.reddit.com/r/BreadStapledToTrees/)
+- [/r/brokengifs](https://www.reddit.com/r/brokengifs/)
+- [/r/buildapcsales](https://www.reddit.com/r/buildapcsales/)
+- [/r/Catloaf](https://www.reddit.com/r/Catloaf/)
+- [/r/Catswhoyell](https://www.reddit.com/r/Catswhoyell/)
+- [/r/Catswithjobs](https://www.reddit.com/r/Catswithjobs/)
+- [/r/copypasta](https://www.reddit.com/r/copypasta/)
+- [/r/CrappyDesign](https://www.reddit.com/r/CrappyDesign/)
+- [/r/cursedimages](https://www.reddit.com/r/cursedimages/)
+- [/r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/)
+- [/r/dataisugly](https://www.reddit.com/r/dataisugly/)
+- [/r/DeepFriedMemes](https://www.reddit.com/r/DeepFriedMemes/)
+- [/r/doodles](https://www.reddit.com/r/doodles/)
+- [/r/educationalgifs](https://www.reddit.com/r/educationalgifs/)
+- [/r/ExpandDong](https://www.reddit.com/r/ExpandDong/)
+- [/r/explainlikeimfive](https://www.reddit.com/r/explainlikeimfive/)
+- [/r/heavymind](https://www.reddit.com/r/Heavymind/)
+- [/r/homelab](https://www.reddit.com/r/homelab/)
+- [/r/IDONTGIVEASWAG](https://www.reddit.com/r/IDONTGIVEASWAG/)
+- [/r/IncreasinglyVerbose](https://www.reddit.com/r/IncreasinglyVerbose/)
+- [/r/interestingasfuck](https://www.reddit.com/r/interestingasfuck/)
+- [/r/James](https://www.reddit.com/r/James/)
+- [/r/Justfuckmyshitup](https://www.reddit.com/r/Justfuckmyshitup/)
+- [/r/justneckbeardthings](https://www.reddit.com/r/justneckbeardthings/)
+- [/r/linuxsucks](https://www.reddit.com/r/linuxsucks/)
 
-### Contact
+## Contact
 
 Social: 
+
 - [GitHub](https://github.com/lemonase)
 - [Goodreads](https://www.goodreads.com/user/show/126275796-james)
 - [Steam](https://steamcommunity.com/id/thatonepyro)
+- [PSN](https://psnprofiles.com/Old_Salty_Lemon)
 - [Discord](https://discord.gg/TNKD3QU2Jt)
 
 Feel free to reach out!
