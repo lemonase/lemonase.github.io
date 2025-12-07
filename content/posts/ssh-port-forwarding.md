@@ -2,6 +2,12 @@
 title: "SSH Port Forwarding & Tunneling"
 date: 2025-11-26T20:00:55-05:00
 draft: false
+tags:
+  - ssh
+  - server
+  - network
+  - ports
+  - linux
 ---
 
 The most common use case for `ssh` is to securely access a shell on a remote
