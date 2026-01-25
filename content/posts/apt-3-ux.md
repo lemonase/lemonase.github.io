@@ -18,7 +18,7 @@ The difference can be seen below:
 apt 2.8.3 (amd64)
 ```
 
-![apt2](images/posts/apt3-ux/apt2.png)
+![apt2](/images/posts/apt3-ux/apt2.png)
 
 ---
 
@@ -27,6 +27,6 @@ jam@deblet2:~$ apt --version
 apt 3.0.3 (amd64)
 ```
 
-![apt3](images/posts/apt3-ux/apt3.png)
+![apt3](/images/posts/apt3-ux/apt3.png)
 
 This is a much welcome change in my opinion. Shouts out to Debian maintainers, great work!
