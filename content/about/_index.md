@@ -3,11 +3,13 @@ title: "About"
 date: "2024-02-03"
 ---
 
-Updated: 2025-11-22
+Updated: 2026-01-25
 
 ## Hello, World 👋
 
 My name is James :3
+
+![pixel forest](/images/backgrounds/pixel-forest.jpg)
 
 Welcome to my blog and place on the internet!
 
@@ -46,10 +48,10 @@ My genuine thanks to all those who share their knowledge and expertise
 
 **DISCLAIMER: Opinions are my own and not the views of my employer**
 
-I am currently employed as a Data Center Technician at Google.
+I am currently working as a [Data Center](https://datacenters.google/locations/south-carolina/) Technician at Google.
 
-I was hired on as a full time Data Center Technician on Feb. 2023. Prior to
-that I had worked logistics at the Data Center.
+> This video is a bit dated, but is still pretty much still a good overview of what working at the DC is like.
+{{< youtube XZmGGAbHqa0 >}}
 
 ## Location
 
@@ -171,45 +173,6 @@ My keyboard preference will depend on what I am doing, but generally.
 Other subjects I enjoy learning about include:
 history, art, psychology, physics, geometry and philosophy,
 not necessarily in that order.
-
-### Cool Subreddits
-
-A curated list of my favorite random subreddits listed below (some useful
-non-meme ones too)
-
-- [/r/assholedesign](https://www.reddit.com/r/assholedesign/)
-- [/r/babiestrappedinknees](https://www.reddit.com/r/babiestrappedinknees/)
-- [/r/badphilosophy](https://www.reddit.com/r/badphilosophy/)
-- [/r/BatmanArkham](https://www.reddit.com/r/BatmanArkham/)
-- [/r/BikiniBottomTwitter](https://www.reddit.com/r/BikiniBottomTwitter/)
-- [/r/bonehurtingjuice](https://www.reddit.com/r/bonehurtingjuice/)
-- [/r/boottoobig](https://www.reddit.com/r/boottoobig/)
-- [/r/Bossfight](https://www.reddit.com/r/Bossfight/)
-- [/r/BreadStapledToTrees](https://www.reddit.com/r/BreadStapledToTrees/)
-- [/r/brokengifs](https://www.reddit.com/r/brokengifs/)
-- [/r/buildapcsales](https://www.reddit.com/r/buildapcsales/)
-- [/r/Catloaf](https://www.reddit.com/r/Catloaf/)
-- [/r/Catswhoyell](https://www.reddit.com/r/Catswhoyell/)
-- [/r/Catswithjobs](https://www.reddit.com/r/Catswithjobs/)
-- [/r/copypasta](https://www.reddit.com/r/copypasta/)
-- [/r/CrappyDesign](https://www.reddit.com/r/CrappyDesign/)
-- [/r/cursedimages](https://www.reddit.com/r/cursedimages/)
-- [/r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/)
-- [/r/dataisugly](https://www.reddit.com/r/dataisugly/)
-- [/r/DeepFriedMemes](https://www.reddit.com/r/DeepFriedMemes/)
-- [/r/doodles](https://www.reddit.com/r/doodles/)
-- [/r/educationalgifs](https://www.reddit.com/r/educationalgifs/)
-- [/r/ExpandDong](https://www.reddit.com/r/ExpandDong/)
-- [/r/explainlikeimfive](https://www.reddit.com/r/explainlikeimfive/)
-- [/r/heavymind](https://www.reddit.com/r/Heavymind/)
-- [/r/homelab](https://www.reddit.com/r/homelab/)
-- [/r/IDONTGIVEASWAG](https://www.reddit.com/r/IDONTGIVEASWAG/)
-- [/r/IncreasinglyVerbose](https://www.reddit.com/r/IncreasinglyVerbose/)
-- [/r/interestingasfuck](https://www.reddit.com/r/interestingasfuck/)
-- [/r/James](https://www.reddit.com/r/James/)
-- [/r/Justfuckmyshitup](https://www.reddit.com/r/Justfuckmyshitup/)
-- [/r/justneckbeardthings](https://www.reddit.com/r/justneckbeardthings/)
-- [/r/linuxsucks](https://www.reddit.com/r/linuxsucks/)
 
 ## Contact
 

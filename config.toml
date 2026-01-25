@@ -7,8 +7,8 @@ pluralizelisttitles = false
 ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
-  brand = "Jam{es}"
-  brand_image = "/img/me.jpg"
+  brand = "Jam[es]+?"
+  brand_image = "/img/logo.png"
   description = "Computers, keyboards, Linux, gaming and misc things of interest"
   dark_mode = true
   favicon = "/img/logo.png"
