@@ -3,11 +3,9 @@ title: "About"
 date: "2024-02-03"
 ---
 
-Updated: 2026-01-25
+Updated: 2026-05-25
 
 ## Hello, World 👋
-
-My name is James :3
 
 ![pixel forest](/images/backgrounds/pixel-forest.jpg)
 
@@ -87,7 +85,7 @@ Here are some of the programming languages that I use:
 ### Often Use
 
 - Python
-- PowerShell/Bash
+- Bash/PowerShell
 - Golang
 - HTML/CSS/JavaScript
 
@@ -134,13 +132,13 @@ I am a huge nerd when it comes to text editors and IDEs
 I have tried the following text editors and here is the order
 of preference:
 
-- Vim
-- Neovim
-- Visual Studio Code
-- Kate
-- Emacs
-- Helix
-- Nano
+- [Vim](http://vim.org/)
+- [Neovim](https://neovim.io/)
+- [Helix](https://helix-editor.com/)
+- [Emacs](https://www.gnu.org/software/emacs/)
+- [Nano](https://www.nano-editor.org/)
+- [Kate](https://kate-editor.org/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ### Choosing a text editor
 
@@ -151,11 +149,15 @@ The trade off with this kind of editor is usually the learning curve of new
 keybinds and configuration language, but *once you do* begin to configure
 things - it can become a great experience that you have crafted yourself over
 time.
-This is certainly the case with Emacs and (Neo)vim.
 
-Editors like VS Code (incl. fork/derivative editors) and IDEs like the ones
-Jetbrains make are also great if you do not care for absolute extensibility,
-but still want a very rich plugin experience.
+This is certainly the case with Emacs and (Neo)vim. Just be prepared to learn
+some [Elisp](https://en.wikipedia.org/wiki/Emacs_Lisp) or [Lua](https://www.lua.org/docs.html)
+along the way.
+
+Editors like [Visual Studio Code](https://code.visualstudio.com/) (incl.
+fork/derivative editors) and IDEs like the ones
+[Jetbrains](https://www.jetbrains.com/ides/) make are also great if you do not
+care for absolute extensibility, but still want a very rich plugin experience.
 
 ## Keyboards
 
