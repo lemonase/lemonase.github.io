@@ -45,3 +45,21 @@ amending this post or in a new one.
 
 Until next time!
 
+### Update 06-16-26 (a few weeks later)
+
+`jj` is good and I think improves on many things from `git`. In particular, I think
+the configuration/CLI ergonomics work better than git for me personally. Having
+subcommands like `jj fix` and `jj config edit --user` are really good and it
+just makes sense in my mind. Having a configurable default command makes sense.
+
+The thing that I struggle with is the concept of `revset` and the mini language
+used to represent them [revest docs](https://www.jj-vcs.dev/latest/revsets/).
+
+I know the basics, however I am still having to resort to the docs to find out
+how to do things that I know how to do in Git. There is a helpful [command
+table](https://www.jj-vcs.dev/latest/git-command-table/) to help with that
+as well.
+
+Happy hacking!
+
+
