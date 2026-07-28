@@ -176,6 +176,18 @@ Other subjects I enjoy learning about include:
 history, art, psychology, physics, geometry and philosophy,
 not necessarily in that order.
 
+## Note on AI / LLMs / AI Generated Writing
+
+I **do not** use AI or LLMs to write any of the posts in my blog. This is a
+decision made out of alignment with my personal values and respect to the
+reader. If there is a section of writing / code that is made with AI, it will
+be explicitly stated in the post.
+
+One of the reasons I wanted to start blogging  was to get in the practice of
+writing and synthesizing information for my own human brain (and hopefully my
+other humans reading). This blog will remain primarily a human space -
+regardless of how quick/cheap/good LLM become at writing.
+
 ## Contact
 
 Social: 
